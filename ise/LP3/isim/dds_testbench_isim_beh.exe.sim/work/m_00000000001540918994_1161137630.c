@@ -166,9 +166,9 @@ LAB13:    xsi_set_current_line(22, ng0);
 }
 
 
-extern void work_m_00000000001540918994_3994722669_init()
+extern void work_m_00000000001540918994_1161137630_init()
 {
 	static char *pe[] = {(void *)Initial_13_0,(void *)Always_17_1};
-	xsi_register_didat("work_m_00000000001540918994_3994722669", "isim/dds_testbench_isim_beh.exe.sim/work/m_00000000001540918994_3994722669.didat");
+	xsi_register_didat("work_m_00000000001540918994_1161137630", "isim/dds_testbench_isim_beh.exe.sim/work/m_00000000001540918994_1161137630.didat");
 	xsi_register_executes(pe);
 }
