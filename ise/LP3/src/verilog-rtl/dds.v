@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module dds #(NBITS = 13, NBITS_SINE_LUT = 7, N_OUTPUT_BITS = 9, NSAMPLES_LUT = 128, HEXVAL = "../simdata/DDSLUT38.hex") (
+module dds #(NBITS = 13, NBITS_SINE_LUT = 7, N_OUTPUT_BITS = 9, NSAMPLES_LUT = 128, HEXVAL = "../simdata/DDSLUT19.hex") (
       input clock,
       input reset,
       input enableclk,
