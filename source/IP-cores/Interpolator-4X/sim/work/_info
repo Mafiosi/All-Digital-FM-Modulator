@@ -1,0 +1,48 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/seq-multiplier/sim
+vinterpol4x
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 o`VL0?G=S59CkGzhTHg0e3
+IJemFU47mOM0m>H8nc2Y_n3
+Z1 dD:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/Interpolator-4X/sim
+w1543226941
+8D:\usr\jca\GoogleFEUP\FEUP\Aulas\2018-2019\PSDI-1819\Labs\Lab3\IP-cores\Interpolator-4X\src-verilog\interpol4x.v
+FD:\usr\jca\GoogleFEUP\FEUP\Aulas\2018-2019\PSDI-1819\Labs\Lab3\IP-cores\Interpolator-4X\src-verilog\interpol4x.v
+L0 28
+Z2 OL;L;10.4c;61
+Z3 !s108 1543227284.000000
+!s107 D:\usr\jca\GoogleFEUP\FEUP\Aulas\2018-2019\PSDI-1819\Labs\Lab3\IP-cores\Interpolator-4X\src-verilog\interpol4x.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:\usr\jca\GoogleFEUP\FEUP\Aulas\2018-2019\PSDI-1819\Labs\Lab3\IP-cores\Interpolator-4X\src-verilog\interpol4x.v|
+!i113 0
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vinterpol4x_tb
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 8;iOf[Ue6;EV:10UP4_aG1
+I^<PfCb]CZH`TLf]RM_ila2
+R1
+w1543226985
+8D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/Interpolator-4X/src-verilog/interpol4x_tb.v
+FD:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/Interpolator-4X/src-verilog/interpol4x_tb.v
+L0 15
+R2
+R3
+!s107 D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/Interpolator-4X/src-verilog/interpol4x_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/Interpolator-4X/src-verilog/interpol4x_tb.v|
+!i113 0
+R4
