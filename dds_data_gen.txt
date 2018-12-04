@@ -1,0 +1,8 @@
+** Below follows the parameters generated per each datagen scenario
+
+* dds_out
+Fout = 38000;
+Nbits_sine_LUT = 8;
+Nsamples_LUT   = 32;
+
+* dds_19

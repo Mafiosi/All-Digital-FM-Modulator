@@ -10,10 +10,10 @@ format long
 %% define the parameters:
 %
 % Output file with the sine wave for the input frequency:
-outputhexfile = '../simdata/DDSout.hex';
+outputhexfile = '../simdata/DDSout_out.hex';
 
 % Lookup-table for the DDS
-DDSLUTfile    = '../simdata/DDSLUT.hex';
+DDSLUTfile    = '../simdata/DDSLUT_out.hex';
 
 % Duration of the output test signal (seconds):
 duration = 0.1;  
@@ -22,14 +22,14 @@ duration = 0.1;
 Fs = 192000;
 
 % Output frequency (Hz):
-Fout = 19000;
+Fout = 38000;
 
 % Number of bits per sample in lookup-table
-Nbits_sine_LUT = 9;
+Nbits_sine_LUT = 8;
 
 % Number of samples in the lookup-table:
 % This should be an integer power of 2
-Nsamples_LUT   = 128;
+Nsamples_LUT   = 32;
 
 % Number of bits of the fractional phase:
 % note that the number of bits in the integer part of the
