@@ -1,6 +1,10 @@
 `timescale 1ns / 1ps
 
+<<<<<<< HEAD:ise/LP3/src/dds.v
 module dds #(NBITS = 8, NBITS_SINE_LUT = 8, N_OUTPUT_BITS = 8, NSAMPLES_LUT = 1024, HEXVAL = "DDSLUT.hex") (
+=======
+module dds #(NBITS = 13, NBITS_SINE_LUT = 7, N_OUTPUT_BITS = 9, NSAMPLES_LUT = 128, HEXVAL = "../simdata/DDSLUT19.hex") (
+>>>>>>> 4a25fc875d8e05dd27a22606dbf193a7ec328033:ise/LP3/src/verilog-rtl/dds.v
       input clock,
       input reset,
       input enableclk,
