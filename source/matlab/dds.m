@@ -25,16 +25,16 @@ Fs = 192000;
 Fout = 38000;
 
 % Number of bits per sample in lookup-table
-Nbits_sine_LUT = 9;
+Nbits_sine_LUT = 8;
 
 % Number of samples in the lookup-table:
 % This should be an integer power of 2
-Nsamples_LUT   = 128;
+Nsamples_LUT   = 32;
 
 % Number of bits of the fractional phase:
 % note that the number of bits in the integer part of the
 % phase is given by log2( NsamplesLUT )
-Nfrac = 6; 
+Nfrac = 5;
 
 %% Build the lookup-table:memory
 sine_LUT = round( sin( (0:Nsamples_LUT-1) / Nsamples_LUT * 2 * pi ) * (2^(Nbits_sine_LUT-1)-1) );
