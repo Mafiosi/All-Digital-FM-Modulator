@@ -22,8 +22,8 @@ Simulation instructions:
        Nbits_sine_LUT = 10;  % Number of bits per sample in lookup-table
        Nsamples_LUT   = 128; % Number of samples in the lookup-table (int power of 2)
        Nfrac = 6;            % Number of bits of the fractional phase:
-                             %    note that the number of bits in the integer part of the
-                             %    phase is given by log2( NsamplesLUT )
+                             % note that the number of bits in the integer part of the
+                             % phase is given by log2( NsamplesLUT )
 
 	2.Run the script dds.m in Matlab/Octave in directory ./matlab
 	  This will generate the data for the DDS lookup table (file ./simdata/DDSLUT.hex)
@@ -87,12 +87,12 @@ parameter FS              = 192000;                   // Sampling frequency (Hz)
 // The DDS module outputs 32 bits but in general we will use only less than 32 bits.
 // For verification we need to connect a wire with NOUTBITS to see in the waveform window
 // the correct signed output value:
-parameter N_OUTPUT_BITS   = 8;                        // Number of valid bits in the output word
+parameter N_OUTPUT_BITS   = 9;                        // Number of valid bits in the output word
 
 // Set the phase increment to 12.6562500 (binary: 001100.101010)
 // To generate a 38 kHz sine wave
 // For readability, use the "_" to indicate the position of the fractional point
-parameter PHASE_INCREMENT = 32'b0001100_101010;
+parameter PHASE_INCREMENT = 32'b001100_101010;
 
 
 // vector to hold the golden results generated my the Matlab code:
@@ -103,6 +103,9 @@ integer Nsamples = MAX_SIM_SAMPLES;
 
 // Maximum number of errors to terminate the simulation:
 parameter MAX_ERRORS = 20;
+
+// SIMULATION FILE
+// parameter file = "../simadata/DDSLUT.hex"
 
 integer i; // generic var for loop iteration
 
@@ -115,8 +118,8 @@ wire        clken192kHz; // The clock enable setting the sampling frequency:
 
 //-------------------------------------------
 // Instantiate the DDS module:
-dds #(.NBITS(13),.NBITS_SINE_LUT(7),.N_OUTPUT_BITS(N_OUTPUT_BITS),.NSAMPLES_LUT(128),.HEXVAL("../simdata/DDSLUT_19.hex")) dds_1(
-            .clock( clock ),
+dds #(.NBITS_PHASE(13),.NBITS_PHASE_FRAC(6),.NSAMPLES_LUT(128),.HEXVAL("simdata/DDSLUT19.hex")) dds(
+         .clock( clock ),
 			.reset( reset ),
 			.enableclk( clken192kHz ),
 			.phaseinc( phaseinc ),
@@ -134,10 +137,10 @@ begin
   // To generate a 38 kHz sine wave
   phaseinc = PHASE_INCREMENT;
 
-  $write("Loading file with the golden results %s\n", "../simdata/DDSout_19.hex");
+  $write("Loading file with the golden results %s\n", "simdata/DDSLUT19.hex");
 
   // Load golden results:
-  $readmemh( "../simdata/DDSout_19.hex", GOLDENOUT );
+  $readmemh( "simdata/DDSout19.hex", GOLDENOUT );
 
   // Count number of samples read:
   for(i=0; i< MAX_SIM_SAMPLES; i=i+1 )

@@ -75,7 +75,7 @@ Simulation instructions:
 */
 
 //////////////////////////////////////////////////////////////////////////////////
-module dds_tb_32;
+module dds_tb_38;
 
 //-------------------------------------------
 // Testbench parameters (assume Fs = 192 kHz):
@@ -92,7 +92,7 @@ parameter N_OUTPUT_BITS   = 9;                        // Number of valid bits in
 // Set the phase increment to 12.6562500 (binary: 001100.101010)
 // To generate a 38 kHz sine wave
 // For readability, use the "_" to indicate the position of the fractional point
-parameter PHASE_INCREMENT = 32'b0001100_101010;
+parameter PHASE_INCREMENT = 32'b011001_010101;
 
 
 // vector to hold the golden results generated my the Matlab code:
@@ -115,7 +115,7 @@ wire        clken192kHz; // The clock enable setting the sampling frequency:
 
 //-------------------------------------------
 // Instantiate the DDS module:
-dds #(.NBITS(13),.NBITS_SINE_LUT(7),.N_OUTPUT_BITS(N_OUTPUT_BITS),.NSAMPLES_LUT(128),.HEXVAL("../simdata/DDSLUT_38.hex")) dds_1(
+dds #(.NBITS(13),.NBITS_SINE_LUT(7),.N_OUTPUT_BITS(N_OUTPUT_BITS),.NSAMPLES_LUT(128),.HEXVAL("simdata/DDSLUT38.hex")) dds(
             .clock( clock ),
 			.reset( reset ),
 			.enableclk( clken192kHz ),
@@ -134,10 +134,10 @@ begin
   // To generate a 38 kHz sine wave
   phaseinc = PHASE_INCREMENT;
 
-  $write("Loading file with the golden results %s\n", "../simdata/DDSout_38.hex");
+  $write("Loading file with the golden results %s\n", "simdata/DDSout38.hex");
 
   // Load golden results:
-  $readmemh( "../simdata/DDSout_38.hex", GOLDENOUT );
+  $readmemh( "simdata/DDSout38.hex", GOLDENOUT );
 
   // Count number of samples read:
   for(i=0; i< MAX_SIM_SAMPLES; i=i+1 )

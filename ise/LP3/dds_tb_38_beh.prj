@@ -1,0 +1,3 @@
+verilog work "src/verilog-rtl/dds.v"
+verilog work "src/verilog-tb/dds_tb_38.v"
+verilog work "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
