@@ -2,14 +2,14 @@ Command line:
    dds_tb_19_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  52618
+     -socket  52870
 
-Tue Dec 11 18:35:31 2018
+Tue Dec 11 18:57:27 2018
 
 
- Elaboration Time: 0.171875 sec
+ Elaboration Time: 0.25 sec
 
- Current Memory Usage: 923.759 Meg
+ Current Memory Usage: 924.479 Meg
 
  Total Signals          : 20
  Total Nets             : 89
@@ -20,9 +20,9 @@ Tue Dec 11 18:35:31 2018
  Total Traceable Variables  : 40
  Total Scalar Nets and Variables : 619349
 
- Total Simulation Time: 17.0156 sec
+ Total Simulation Time: 17.1563 sec
 
- Current Memory Usage: 1238.86 Meg
+ Current Memory Usage: 924.479 Meg
 
-Tue Dec 11 18:36:07 2018
+Tue Dec 11 18:57:54 2018
 
