@@ -34,7 +34,7 @@ Nsamples_LUT   = 32;
 % Number of bits of the fractional phase:
 % note that the number of bits in the integer part of the
 % phase is given by log2( NsamplesLUT )
-Nfrac = 6; 
+Nfrac = 5;
 
 %% Build the lookup-table:memory
 sine_LUT = round( sin( (0:Nsamples_LUT-1) / Nsamples_LUT * 2 * pi ) * (2^(Nbits_sine_LUT-1)-1) );
