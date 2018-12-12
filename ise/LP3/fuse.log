@@ -1,21 +1,21 @@
-Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/dds_testbench_38_isim_beh.exe -prj D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/dds_testbench_38_beh.prj work.dds_testbench_38 work.glbl 
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/dds_tb_19_isim_beh.exe -prj D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/dds_tb_19_beh.prj work.dds_tb_19 work.glbl 
 ISim P.20131013 (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Analyzing Verilog file "D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/src/dds.v" into library work
-Analyzing Verilog file "D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/src/dds_tb.v" into library work
+Analyzing Verilog file "D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/src/verilog-rtl/dds.v" into library work
+Analyzing Verilog file "D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/src/verilog-tb/dds_tb_19.v" into library work
 Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:189 - "D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/src/dds_tb.v" Line 125: Size mismatch in connection of port <phaseinc>. Formal port size is 13-bit while actual signal size is 32-bit.
 Completed static elaboration
-Fuse Memory Usage: 160628 KB
-Fuse CPU Usage: 296 ms
-Compiling module dds(N_OUTPUT_BITS=9)
-Compiling module dds_testbench_38
+Fuse Memory Usage: 160436 KB
+Fuse CPU Usage: 359 ms
+Compiling module dds(HEXVAL="simdata/DDSLUT19.hex...
+Compiling module dds_tb_19
 Compiling module glbl
 Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 3 Verilog Units
-Built simulation executable D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/dds_testbench_38_isim_beh.exe
-Fuse Memory Usage: 167128 KB
-Fuse CPU Usage: 390 ms
+Built simulation executable D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/dds_tb_19_isim_beh.exe
+Fuse Memory Usage: 166936 KB
+Fuse CPU Usage: 421 ms

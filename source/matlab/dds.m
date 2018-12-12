@@ -10,10 +10,10 @@ format long
 %% define the parameters:
 %
 % Output file with the sine wave for the input frequency:
-outputhexfile = '../simdata/DDSout_out.hex';
+outputhexfile = 'simdata/DDSout.hex';
 
 % Lookup-table for the DDS
-DDSLUTfile    = '../simdata/DDSLUT_out.hex';
+DDSLUTfile    = 'simdata/DDSLUT.hex';
 
 % Duration of the output test signal (seconds):
 duration = 0.1;  

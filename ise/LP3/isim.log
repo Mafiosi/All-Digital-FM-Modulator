@@ -1,14 +1,45 @@
 ISim log file
-Running: D:\Faculdade\5_ano\1_semestre\PSDI\PRATICA\PSDI_TP3\ise\LP3\dds_testbench_38_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/dds_testbench_38_isim_beh.wdb 
+Running: D:\Faculdade\5_ano\1_semestre\PSDI\PRATICA\PSDI_TP3\ise\LP3\dds_tb_19_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/dds_tb_19_isim_beh.wdb 
 ISim P.20131013 (signature 0x8ef4fb42)
 This is a Full version of ISim.
-WARNING: File "D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/src/dds_tb.v" Line 115.  For instance dds_testbench_38/dds/, width 13 of formal port phaseinc is not equal to width 32 of actual variable phaseinc. 
 Time resolution is 1 ps
 # onerror resume
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-WARNING: File ../simdata/DDSLUT38.hex referenced on D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/src/dds.v at line 13 cannot be opened for reading. Please ensure that this file is available in the current working directory.Loading file with the golden results ../simdata/DDSLUT38.hex
-WARNING: File ../simdata/DDSout38.hex referenced on D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/src/dds_tb.v at line 143 cannot be opened for reading. Please ensure that this file is available in the current working directory.Done. Read 0 samples.
+Loading file with the golden results simdata/DDSLUT19.hex
+Done. Read 19200 samples.
 Finished circuit initialization process.
 Starting simulation...
+# run all dds_tb_19
+Samples verified: 1000 (5%)
+Samples verified: 2000 (10%)
+Samples verified: 3000 (15%)
+Samples verified: 4000 (20%)
+Samples verified: 5000 (26%)
+Samples verified: 6000 (31%)
+Samples verified: 7000 (36%)
+Samples verified: 8000 (41%)
+Samples verified: 9000 (46%)
+Samples verified: 10000 (52%)
+Samples verified: 11000 (57%)
+Samples verified: 12000 (62%)
+Samples verified: 13000 (67%)
+Samples verified: 14000 (72%)
+Samples verified: 15000 (78%)
+Samples verified: 16000 (83%)
+Samples verified: 17000 (88%)
+Samples verified: 18000 (93%)
+Samples verified: 19000 (98%)
+No errors found.
+
+-----------------------------
+   OOO    K      
+  O   O   K   K  
+  O   O   K K    
+  O   O   K K    
+   OOO    K   K  
+
+-----------------------------
+
+Stopped at time : 88473612 ns :  in File "D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/src/verilog-tb/dds_tb_19.v" Line 245 
