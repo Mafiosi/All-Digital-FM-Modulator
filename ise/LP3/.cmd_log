@@ -1,0 +1,1 @@
+vhdtdtfi -lib work D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/src/verilog-rtl/dds.v -lang verilog -prj LP3 -o .spl -module {} -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 

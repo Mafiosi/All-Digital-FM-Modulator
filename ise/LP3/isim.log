@@ -1,5 +1,6 @@
 ISim log file
-Running: D:\Faculdade\5_ano\1_semestre\PSDI\PRATICA\PSDI_TP3\ise\LP3\dds_tb_19_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/dds_tb_19_isim_beh.wdb 
+Running: D:\Faculdade\5_ano\1_semestre\PSDI\PRATICA\PSDI_TP3\ise\LP3\dds_tb_38_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/dds_tb_38_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
 ISim P.20131013 (signature 0x8ef4fb42)
 This is a Full version of ISim.
 Time resolution is 1 ps
@@ -7,11 +8,11 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-Loading file with the golden results simdata/DDSLUT19.hex
+Loading file with the golden results simdata/DDSout38.hex
 Done. Read 19200 samples.
 Finished circuit initialization process.
 Starting simulation...
-# run all dds_tb_19
+# run all tb_dds_38
 Samples verified: 1000 (5%)
 Samples verified: 2000 (10%)
 Samples verified: 3000 (15%)
@@ -42,4 +43,4 @@ No errors found.
 
 -----------------------------
 
-Stopped at time : 88473612 ns :  in File "D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/src/verilog-tb/dds_tb_19.v" Line 245 
+Stopped at time : 88473612 ns :  in File "D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/src/verilog-tb/dds_tb_38.v" Line 242 

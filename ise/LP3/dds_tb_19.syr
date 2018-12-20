@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: dds_tb_19.prj
 
@@ -105,8 +105,6 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\Faculdade\5_ano\1_semestre\PSDI\PRATICA\PSDI_TP3\ise\LP3\src\verilog-rtl\dds.v" into library work
-Parsing module <dds>.
 Analyzing Verilog file "D:\Faculdade\5_ano\1_semestre\PSDI\PRATICA\PSDI_TP3\ise\LP3\src\verilog-tb\dds_tb_19.v" into library work
 Parsing module <dds_tb_19>.
 
@@ -115,16 +113,16 @@ Parsing module <dds_tb_19>.
 =========================================================================
 
 Elaborating module <dds_tb_19>.
-"D:\Faculdade\5_ano\1_semestre\PSDI\PRATICA\PSDI_TP3\ise\LP3\src\verilog-tb\dds_tb_19.v" Line 137. $write Loading file with the golden results ../simdata/DDSout_19.hex\n
-ERROR:HDLCompiler:990 - "D:\Faculdade\5_ano\1_semestre\PSDI\PRATICA\PSDI_TP3\ise\LP3\src\verilog-tb\dds_tb_19.v" Line 140: Cannot open file ../simdata/DDSout_19.hex
-WARNING:HDLCompiler:872 - "D:\Faculdade\5_ano\1_semestre\PSDI\PRATICA\PSDI_TP3\ise\LP3\src\verilog-tb\dds_tb_19.v" Line 128: Using initial value of clock since it is never assigned
+"D:\Faculdade\5_ano\1_semestre\PSDI\PRATICA\PSDI_TP3\ise\LP3\src\verilog-tb\dds_tb_19.v" Line 140. $write Loading file with the golden results simdata/DDSLUT19.hex\n
+Reading initialization file \"simdata/DDSout19.hex\".
+ERROR:HDLCompiler:569 - "D:\Faculdade\5_ano\1_semestre\PSDI\PRATICA\PSDI_TP3\ise\LP3\src\verilog-tb\dds_tb_19.v" Line 146: Loop count limit exceeded. Condition is never false.
 Module dds_tb_19 remains a blackbox, due to errors in its contents
 WARNING:HDLCompiler:1499 - "D:\Faculdade\5_ano\1_semestre\PSDI\PRATICA\PSDI_TP3\ise\LP3\src\verilog-tb\dds_tb_19.v" Line 78: Empty module <dds_tb_19> remains a black box.
 --> 
 
-Total memory usage is 215072 kilobytes
+Total memory usage is 213320 kilobytes
 
 Number of errors   :    1 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

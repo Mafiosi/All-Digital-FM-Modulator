@@ -5,13 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="990" delta="new" >"D:\Faculdade\5_ano\1_semestre\PSDI\PRATICA\PSDI_TP3\ise\LP3\src\verilog-tb\dds_tb_19.v" Line 140: Cannot open file <arg fmt="%s" index="1">../simdata/DDSout_19.hex</arg>
+<msg type="error" file="HDLCompiler" num="569" delta="new" >"D:\Faculdade\5_ano\1_semestre\PSDI\PRATICA\PSDI_TP3\ise\LP3\src\verilog-tb\dds_tb_19.v" Line 146: Loop count limit exceeded. Condition is never false.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="new" >"D:\Faculdade\5_ano\1_semestre\PSDI\PRATICA\PSDI_TP3\ise\LP3\src\verilog-tb\dds_tb_19.v" Line 128: Using initial value of <arg fmt="%s" index="1">clock</arg> since it is never assigned
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"D:\Faculdade\5_ano\1_semestre\PSDI\PRATICA\PSDI_TP3\ise\LP3\src\verilog-tb\dds_tb_19.v" Line 78: Empty module &lt;<arg fmt="%s" index="1">dds_tb_19</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\Faculdade\5_ano\1_semestre\PSDI\PRATICA\PSDI_TP3\ise\LP3\src\verilog-tb\dds_tb_19.v" Line 78: Empty module &lt;<arg fmt="%s" index="1">dds_tb_19</arg>&gt; remains a black box.
 </msg>
 
 </messages>
