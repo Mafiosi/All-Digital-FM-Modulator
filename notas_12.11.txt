@@ -1,0 +1,46 @@
+* Inputs
+- clk
+- reset
+- en48kHz
+- en192kHz
+- L[17:0]
+- R[17:0]
+
+* Weights (inputs, not parameters)
+- Ks[3:0]
+- Kd[3:0]
+- Kp[3:0]
+- Kf[7:0]
+
+* Outputs
+- FMout[23:0]
+
+nbitssl = 8
+nspllut 64
+nfrac = 12
+
+- SDRSharp (mas não é relevante por ora estar a ouvir o .wav de saída neste programa)
+
+* Next steps:
+
+
+* DDS:
+38kHz:
+-8 out
+-64 LUT
+-12 frac
+
+19kHz:
+-8 out
+-64 LUT
+-12 frac
+
+* NOTA: se houver bits sem sinal, é necessário explicitar que esse bit tem sinal com $signal(x) ao efectuar a operação (i.e. fazer cast)
+>>> preserva o bit de sinal (caso a palavra seja declarada como signed)
+
+* definir wire entre Kd, Ks e interpolador (de 18 bits após Ks) como signed
+
+* sugestão:
+colocar cadeia de ganhos a 0 e testar cadeia de cima
+depois estar sine wave com Kp definido a alguma coisa e testar
+depois testar cadeia de baixo

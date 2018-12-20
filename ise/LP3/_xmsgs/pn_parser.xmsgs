@@ -11,10 +11,7 @@
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/src/verilog-rtl/dds.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/src/verilog-tb/dds_tb_19.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/src/verilog-tb/dds_tb_38.v&quot; into library work</arg>
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Faculdade/5_ano/1_semestre/PSDI/PRATICA/PSDI_TP3/ise/LP3/src/verilog-rtl/dds.v</arg>&quot; Line <arg fmt="%d" index="2">3</arg>. <arg fmt="%s" index="3">Syntax error near &quot;&lt;&lt;&lt;&quot;.</arg>
 </msg>
 
 </messages>

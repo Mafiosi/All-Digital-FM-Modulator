@@ -1,6 +1,7 @@
 `timescale 1ns / 1ps
 
-module dds #(NBITS_PHASE = 13, NBITS_PHASE_FRAC = 6, NSAMPLES_LUT = 128, HEXVAL = "simdata/DDSLUT.hex") (
+
+module dds #(NBITS_PHASE = 16, NBITS_PHASE_DEC = 8, NSAMPLES_LUT = 256, HEXVAL = "DDSLUT.hex") (
       input clock,
       input reset,
       input enableclk,
@@ -16,14 +17,14 @@ reg [31:0] phase;
 
 // Defines FF for phase calculation input of LUT
 
+reg [NBITS_PHASE-1:0] phase;
+
 always @(posedge clock)
 begin
     if (reset) begin
         phase <= 0;
     end else if (enableclk) begin
-        phase <= phase + phaseinc;
+        phase <= phase + phaseinc[NBITS_PHASE-1:0];
     end
-    outsine <= sineLUT[ phase[NBITS_PHASE-1:NBITS_PHASE_FRAC]];
+    outsine <= sineLUT[ phase[NBITS_PHASE-1:NBITS_PHASE-NBITS_PHASE_FRAC] ];
 end
-
-endmodule
