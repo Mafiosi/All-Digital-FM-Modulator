@@ -1,0 +1,29 @@
+# vsim -novopt -c -do "run -all; quit" work.stereo_mx_fm_tb 
+# Start time: 11:56:11 on Dec 13,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# //  Questa Sim-64
+# //  Version 10.4c win64 Jul 20 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Refreshing D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/sim/work.stereo_mx_fm_tb
+# Loading work.stereo_mx_fm_tb
+# Loading work.stereo_fm_mx
+# Refreshing D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/sim/work.interpol4x
+# Loading work.interpol4x
+# Loading work.dds38k
+# Loading work.dds19k
+# Refreshing D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/sim/work.clockenablegen
+# Loading work.clockenablegen
+# run -all

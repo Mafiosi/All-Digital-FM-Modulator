@@ -1,0 +1,453 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: lixo.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "lixo.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "lixo"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : lixo
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\usr\jca\GoogleFEUP\FEUP\Aulas\2018-2019\PSDI-1819\Labs\Lab3\IP-cores\Interpolator-4X\src-verilog\interpol4x.v" into library work
+Parsing module <interpol4x>.
+Analyzing Verilog file "D:\usr\jca\GoogleFEUP\FEUP\Aulas\2018-2019\PSDI-1819\Labs\Lab3\IP-cores\Interpolator-4X\src-verilog\lixo.v" into library work
+Parsing module <lixo>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <lixo>.
+
+Elaborating module <interpol4x(filename="./simdata/teste.dat")>.
+Reading initialization file \"./simdata/teste.dat\".
+WARNING:HDLCompiler:1670 - "D:\usr\jca\GoogleFEUP\FEUP\Aulas\2018-2019\PSDI-1819\Labs\Lab3\IP-cores\Interpolator-4X\src-verilog\interpol4x.v" Line 44: Signal <mem> in initial block is partially initialized.
+WARNING:HDLCompiler:872 - "D:\usr\jca\GoogleFEUP\FEUP\Aulas\2018-2019\PSDI-1819\Labs\Lab3\IP-cores\Interpolator-4X\src-verilog\interpol4x.v" Line 42: Using initial value of mem since it is never assigned
+WARNING:HDLCompiler:413 - "D:\usr\jca\GoogleFEUP\FEUP\Aulas\2018-2019\PSDI-1819\Labs\Lab3\IP-cores\Interpolator-4X\src-verilog\interpol4x.v" Line 101: Result of 23-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "D:\usr\jca\GoogleFEUP\FEUP\Aulas\2018-2019\PSDI-1819\Labs\Lab3\IP-cores\Interpolator-4X\src-verilog\interpol4x.v" Line 102: Result of 23-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "D:\usr\jca\GoogleFEUP\FEUP\Aulas\2018-2019\PSDI-1819\Labs\Lab3\IP-cores\Interpolator-4X\src-verilog\interpol4x.v" Line 103: Result of 23-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "D:\usr\jca\GoogleFEUP\FEUP\Aulas\2018-2019\PSDI-1819\Labs\Lab3\IP-cores\Interpolator-4X\src-verilog\interpol4x.v" Line 104: Result of 23-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "D:\usr\jca\GoogleFEUP\FEUP\Aulas\2018-2019\PSDI-1819\Labs\Lab3\IP-cores\Interpolator-4X\src-verilog\interpol4x.v" Line 105: Result of 23-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "D:\usr\jca\GoogleFEUP\FEUP\Aulas\2018-2019\PSDI-1819\Labs\Lab3\IP-cores\Interpolator-4X\src-verilog\interpol4x.v" Line 107: Result of 19-bit expression is truncated to fit in 18-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <lixo>.
+    Related source file is "D:\usr\jca\GoogleFEUP\FEUP\Aulas\2018-2019\PSDI-1819\Labs\Lab3\IP-cores\Interpolator-4X\src-verilog\lixo.v".
+    Summary:
+	no macro.
+Unit <lixo> synthesized.
+
+Synthesizing Unit <interpol4x>.
+    Related source file is "D:\usr\jca\GoogleFEUP\FEUP\Aulas\2018-2019\PSDI-1819\Labs\Lab3\IP-cores\Interpolator-4X\src-verilog\interpol4x.v".
+        filename = "./simdata/teste.dat"
+    Found 18-bit register for signal <xkus>.
+    Found 21-bit register for signal <r0>.
+    Found 21-bit register for signal <r1>.
+    Found 21-bit register for signal <r2>.
+    Found 21-bit register for signal <r3>.
+    Found 21-bit register for signal <r4>.
+    Found 21-bit register for signal <r5>.
+    Found 21-bit register for signal <r6>.
+    Found 18-bit register for signal <ykout>.
+    Found 18-bit register for signal <xkr>.
+    Found 22-bit adder for signal <n0102> created at line 101.
+    Found 22-bit adder for signal <n0060> created at line 101.
+    Found 22-bit adder for signal <n0107> created at line 102.
+    Found 22-bit adder for signal <n0063> created at line 102.
+    Found 22-bit adder for signal <n0112> created at line 103.
+    Found 22-bit adder for signal <n0065> created at line 103.
+    Found 22-bit adder for signal <n0117> created at line 104.
+    Found 22-bit adder for signal <n0067> created at line 104.
+    Found 22-bit adder for signal <n0122> created at line 105.
+    Found 22-bit adder for signal <n0069> created at line 105.
+    Found 21-bit adder for signal <r5[20]_xkus[17]_add_22_OUT> created at line 106.
+    Found 18x2-bit multiplier for signal <xkus[17]_PWR_2_o_MuLt_12_OUT> created at line 102.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred  11 Adder/Subtractor(s).
+	inferred 201 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <interpol4x> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 18x2-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 11
+ 21-bit adder                                          : 1
+ 22-bit adder                                          : 10
+# Registers                                            : 10
+ 18-bit register                                       : 3
+ 21-bit register                                       : 7
+# Multiplexers                                         : 1
+ 18-bit 2-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <r0_17> in Unit <UUT> is equivalent to the following 3 FFs/Latches, which will be removed : <r0_18> <r0_19> <r0_20> 
+WARNING:Xst:2677 - Node <r6_0> of sequential type is unconnected in block <UUT>.
+WARNING:Xst:2677 - Node <r6_1> of sequential type is unconnected in block <UUT>.
+WARNING:Xst:2677 - Node <r6_20> of sequential type is unconnected in block <UUT>.
+WARNING:Xst:2677 - Node <r6_0> of sequential type is unconnected in block <interpol4x>.
+WARNING:Xst:2677 - Node <r6_1> of sequential type is unconnected in block <interpol4x>.
+WARNING:Xst:2677 - Node <r6_20> of sequential type is unconnected in block <interpol4x>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 18x2-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 11
+ 21-bit adder                                          : 11
+# Registers                                            : 198
+ Flip-Flops                                            : 198
+# Multiplexers                                         : 1
+ 18-bit 2-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <r0_17> in Unit <interpol4x> is equivalent to the following 3 FFs/Latches, which will be removed : <r0_18> <r0_19> <r0_20> 
+WARNING:Xst:2677 - Node <r1_20> of sequential type is unconnected in block <interpol4x>.
+WARNING:Xst:2677 - Node <r2_20> of sequential type is unconnected in block <interpol4x>.
+WARNING:Xst:2677 - Node <r3_20> of sequential type is unconnected in block <interpol4x>.
+WARNING:Xst:2677 - Node <r4_20> of sequential type is unconnected in block <interpol4x>.
+WARNING:Xst:2677 - Node <r5_20> of sequential type is unconnected in block <interpol4x>.
+
+Optimizing unit <lixo> ...
+
+Optimizing unit <interpol4x> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block lixo, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 190
+ Flip-Flops                                            : 190
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : lixo.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 519
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 2
+#      LUT2                        : 152
+#      LUT3                        : 94
+#      MUXCY                       : 132
+#      XORCY                       : 136
+# FlipFlops/Latches                : 190
+#      FDRE                        : 190
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 39
+#      IBUF                        : 21
+#      OBUF                        : 18
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             190  out of  54576     0%  
+ Number of Slice LUTs:                  250  out of  27288     0%  
+    Number used as Logic:               250  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    300
+   Number with an unused Flip Flop:     110  out of    300    36%  
+   Number with an unused LUT:            50  out of    300    16%  
+   Number of fully used LUT-FF pairs:   140  out of    300    46%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          40
+ Number of bonded IOBs:                  40  out of    218    18%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 190   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.375ns (Maximum Frequency: 228.553MHz)
+   Minimum input arrival time before clock: 3.696ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 4.375ns (frequency: 228.553MHz)
+  Total number of paths / destination ports: 24632 / 172
+-------------------------------------------------------------------------
+Delay:               4.375ns (Levels of Logic = 22)
+  Source:            UUT/xkus_1 (FF)
+  Destination:       UUT/r4_19 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: UUT/xkus_1 to UUT/r4_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            10   0.447   0.961  UUT/xkus_1 (UUT/xkus_1)
+     LUT2:I0->O            1   0.203   0.000  UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_lut<1> (UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<1> (UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<2> (UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<3> (UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<4> (UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<5> (UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<6> (UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<7> (UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<8> (UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<9> (UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<10> (UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<11> (UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<12> (UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<13> (UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<14> (UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<15> (UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<16> (UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_cy<16>)
+     XORCY:CI->O           4   0.180   0.684  UUT/Mmult_xkus[17]_PWR_2_o_MuLt_12_OUT_Madd_xor<17> (UUT/xkus[17]_PWR_2_o_MuLt_12_OUT<17>)
+     LUT2:I1->O            1   0.205   0.580  UUT/Madd_n0067_Madd17 (UUT/Madd_n0067_Madd17)
+     LUT3:I2->O            1   0.205   0.000  UUT/Madd_n0067_Madd_lut<0>18 (UUT/Madd_n0067_Madd_lut<0>18)
+     MUXCY:S->O            0   0.172   0.000  UUT/Madd_n0067_Madd_cy<0>_17 (UUT/Madd_n0067_Madd_cy<0>18)
+     XORCY:CI->O           1   0.180   0.000  UUT/Madd_n0067_Madd_xor<0>_18 (UUT/n0067<19>)
+     FDRE:D                    0.102          UUT/r4_19
+    ----------------------------------------
+    Total                      4.375ns (2.151ns logic, 2.224ns route)
+                                       (49.2% logic, 50.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 416 / 416
+-------------------------------------------------------------------------
+Offset:              3.696ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       UUT/ykout_17 (FF)
+  Destination Clock: clock rising
+
+  Data Path: reset to UUT/ykout_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           190   1.222   2.044  reset_IBUF (reset_IBUF)
+     FDRE:R                    0.430          UUT/xkr_0
+    ----------------------------------------
+    Total                      3.696ns (1.652ns logic, 2.044ns route)
+                                       (44.7% logic, 55.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 18 / 18
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            UUT/ykout_17 (FF)
+  Destination:       ykout<17> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: UUT/ykout_17 to ykout<17>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.447   0.579  UUT/ykout_17 (UUT/ykout_17)
+     OBUF:I->O                 2.571          ykout_17_OBUF (ykout<17>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    4.375|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.81 secs
+ 
+--> 
+
+Total memory usage is 259196 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   19 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

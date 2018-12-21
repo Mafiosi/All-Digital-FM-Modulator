@@ -1,0 +1,29 @@
+D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/seq-multiplier/verilog/seqmultNM.v {1 {vlog -work work -vopt -stats=none D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/seq-multiplier/verilog/seqmultNM.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module seqmultNM
+
+Top level modules:
+	seqmultNM
+
+} {} {}} D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/clk-enable-generator/verilog/clockenablegen.v {1 {vlog -work work -vopt -stats=none D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/clk-enable-generator/verilog/clockenablegen.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module clockenablegen
+
+Top level modules:
+	clockenablegen
+
+} {} {}} D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/src/verilog-tb/fm_stereo_mx_tb.v {1 {vlog -work work -vopt -stats=none D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/src/verilog-tb/fm_stereo_mx_tb.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module stereo_mx_fm_tb
+
+Top level modules:
+	stereo_mx_fm_tb
+
+} {} {}} D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/Interpolator-4X/verilog/interpol4x.v {1 {vlog -work work -vopt -stats=none D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/Interpolator-4X/verilog/interpol4x.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module interpol4x
+
+Top level modules:
+	interpol4x
+
+} {} {}}

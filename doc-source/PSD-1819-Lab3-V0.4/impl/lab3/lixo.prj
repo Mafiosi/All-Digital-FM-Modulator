@@ -1,0 +1,2 @@
+verilog work "../../IP-cores/Interpolator-4X/src-verilog/interpol4x.v"
+verilog work "../../IP-cores/Interpolator-4X/src-verilog/lixo.v"

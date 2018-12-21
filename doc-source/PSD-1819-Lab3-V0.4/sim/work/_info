@@ -1,0 +1,165 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/sim
+vclockenablegen
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 aZTOlgU7]Re]R7c:V]a:l0
+I^;[6:h[J<IbS>JF2BQDiZ0
+R0
+w1544695307
+8./../IP-cores/clk-enable-generator/verilog/clockenablegen.v
+F./../IP-cores/clk-enable-generator/verilog/clockenablegen.v
+Z2 L0 14
+Z3 OL;L;10.4c;61
+Z4 !s108 1544702165.000000
+Z5 !s107 ./../IP-cores/seq-multiplier/verilog/seqmultNM.v|./../IP-cores/clk-enable-generator/verilog/clockenablegen.v|./../IP-cores/Interpolator-4X/verilog/interpol4x.v|./../src/verilog-tb/fm_stereo_mx_tb.v|
+Z6 !s90 -f|vlogfiles|-createlib|
+!i113 0
+Z7 o-createlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vdds19k
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 _cVZWQm:<V1ejA:G2^;3`2
+IAX^S?VWonCeKPlBzLzNBA1
+R0
+w1544479887
+8./../src.src/verilog-rtl/dds19k.v
+F./../src.src/verilog-rtl/dds19k.v
+Z8 L0 16
+R3
+Z9 !s108 1544654427.000000
+Z10 !s107 ./../IP-cores/seq-multiplier/verilog/seqmultNM.v|./../src.src/verilog-rtl/dds38k.v|./../src.src/verilog-rtl/dds19k.v|./../IP-cores/clk-enable-generator/verilog/clockenablegen.v|./../IP-cores/Interpolator-4X/verilog/interpol4x.v|./../src.src/verilog-rtl/stereo_fm_mx.v|./../src/verilog-tb/fm_stereo_mx_tb.v|
+R6
+!i113 0
+R7
+vdds38k
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 2cYE0fKNXHn:U<^gO7G_Z3
+Io?]i;ZY[z=bmlV?SRh69M2
+R0
+w1544479899
+8./../src.src/verilog-rtl/dds38k.v
+F./../src.src/verilog-rtl/dds38k.v
+R8
+R3
+R9
+R10
+R6
+!i113 0
+R7
+vinterpol4x
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 KYmzh9jY_dln]OP>DXhjD3
+IHMI?2BGe^gQTVPfU<;<J30
+R0
+w1544657109
+8./../IP-cores/Interpolator-4X/verilog/interpol4x.v
+F./../IP-cores/Interpolator-4X/verilog/interpol4x.v
+L0 33
+R3
+R4
+R5
+R6
+!i113 0
+R7
+vinterpol4x_tb
+!s110 1544647665
+!i10b 1
+!s100 ?hl>Qjng1nFaFen5G1l9g0
+IIZX9TU=PoR1bWX7cA?:622
+R1
+R0
+w1544566621
+8./../IP-cores/Interpolator-4X/src-verilog/interpol4x_tb.v
+F./../IP-cores/Interpolator-4X/src-verilog/interpol4x_tb.v
+L0 15
+R3
+r1
+!s85 0
+31
+!s108 1544647665.000000
+!s107 ./../src.src/verilog-rtl/dds38k.v|./../IP-cores/seq-multiplier/src-verilog/seqmultNM.v|./../src.src/verilog-rtl/dds19k.v|./../IP-cores/clk-enable-generator/clockenablegen.v|./../src/verilog-tb/fm_stereo_mx_tb.v|./../IP-cores/Interpolator-4X/src-verilog/interpol4x_tb.v|./../src/verilog-tb/stereo_fm_mx.v|./../IP-cores/Interpolator-4X/src-verilog/interpol4x.v|
+R6
+!i113 0
+R7
+vseqmultNM
+!s110 1544702165
+!i10b 1
+!s100 abAUcnn:0=3HD08:[aAYK0
+I3YbWfSllX48mlgT3h4Rf12
+R1
+R0
+w1543182544
+8./../IP-cores/seq-multiplier/verilog/seqmultNM.v
+F./../IP-cores/seq-multiplier/verilog/seqmultNM.v
+L0 21
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+nseqmult@n@m
+vstereo_fm_mx
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ]52OfMh2a>F0M49lLNGHT2
+IH_e4do7:n^MzmHeIZ9<SR0
+R0
+w1544654409
+8./../src.src/verilog-rtl/stereo_fm_mx.v
+F./../src.src/verilog-rtl/stereo_fm_mx.v
+R2
+R3
+R9
+R10
+R6
+!i113 0
+R7
+vstereo_mx_fm_tb
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 HTJbSJQnAe@1R6Cb^V0VS1
+Ie=Lail8;`I;OhfBnNO`Pl3
+R0
+w1544695908
+8./../src/verilog-tb/fm_stereo_mx_tb.v
+F./../src/verilog-tb/fm_stereo_mx_tb.v
+L0 27
+R3
+R4
+R5
+R6
+!i113 0
+R7

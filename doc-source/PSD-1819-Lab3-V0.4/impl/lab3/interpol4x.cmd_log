@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/impl/lab3/interpol4x.xst" -ofn "D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/impl/lab3/interpol4x.syr" 
+xst -intstyle ise -ifn "D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/impl/lab3/interpol4x.xst" -ofn "D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/impl/lab3/interpol4x.syr" 

@@ -1,0 +1,11 @@
+./../src/verilog-tb/fm_stereo_mx_tb.v 
+./../IP-cores/Interpolator-4X/verilog/interpol4x.v
+./../IP-cores/clk-enable-generator/verilog/clockenablegen.v 
+./../IP-cores/seq-multiplier/verilog/seqmultNM.v 
+######################################################
+# TO COMPILE YOUR DESIGN UNCOMMENT THE FOLLOWING LINES
+# AND CORRECT THE FILENAMES
+# ./../verilog-rtl/<your-dds-38k>.v  
+# ./../verilog-rtl/<your-dds-19k>.v
+# ./../verilog-rtl/<your-fm-modulator>.v 
+
