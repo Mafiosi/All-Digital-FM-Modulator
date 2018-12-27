@@ -31,14 +31,12 @@ wire signed [17:0] LpR, LmR;
 // RESULTS OF MULTIPLIER
 wire signed [17:0] Out_mult_LpR, Out_mult_LmR;
 wire signed [4:0] signed_Ks, signed_Kd;
-reg flag_LmR = 0, flag_LpR = 0;
-
 
 // SIGNED CONSTANTS KD and KS
 assign signed_Ks = {1'b0, Ks};
 assign signed_Kd = {1'b0, Kd};
 
-seqmultNM #(.N(18), .M(4)) seqmult_LpR(
+seqmultNM #(.N(18), .M(5)) seqmult_LpR(
 	.clock(clock),
 	.reset(reset),
 	.start(start_LpR),
@@ -48,7 +46,7 @@ seqmultNM #(.N(18), .M(4)) seqmult_LpR(
 	.R(Out_mult_LpR)
 );
 
-seqmultNM #(.N(18), .M(4)) seqmult_LmR(
+seqmultNM #(.N(18), .M(5)) seqmult_LmR(
 	.clock(clock),
 	.reset(reset),
 	.start(start_LmR),
@@ -64,41 +62,41 @@ assign LmR = (LEFT - RIGHT) << 3;
 
 always @(posedge clock)
 begin
-	
+
 	// RESET SCENARIO
-	if (reset) 
+	if (reset)
 	begin
 		LI_in_LpR <= 0;
 		LI_in_LmR <= 0;
-	end 
-	
+	end
+
 	// LpR scenario
-	else 
+	else
 	begin
-		if (start_LpR && ~(ready_LpR)) 
+		if (start_LpR && ~(ready_LpR))
 		begin
 			start_LpR = 0;
 		end
-		
-		// LmR scenario	
+
+		// LmR scenario
 		if (start_LmR && ~(ready_LmR))
 		begin
 			start_LmR = 0;
 		end
 	end
-	
+
 end
 
 always @(posedge ready_LmR)
 begin
-	LI_in_LmR <= Out_mult_LmR;
+	LI_in_LmR <= Out_mult_LmR[22:5];
 	start_LmR = 1;
 end
 
 
 always @(posedge ready_LpR)
 begin
-	LI_in_LpR <= Out_mult_LpR;
+	LI_in_LpR <= Out_mult_LpR[22:5];
 	start_LpR = 1;
 end
 
