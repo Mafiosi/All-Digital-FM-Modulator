@@ -87,6 +87,8 @@ begin
 
 end
 
+// quanto a estes dois ultimos always: nao sei se nao e um erro fazer
+// clock a isto... sugeria apenas fazer clock ao FMout no 192 kHz
 always @(posedge ready_LmR)
 begin
 	LI_in_LmR <= Out_mult_LmR[22:5];
