@@ -1,0 +1,191 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/impl
+T_opt
+!s110 1545914438
+VeU;:zRi_3]OF;OIbU:^SI1
+04 15 4 work stereo_mx_fm_tb fast 0
+=2-843497177120-5c24c846-48-1f44
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.4c;61
+R0
+vclockenablegen
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 d<zG7U:7f:1[h:=f@za[H2
+I^V_KcZZEZ>aVaiP:Y[]j23
+Z2 dD:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/sim
+w1545834018
+8D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/clk-enable-generator/verilog/clockenablegen.v
+FD:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/clk-enable-generator/verilog/clockenablegen.v
+Z3 L0 14
+Z4 OL;L;10.4c;61
+!s108 1545912799.000000
+!s107 D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/clk-enable-generator/verilog/clockenablegen.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/clk-enable-generator/verilog/clockenablegen.v|
+!i113 0
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vdds19k_2
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ;zjh;<[<AV8QHlO^2<ZU42
+I[hY48fl9L^X>nY7@]2m292
+R2
+w1545849398
+8D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/dds19k.v
+FD:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/dds19k.v
+Z6 L0 20
+R4
+Z7 !s108 1545912798.000000
+!s107 D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/dds19k.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/dds19k.v|
+!i113 0
+R5
+vdds38k_2
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 o^[5jIcVVN60nGB70gTC:2
+IQh8d>aMC^obYO32T==LC;3
+R2
+w1545849409
+8D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/dds38k.v
+FD:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/dds38k.v
+R6
+R4
+R7
+!s107 D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/dds38k.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/dds38k.v|
+!i113 0
+R5
+vfm_modulator_2
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 7<>jSW`VTgL]o_VMJFmc@1
+I]SDmihZ=?DSILWgigSN6e3
+R2
+w1545849537
+8D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/fm_modulator.v
+FD:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/fm_modulator.v
+R3
+R4
+R7
+!s107 D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/fm_modulator.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/fm_modulator.v|
+!i113 0
+R5
+vfs192k_2
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 hzP_BGPfAB]AU9J11SR_I0
+IIFcmOn@Ag;U`nJC1T>SfC2
+R2
+w1545849496
+8D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/fs192k.v
+FD:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/fs192k.v
+R3
+R4
+R7
+!s107 D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/fs192k.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/fs192k.v|
+!i113 0
+R5
+vfs48k_2
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 9kYZl0S8TQL=8A>M62n[I1
+IP5olQ^ERVHo`Fmia8bazm1
+R2
+w1545849461
+8D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/fs48k.v
+FD:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/fs48k.v
+R3
+R4
+R7
+!s107 D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/fs48k.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-rtl/Alunos/DanielSilva-PedroAlbergaria/fs48k.v|
+!i113 0
+R5
+vinterpol4x
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 =eQe@2S1kNlXfS0A55>lX3
+I[::oNGf=B43NhHB`oENK70
+R2
+w1545825820
+8D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/Interpolator-4X/verilog/interpol4x.v
+FD:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/Interpolator-4X/verilog/interpol4x.v
+L0 33
+R4
+R7
+!s107 D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/Interpolator-4X/verilog/interpol4x.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/Interpolator-4X/verilog/interpol4x.v|
+!i113 0
+R5
+vseqmultNM
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ;=90`RzgZ57Gb6SJz8=la2
+I4]53Si<ITiED1g86K9@kT1
+R2
+w1544703866
+8D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/seq-multiplier/verilog/seqmultNM.v
+FD:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/seq-multiplier/verilog/seqmultNM.v
+L0 26
+R4
+R7
+!s107 D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/seq-multiplier/verilog/seqmultNM.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/IP-cores/seq-multiplier/verilog/seqmultNM.v|
+!i113 0
+R5
+nseqmult@n@m
+vstereo_mx_fm_tb
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 nBNI@57>EhfGoffK_c>Uc0
+I[TogT2AJQT@Kj_YIPXh<02
+R2
+w1545914426
+8D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-tb/fm_stereo_mx_tb.v
+FD:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-tb/fm_stereo_mx_tb.v
+L0 27
+R4
+!s108 1545914434.000000
+!s107 D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-tb/fm_stereo_mx_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/usr/jca/GoogleFEUP/FEUP/Aulas/2018-2019/PSDI-1819/Labs/Lab3/Atlys-Audio-Reference-Design-V2.1/src/verilog-tb/fm_stereo_mx_tb.v|
+!i113 0
+R5
