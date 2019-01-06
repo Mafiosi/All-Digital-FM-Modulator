@@ -1,0 +1,353 @@
+# Reading C:/questasim64_10.4c/tcl/vsim/pref.tcl
+# //  Questa Sim-64
+# //  Version 10.4c win64 Jul 20 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# do {stereo_mx_fm_tb.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 03:59:54 on Jan 06,2019
+# vlog -reportprogress 300 ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/dds.v 
+# -- Compiling module dds
+# 
+# Top level modules:
+# 	dds
+# End time: 03:59:54 on Jan 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 03:59:54 on Jan 06,2019
+# vlog -reportprogress 300 ../IP-cores/seq-multiplier/verilog/seqmultNM.v 
+# -- Compiling module seqmultNM
+# 
+# Top level modules:
+# 	seqmultNM
+# End time: 03:59:54 on Jan 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 03:59:54 on Jan 06,2019
+# vlog -reportprogress 300 ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/block_48kHz.v 
+# -- Compiling module block_48kHz
+# 
+# Top level modules:
+# 	block_48kHz
+# End time: 03:59:54 on Jan 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 03:59:54 on Jan 06,2019
+# vlog -reportprogress 300 ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/block_192kHz.v 
+# -- Compiling module block_192kHz
+# 
+# Top level modules:
+# 	block_192kHz
+# End time: 03:59:54 on Jan 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 03:59:54 on Jan 06,2019
+# vlog -reportprogress 300 ../IP-cores/Interpolator-4X/verilog/interpol4x.v 
+# -- Compiling module interpol4x
+# 
+# Top level modules:
+# 	interpol4x
+# End time: 03:59:54 on Jan 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 03:59:54 on Jan 06,2019
+# vlog -reportprogress 300 ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/main_block.v 
+# -- Compiling module my_fm_stereo
+# 
+# Top level modules:
+# 	my_fm_stereo
+# End time: 03:59:54 on Jan 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 03:59:54 on Jan 06,2019
+# vlog -reportprogress 300 ../IP-cores/clk-enable-generator/verilog/clockenablegen.v 
+# -- Compiling module clockenablegen
+# 
+# Top level modules:
+# 	clockenablegen
+# End time: 03:59:54 on Jan 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 03:59:54 on Jan 06,2019
+# vlog -reportprogress 300 ../src/verilog-tb/fm_stereo_mx_tb.v 
+# -- Compiling module stereo_mx_fm_tb
+# 
+# Top level modules:
+# 	stereo_mx_fm_tb
+# End time: 03:59:54 on Jan 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 03:59:54 on Jan 06,2019
+# vlog -reportprogress 300 C:/Xilinx/14.6/ISE_DS/ISE/verilog/src/glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 03:59:54 on Jan 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work work.stereo_mx_fm_tb glbl 
+# Start time: 03:59:55 on Jan 06,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.stereo_mx_fm_tb(fast)
+# Loading work.my_fm_stereo(fast)
+# Loading work.block_48kHz(fast)
+# Loading work.seqmultNM(fast)
+# Loading work.block_192kHz(fast)
+# Loading work.seqmultNM(fast__1)
+# Loading work.seqmultNM(fast__2)
+# Loading work.seqmultNM(fast__3)
+# Loading work.dds(fast)
+# Loading work.dds(fast__1)
+# Loading work.interpol4x(fast)
+# Loading work.clockenablegen(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Alunos  Hostname: I02CP2109  ProcessID: 10120
+# 
+#           Attempting to use alternate WLF file "./wlftz3abgs".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftz3abgs
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading simulation input data from files ../simdata/fmstereo_audioin_left.hex, ../simdata/fmstereo_audioin_right.hex:
+# Datain(    0) [ left, right] = [       0  ,        0] (hex 00000  00000)
+# Datain(    1) [ left, right] = [    -208  ,      205] (hex 3ff30  000cd)
+# Datain(    2) [ left, right] = [    3551  ,    -3567] (hex 00ddf  3f211)
+# Datain(    3) [ left, right] = [    4730  ,    -4565] (hex 0127a  3ee2b)
+# Datain(    4) [ left, right] = [    5660  ,    -4000] (hex 0161c  3f060)
+# Datain(    5) [ left, right] = [    7989  ,    -4222] (hex 01f35  3ef82)
+# Datain(    6) [ left, right] = [    8947  ,    -3979] (hex 022f3  3f075)
+# Datain(    7) [ left, right] = [    9267  ,    -4273] (hex 02433  3ef4f)
+# Datain(    8) [ left, right] = [    9664  ,    -4101] (hex 025c0  3effb)
+# Datain(    9) [ left, right] = [   10529  ,    -4112] (hex 02921  3eff0)
+# Datain(   10) [ left, right] = [    9696  ,    -4226] (hex 025e0  3ef7e)
+# Datain(   11) [ left, right] = [    8147  ,    -4251] (hex 01fd3  3ef65)
+# Datain(   12) [ left, right] = [    7369  ,    -4343] (hex 01cc9  3ef09)
+# Datain(   13) [ left, right] = [    7574  ,    -4461] (hex 01d96  3ee93)
+# Datain(   14) [ left, right] = [    7255  ,    -4353] (hex 01c57  3eeff)
+# Datain(   15) [ left, right] = [    6054  ,    -4276] (hex 017a6  3ef4c)
+# Datain(   16) [ left, right] = [    5962  ,    -4051] (hex 0174a  3f02d)
+# Datain(   17) [ left, right] = [    7534  ,    -4273] (hex 01d6e  3ef4f)
+# Datain(   18) [ left, right] = [    9275  ,    -4333] (hex 0243b  3ef13)
+# Datain(   19) [ left, right] = [   10048  ,    -4369] (hex 02740  3eeef)
+# -----------------------------------------------
+# Read        4800 samples from input files
+# 
+# -----------------------------------------------
+# Loading golden output data from file ../simdata/fmstereo_mpx_golden.hex:
+# Golden dataout(    0) =        0 (hex 000000 )
+# Golden dataout(    1) =        0 (hex 000000 )
+# Golden dataout(    2) =    18176 (hex 004700 )
+# Golden dataout(    3) =    29952 (hex 007500 )
+# Golden dataout(    4) =    32000 (hex 007d00 )
+# Golden dataout(    5) =    20736 (hex 005100 )
+# Golden dataout(    6) =     3072 (hex 000c00 )
+# Golden dataout(    7) =   -15360 (hex ffc400 )
+# Golden dataout(    8) =   -29952 (hex ff8b00 )
+# Golden dataout(    9) =   -31956 (hex ff832c )
+# Golden dataout(   10) =   -22840 (hex ffa6c8 )
+# Golden dataout(   11) =    -3016 (hex fff438 )
+# Golden dataout(   12) =    14992 (hex 003a90 )
+# Golden dataout(   13) =    29784 (hex 007458 )
+# Golden dataout(   14) =    30704 (hex 0077f0 )
+# Golden dataout(   15) =    17868 (hex 0045cc )
+# Golden dataout(   16) =     4324 (hex 0010e4 )
+# Golden dataout(   17) =    -8988 (hex ffdce4 )
+# Golden dataout(   18) =   -22320 (hex ffa8d0 )
+# Golden dataout(   19) =   -34672 (hex ff7890 )
+# -----------------------------------------------
+# Read       19205 samples from output golden file
+# 
+# -----------------------------------------------
+# 
+# Starting applying samples...
+#           0 input samples processed (  0%), 0 errors detected
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# 
+# Loading work.stereo_mx_fm_tb(fast)
+# Loading work.my_fm_stereo(fast)
+# Loading work.block_48kHz(fast)
+# Loading work.seqmultNM(fast)
+# Loading work.block_192kHz(fast)
+# Loading work.seqmultNM(fast__1)
+# Loading work.seqmultNM(fast__2)
+# Loading work.seqmultNM(fast__3)
+# Loading work.dds(fast)
+# Loading work.dds(fast__1)
+# Loading work.interpol4x(fast)
+# Loading work.clockenablegen(fast)
+# Loading work.glbl(fast)
+run -all
+# Loading simulation input data from files ../simdata/fmstereo_audioin_left.hex, ../simdata/fmstereo_audioin_right.hex:
+# Datain(    0) [ left, right] = [       0  ,        0] (hex 00000  00000)
+# Datain(    1) [ left, right] = [    -208  ,      205] (hex 3ff30  000cd)
+# Datain(    2) [ left, right] = [    3551  ,    -3567] (hex 00ddf  3f211)
+# Datain(    3) [ left, right] = [    4730  ,    -4565] (hex 0127a  3ee2b)
+# Datain(    4) [ left, right] = [    5660  ,    -4000] (hex 0161c  3f060)
+# Datain(    5) [ left, right] = [    7989  ,    -4222] (hex 01f35  3ef82)
+# Datain(    6) [ left, right] = [    8947  ,    -3979] (hex 022f3  3f075)
+# Datain(    7) [ left, right] = [    9267  ,    -4273] (hex 02433  3ef4f)
+# Datain(    8) [ left, right] = [    9664  ,    -4101] (hex 025c0  3effb)
+# Datain(    9) [ left, right] = [   10529  ,    -4112] (hex 02921  3eff0)
+# Datain(   10) [ left, right] = [    9696  ,    -4226] (hex 025e0  3ef7e)
+# Datain(   11) [ left, right] = [    8147  ,    -4251] (hex 01fd3  3ef65)
+# Datain(   12) [ left, right] = [    7369  ,    -4343] (hex 01cc9  3ef09)
+# Datain(   13) [ left, right] = [    7574  ,    -4461] (hex 01d96  3ee93)
+# Datain(   14) [ left, right] = [    7255  ,    -4353] (hex 01c57  3eeff)
+# Datain(   15) [ left, right] = [    6054  ,    -4276] (hex 017a6  3ef4c)
+# Datain(   16) [ left, right] = [    5962  ,    -4051] (hex 0174a  3f02d)
+# Datain(   17) [ left, right] = [    7534  ,    -4273] (hex 01d6e  3ef4f)
+# Datain(   18) [ left, right] = [    9275  ,    -4333] (hex 0243b  3ef13)
+# Datain(   19) [ left, right] = [   10048  ,    -4369] (hex 02740  3eeef)
+# -----------------------------------------------
+# Read        4800 samples from input files
+# 
+# -----------------------------------------------
+# Loading golden output data from file ../simdata/fmstereo_mpx_golden.hex:
+# Golden dataout(    0) =        0 (hex 000000 )
+# Golden dataout(    1) =        0 (hex 000000 )
+# Golden dataout(    2) =    18176 (hex 004700 )
+# Golden dataout(    3) =    29952 (hex 007500 )
+# Golden dataout(    4) =    32000 (hex 007d00 )
+# Golden dataout(    5) =    20736 (hex 005100 )
+# Golden dataout(    6) =     3072 (hex 000c00 )
+# Golden dataout(    7) =   -15360 (hex ffc400 )
+# Golden dataout(    8) =   -29952 (hex ff8b00 )
+# Golden dataout(    9) =   -31956 (hex ff832c )
+# Golden dataout(   10) =   -22840 (hex ffa6c8 )
+# Golden dataout(   11) =    -3016 (hex fff438 )
+# Golden dataout(   12) =    14992 (hex 003a90 )
+# Golden dataout(   13) =    29784 (hex 007458 )
+# Golden dataout(   14) =    30704 (hex 0077f0 )
+# Golden dataout(   15) =    17868 (hex 0045cc )
+# Golden dataout(   16) =     4324 (hex 0010e4 )
+# Golden dataout(   17) =    -8988 (hex ffdce4 )
+# Golden dataout(   18) =   -22320 (hex ffa8d0 )
+# Golden dataout(   19) =   -34672 (hex ff7890 )
+# -----------------------------------------------
+# Read       19205 samples from output golden file
+# 
+# -----------------------------------------------
+# 
+# Starting applying samples...
+#           0 input samples processed (  0%), 0 errors detected
+# OK:    Data out (          0) =         0  (000000)
+# Synchonization detected at index           2
+# OK:    Data out (          1) =     18176  (004700)
+# OK:    Data out (          2) =     29952  (007500)
+# OK:    Data out (          3) =     32000  (007d00)
+# OK:    Data out (          4) =     20736  (005100)
+# OK:    Data out (          5) =      3072  (000c00)
+# OK:    Data out (          6) =    -15360  (ffc400)
+# OK:    Data out (          7) =    -29952  (ff8b00)
+# OK:    Data out (          8) =    -31956  (ff832c)
+# OK:    Data out (          9) =    -22840  (ffa6c8)
+# OK:    Data out (         10) =     -3016  (fff438)
+# OK:    Data out (         11) =     14992  (003a90)
+# OK:    Data out (         12) =     29784  (007458)
+# OK:    Data out (         13) =     30704  (0077f0)
+# OK:    Data out (         14) =     17868  (0045cc)
+# OK:    Data out (         15) =      4324  (0010e4)
+# OK:    Data out (         16) =     -8988  (ffdce4)
+# OK:    Data out (         17) =    -22320  (ffa8d0)
+# OK:    Data out (         18) =    -34672  (ff7890)
+# OK:    Data out (         19) =    -32100  (ff829c)
+# OK:    Data out (         20) =     -8580  (ffde7c)
+# OK:    Data out (         21) =     20708  (0050e4)
+# OK:    Data out (         22) =     37876  (0093f4)
+# OK:    Data out (         23) =     31120  (007990)
+# OK:    Data out (         24) =     17136  (0042f0)
+# OK:    Data out (         25) =      4924  (00133c)
+# OK:    Data out (         26) =      -452  (fffe3c)
+# OK:    Data out (         27) =    -12692  (ffce6c)
+# OK:    Data out (         28) =    -30612  (ff886c)
+# OK:    Data out (         29) =    -33096  (ff7eb8)
+# OK:    Data out (         30) =    -10784  (ffd5e0)
+# OK:    Data out (         31) =     26600  (0067e8)
+# OK:    Data out (         32) =     43548  (00aa1c)
+# OK:    Data out (         33) =     36248  (008d98)
+# OK:    Data out (         34) =     16996  (004264)
+# OK:    Data out (         35) =      8116  (001fb4)
+# OK:    Data out (         36) =      4260  (0010a4)
+# OK:    Data out (         37) =     -9384  (ffdb58)
+# OK:    Data out (         38) =    -28384  (ff9120)
+# OK:    Data out (         39) =    -34696  (ff7878)
+# OK:    Data out (         40) =    -11456  (ffd340)
+# OK:    Data out (         41) =     24444  (005f7c)
+# OK:    Data out (         42) =     45032  (00afe8)
+# OK:    Data out (         43) =     38928  (009810)
+# OK:    Data out (         44) =     19528  (004c48)
+# OK:    Data out (         45) =      9444  (0024e4)
+# OK:    Data out (         46) =      4052  (000fd4)
+# OK:    Data out (         47) =     -6352  (ffe730)
+# OK:    Data out (         48) =    -25916  (ff9ac4)
+# OK:    Data out (         49) =    -34488  (ff7948)
+# OK:    Data out (         50) =    -16344  (ffc028)
+# OK:    Data out (         51) =     16104  (003ee8)
+# OK:    Data out (         52) =     40700  (009efc)
+# OK:    Data out (         53) =     36844  (008fec)
+# OK:    Data out (         54) =     21512  (005408)
+# OK:    Data out (         55) =      7332  (001ca4)
+# OK:    Data out (         56) =      2168  (000878)
+# OK:    Data out (         57) =     -8288  (ffdfa0)
+# OK:    Data out (         58) =    -26836  (ff972c)
+# OK:    Data out (         59) =    -36092  (ff7304)
+# OK:    Data out (         60) =    -21436  (ffac44)
+# OK:    Data out (         61) =     13928  (003668)
+# OK:    Data out (         62) =     37520  (009290)
+# OK:    Data out (         63) =     38252  (00956c)
+# OK:    Data out (         64) =     21940  (0055b4)
+# OK:    Data out (         65) =      9296  (002450)
+# OK:    Data out (         66) =      2060  (00080c)
+# OK:    Data out (         67) =    -11016  (ffd4f8)
+# OK:    Data out (         68) =    -27232  (ff95a0)
+# OK:    Data out (         69) =    -35900  (ff73c4)
+# OK:    Data out (         70) =    -21844  (ffaaac)
+# OK:    Data out (         71) =      7872  (001ec0)
+# OK:    Data out (         72) =     33276  (0081fc)
+# OK:    Data out (         73) =     38756  (009764)
+# OK:    Data out (         74) =     24176  (005e70)
+# OK:    Data out (         75) =     11104  (002b60)
+# OK:    Data out (         76) =      3000  (000bb8)
+# OK:    Data out (         77) =     -4132  (ffefdc)
+# OK:    Data out (         78) =    -20548  (ffafbc)
+# OK:    Data out (         79) =    -34584  (ff78e8)
+#        1000 input samples processed ( 20%), 0 errors detected
+#        2000 input samples processed ( 41%), 0 errors detected
+#        3000 input samples processed ( 62%), 0 errors detected
+#        4000 input samples processed ( 83%), 0 errors detected
+# -------------------------------------------------------
+# 
+#           #####     ##     ####    ####
+#           #    #   #  #   #       #
+#           #    #  #    #   ####    ####
+#           #####   ######       #       #
+#           #       #    #  #    #  #    #
+#           #       #    #   ####    ####
+# 
+# -------------------------------------------------------
+# 
+# ** Note: $stop    : ../src/verilog-tb/fm_stereo_mx_tb.v(351)
+#    Time: 98304352 ns  Iteration: 0  Instance: /stereo_mx_fm_tb
+# Break in Module stereo_mx_fm_tb at ../src/verilog-tb/fm_stereo_mx_tb.v line 351
+# End time: 04:00:33 on Jan 06,2019, Elapsed time: 0:00:38
+# Errors: 0, Warnings: 2
