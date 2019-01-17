@@ -1,0 +1,1546 @@
+//! **************************************************************************
+// Written by: Map P.68d on Thu Jan 10 15:55:02 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "rx" LOCATE = SITE "A16" LEVEL 1;
+COMP "tx" LOCATE = SITE "B16" LEVEL 1;
+COMP "ld0" LOCATE = SITE "U18" LEVEL 1;
+COMP "ld1" LOCATE = SITE "M14" LEVEL 1;
+COMP "ld2" LOCATE = SITE "N14" LEVEL 1;
+COMP "ld3" LOCATE = SITE "L14" LEVEL 1;
+COMP "ld4" LOCATE = SITE "M13" LEVEL 1;
+COMP "ld5" LOCATE = SITE "D4" LEVEL 1;
+COMP "ld6" LOCATE = SITE "P16" LEVEL 1;
+COMP "ld7" LOCATE = SITE "N12" LEVEL 1;
+COMP "sw0" LOCATE = SITE "A10" LEVEL 1;
+COMP "sw1" LOCATE = SITE "D14" LEVEL 1;
+COMP "sw2" LOCATE = SITE "C14" LEVEL 1;
+COMP "sw3" LOCATE = SITE "P15" LEVEL 1;
+COMP "sw4" LOCATE = SITE "P12" LEVEL 1;
+COMP "sw5" LOCATE = SITE "R5" LEVEL 1;
+COMP "sw6" LOCATE = SITE "T5" LEVEL 1;
+COMP "sw7" LOCATE = SITE "E4" LEVEL 1;
+COMP "SYNC" LOCATE = SITE "U17" LEVEL 1;
+COMP "btnc" LOCATE = SITE "F5" LEVEL 1;
+COMP "btnd" LOCATE = SITE "P3" LEVEL 1;
+COMP "btnl" LOCATE = SITE "P4" LEVEL 1;
+COMP "btnr" LOCATE = SITE "F6" LEVEL 1;
+COMP "btnu" LOCATE = SITE "N4" LEVEL 1;
+COMP "PMOD4" LOCATE = SITE "N5" LEVEL 1;
+COMP "reset_n" LOCATE = SITE "T15" LEVEL 1;
+COMP "VHDC1N" LOCATE = SITE "V16" LEVEL 1;
+COMP "VHDC2N" LOCATE = SITE "V15" LEVEL 1;
+COMP "VHDC1P" LOCATE = SITE "U16" LEVEL 1;
+COMP "VHDC3N" LOCATE = SITE "V13" LEVEL 1;
+COMP "VHDC2P" LOCATE = SITE "U15" LEVEL 1;
+COMP "VHDC4N" LOCATE = SITE "N11" LEVEL 1;
+COMP "VHDC3P" LOCATE = SITE "U13" LEVEL 1;
+COMP "VHDC5N" LOCATE = SITE "T11" LEVEL 1;
+COMP "VHDC4P" LOCATE = SITE "M11" LEVEL 1;
+COMP "VHDC6N" LOCATE = SITE "V12" LEVEL 1;
+COMP "VHDC5P" LOCATE = SITE "R11" LEVEL 1;
+COMP "VHDC7N" LOCATE = SITE "P11" LEVEL 1;
+COMP "VHDC6P" LOCATE = SITE "T12" LEVEL 1;
+COMP "VHDC8N" LOCATE = SITE "N9" LEVEL 1;
+COMP "VHDC7P" LOCATE = SITE "N10" LEVEL 1;
+COMP "VHDC9N" LOCATE = SITE "V11" LEVEL 1;
+COMP "VHDC8P" LOCATE = SITE "M10" LEVEL 1;
+COMP "VHDC9P" LOCATE = SITE "U11" LEVEL 1;
+COMP "clockext100MHz" LOCATE = SITE "L15" LEVEL 1;
+COMP "PMOD10" LOCATE = SITE "T4" LEVEL 1;
+COMP "SDATA_OUT" LOCATE = SITE "N16" LEVEL 1;
+COMP "BIT_CLK" LOCATE = SITE "L13" LEVEL 1;
+COMP "PMOD1" LOCATE = SITE "T3" LEVEL 1;
+COMP "PMOD2" LOCATE = SITE "R3" LEVEL 1;
+COMP "PMOD3" LOCATE = SITE "P6" LEVEL 1;
+COMP "PMOD7" LOCATE = SITE "V9" LEVEL 1;
+COMP "PMOD8" LOCATE = SITE "T9" LEVEL 1;
+COMP "PMOD9" LOCATE = SITE "V4" LEVEL 1;
+COMP "SDATA_IN" LOCATE = SITE "T18" LEVEL 1;
+COMP "VHDC10N" LOCATE = SITE "T10" LEVEL 1;
+COMP "VHDC11N" LOCATE = SITE "V10" LEVEL 1;
+COMP "VHDC10P" LOCATE = SITE "R10" LEVEL 1;
+COMP "VHDC20N" LOCATE = SITE "V5" LEVEL 1;
+COMP "VHDC12N" LOCATE = SITE "T8" LEVEL 1;
+COMP "VHDC11P" LOCATE = SITE "U10" LEVEL 1;
+COMP "VHDC20P" LOCATE = SITE "U5" LEVEL 1;
+COMP "VHDC13N" LOCATE = SITE "N8" LEVEL 1;
+COMP "VHDC12P" LOCATE = SITE "R8" LEVEL 1;
+COMP "VHDC14N" LOCATE = SITE "V8" LEVEL 1;
+COMP "VHDC13P" LOCATE = SITE "M8" LEVEL 1;
+COMP "VHDC15N" LOCATE = SITE "V7" LEVEL 1;
+COMP "VHDC14P" LOCATE = SITE "U8" LEVEL 1;
+COMP "VHDC16N" LOCATE = SITE "P8" LEVEL 1;
+COMP "VHDC15P" LOCATE = SITE "U7" LEVEL 1;
+COMP "VHDC17N" LOCATE = SITE "V6" LEVEL 1;
+COMP "VHDC16P" LOCATE = SITE "N7" LEVEL 1;
+COMP "VHDC18N" LOCATE = SITE "T7" LEVEL 1;
+COMP "VHDC17P" LOCATE = SITE "T6" LEVEL 1;
+COMP "VHDC19N" LOCATE = SITE "P7" LEVEL 1;
+COMP "VHDC18P" LOCATE = SITE "R7" LEVEL 1;
+COMP "VHDC19P" LOCATE = SITE "N6" LEVEL 1;
+COMP "RESET_N" LOCATE = SITE "T17" LEVEL 1;
+TIMEGRP clock_bit2x_1_clkfx = BEL "DACclock" BEL "clock_bit2x_1/clkout3_buf"
+        BEL "DACclock_1";
+PIN DUV/block_192kHz_dds_38/Mram_sineLUT1_pins<18> = BEL
+        "DUV/block_192kHz_dds_38/Mram_sineLUT1" PINNAME CLKA;
+PIN DUV/block_192kHz_dds_38/Mram_sineLUT1_pins<19> = BEL
+        "DUV/block_192kHz_dds_38/Mram_sineLUT1" PINNAME CLKB;
+TIMEGRP clock_freq_98 = BEL "clken192kHz" BEL "clken48kHz" BEL "rightins_0"
+        BEL "rightins_1" BEL "rightins_2" BEL "rightins_3" BEL "rightins_4"
+        BEL "rightins_5" BEL "rightins_6" BEL "rightins_7" BEL "rightins_8"
+        BEL "rightins_9" BEL "rightins_10" BEL "rightins_11" BEL "rightins_12"
+        BEL "rightins_13" BEL "rightins_14" BEL "rightins_15" BEL
+        "rightins_16" BEL "rightins_17" BEL "leftins_0" BEL "leftins_1" BEL
+        "leftins_2" BEL "leftins_3" BEL "leftins_4" BEL "leftins_5" BEL
+        "leftins_6" BEL "leftins_7" BEL "leftins_8" BEL "leftins_9" BEL
+        "leftins_10" BEL "leftins_11" BEL "leftins_12" BEL "leftins_13" BEL
+        "leftins_14" BEL "leftins_15" BEL "leftins_16" BEL "leftins_17" BEL
+        "testmodlong_2" BEL "testmodlong_3" BEL "testmodlong_4" BEL
+        "testmodlong_5" BEL "testmodlong_6" BEL "testmodlong_7" BEL
+        "testmodlong_8" BEL "testmodlong_9" BEL "testmodlong_10" BEL
+        "testmodlong_11" BEL "testmodlong_12" BEL "testmodlong_13" BEL
+        "testmodlong_14" BEL "testmodlong_15" BEL "testmod_0" BEL "testmod_1"
+        BEL "testmod_2" BEL "testmod_3" BEL "testmod_4" BEL "testmod_5" BEL
+        "testmod_6" BEL "testmod_7" BEL "testmod_8" BEL "testmod_9" BEL
+        "testmod_10" BEL "testmod_11" BEL "testmod_12" BEL "testmod_13" BEL
+        "FMout_r_0" BEL "FMout_r_1" BEL "FMout_r_2" BEL "FMout_r_3" BEL
+        "FMout_r_4" BEL "FMout_r_5" BEL "FMout_r_6" BEL "FMout_r_7" BEL
+        "FMout_r_8" BEL "FMout_r_9" BEL "FMout_r_10" BEL "FMout_r_11" BEL
+        "FMout_r_12" BEL "FMout_r_13" BEL "FMout_r_14" BEL "FMout_r_15" BEL
+        "FMout_r_16" BEL "FMout_r_17" BEL "FMout_r_18" BEL "FMout_r_19" BEL
+        "FMout_r_20" BEL "FMout_r_21" BEL "FMout_r_22" BEL "FMout_r_23" BEL
+        "datamod_0" BEL "datamod_1" BEL "datamod_2" BEL "datamod_3" BEL
+        "datamod_4" BEL "datamod_5" BEL "datamod_6" BEL "datamod_7" BEL
+        "datamod_8" BEL "datamod_9" BEL "datamod_10" BEL "datamod_11" BEL
+        "datamod_12" BEL "datamod_13" BEL "dataDAC_0" BEL "dataDAC_1" BEL
+        "dataDAC_2" BEL "dataDAC_3" BEL "dataDAC_4" BEL "dataDAC_5" BEL
+        "dataDAC_6" BEL "PMOD7" BEL "PMOD2" BEL "PMOD1" BEL "PMOD8" BEL
+        "PMOD9" BEL "PMOD3" BEL "PMOD10" BEL "clken48k192k/clkdivcount_0" BEL
+        "clken48k192k/clkdivcount_1" BEL "clken48k192k/clkdivcount_2" BEL
+        "clken48k192k/clkdivcount_3" BEL "clken48k192k/clkdivcount_4" BEL
+        "clken48k192k/clkdivcount_5" BEL "clken48k192k/clkdivcount_6" BEL
+        "clken48k192k/clkdivcount_7" BEL "clken48k192k/clkdivcount_8" BEL
+        "clken48k192k/clkdivcount_9" BEL "clken48k192k/clkdivcount_10" BEL
+        "uart_1/bittxcount_3" BEL "uart_1/bittxcount_2" BEL
+        "uart_1/bittxcount_0" BEL "uart_1/bittxcount_1" BEL
+        "uart_1/baudtxcount_12" BEL "uart_1/baudtxcount_11" BEL
+        "uart_1/baudtxcount_13" BEL "uart_1/baudtxcount_9" BEL
+        "uart_1/baudtxcount_8" BEL "uart_1/baudtxcount_10" BEL
+        "uart_1/baudtxcount_6" BEL "uart_1/baudtxcount_7" BEL
+        "uart_1/baudtxcount_3" BEL "uart_1/baudtxcount_0" BEL
+        "uart_1/baudtxcount_1" BEL "uart_1/baudrxcount_12" BEL
+        "uart_1/baudrxcount_11" BEL "uart_1/baudrxcount_13" BEL
+        "uart_1/baudrxcount_10" BEL "uart_1/baudrxcount_9" BEL
+        "uart_1/baudrxcount_7" BEL "uart_1/baudrxcount_6" BEL
+        "uart_1/baudrxcount_8" BEL "uart_1/baudrxcount_3" BEL
+        "uart_1/baudrxcount_1" BEL "uart_1/baudrxcount_0" BEL
+        "uart_1/bitrxcount_3" BEL "uart_1/bitrxcount_2" BEL
+        "uart_1/bitrxcount_0" BEL "uart_1/bitrxcount_1" BEL "uart_1/dout_7"
+        BEL "uart_1/dout_6" BEL "uart_1/dout_5" BEL "uart_1/dout_4" BEL
+        "uart_1/dout_3" BEL "uart_1/dout_2" BEL "uart_1/dout_1" BEL
+        "uart_1/dout_0" BEL "uart_1/txdata_8" BEL "uart_1/txdata_7" BEL
+        "uart_1/txdata_6" BEL "uart_1/txdata_5" BEL "uart_1/txdata_4" BEL
+        "uart_1/txdata_3" BEL "uart_1/txdata_2" BEL "uart_1/txdata_1" BEL
+        "uart_1/txdata_0" BEL "uart_1/rxdata_8" BEL "uart_1/rxdata_7" BEL
+        "uart_1/rxdata_6" BEL "uart_1/rxdata_5" BEL "uart_1/rxdata_4" BEL
+        "uart_1/rxdata_3" BEL "uart_1/rxdata_2" BEL "uart_1/rxdata_1" BEL
+        "uart_1/rx3" BEL "uart_1/rx2" BEL "uart_1/rx1" BEL
+        "LM4550_controler_1/SYNC_REGISTER_READY" BEL
+        "LM4550_controler_1/SYNC_REGISTER" BEL
+        "LM4550_controler_1/DELAY_SYNC_REGISTER2" BEL
+        "LM4550_controler_1/DELAY_SYNC_REGISTER" BEL
+        "LM4550_controler_1/STATE_REG_3" BEL "LM4550_controler_1/STATE_REG_2"
+        BEL "LM4550_controler_1/STATE_REG_1" BEL
+        "LM4550_controler_1/STATE_REG_0" BEL
+        "LM4550_controler_1/NEXTSTATE_REG_3" BEL
+        "LM4550_controler_1/NEXTSTATE_REG_2" BEL
+        "LM4550_controler_1/NEXTSTATE_REG_1" BEL
+        "LM4550_controler_1/NEXTSTATE_REG_0" BEL
+        "LM4550_controler_1/STATUS_REG_3" BEL
+        "LM4550_controler_1/STATUS_REG_2" BEL
+        "LM4550_controler_1/STATUS_REG_1" BEL
+        "LM4550_controler_1/STATUS_REG_0" BEL
+        "LM4550_controler_1/DATA_TO_SEND_254" BEL
+        "LM4550_controler_1/DATA_TO_SEND_251" BEL
+        "LM4550_controler_1/DATA_TO_SEND_239" BEL
+        "LM4550_controler_1/DATA_TO_SEND_237" BEL
+        "LM4550_controler_1/DATA_TO_SEND_236" BEL
+        "LM4550_controler_1/DATA_TO_SEND_235" BEL
+        "LM4550_controler_1/DATA_TO_SEND_234" BEL
+        "LM4550_controler_1/DATA_TO_SEND_233" BEL
+        "LM4550_controler_1/DATA_TO_SEND_232" BEL
+        "LM4550_controler_1/DATA_TO_SEND_219" BEL
+        "LM4550_controler_1/DATA_TO_SEND_218" BEL
+        "LM4550_controler_1/DATA_TO_SEND_217" BEL
+        "LM4550_controler_1/DATA_TO_SEND_216" BEL
+        "LM4550_controler_1/DATA_TO_SEND_215" BEL
+        "LM4550_controler_1/DATA_TO_SEND_214" BEL
+        "LM4550_controler_1/DATA_TO_SEND_213" BEL
+        "LM4550_controler_1/DATA_TO_SEND_212" BEL
+        "LM4550_controler_1/DATA_TO_SEND_211" BEL
+        "LM4550_controler_1/DATA_TO_SEND_210" BEL
+        "LM4550_controler_1/DATA_TO_SEND_209" BEL
+        "LM4550_controler_1/DATA_TO_SEND_208" BEL
+        "LM4550_controler_1/DATA_TO_SEND_207" BEL
+        "LM4550_controler_1/DATA_TO_SEND_206" BEL
+        "LM4550_controler_1/DATA_TO_SEND_205" BEL
+        "LM4550_controler_1/DATA_TO_SEND_204" BEL
+        "LM4550_controler_1/DATA_TO_SEND_199" BEL
+        "LM4550_controler_1/DATA_TO_SEND_198" BEL
+        "LM4550_controler_1/DATA_TO_SEND_197" BEL
+        "LM4550_controler_1/DATA_TO_SEND_196" BEL
+        "LM4550_controler_1/DATA_TO_SEND_195" BEL
+        "LM4550_controler_1/DATA_TO_SEND_194" BEL
+        "LM4550_controler_1/DATA_TO_SEND_193" BEL
+        "LM4550_controler_1/DATA_TO_SEND_192" BEL
+        "LM4550_controler_1/DATA_TO_SEND_191" BEL
+        "LM4550_controler_1/DATA_TO_SEND_190" BEL
+        "LM4550_controler_1/DATA_TO_SEND_189" BEL
+        "LM4550_controler_1/DATA_TO_SEND_188" BEL
+        "LM4550_controler_1/DATA_TO_SEND_187" BEL
+        "LM4550_controler_1/DATA_TO_SEND_186" BEL
+        "LM4550_controler_1/DATA_TO_SEND_185" BEL
+        "LM4550_controler_1/DATA_TO_SEND_184" BEL
+        "LM4550_controler_1/DATA_TO_SEND_183" BEL
+        "LM4550_controler_1/DATA_TO_SEND_182" BEL
+        "LM4550_controler_1/DATA_TO_SEND_179" BEL
+        "LM4550_controler_1/DATA_TO_SEND_178" BEL
+        "LM4550_controler_1/DATA_TO_SEND_177" BEL
+        "LM4550_controler_1/DATA_TO_SEND_176" BEL
+        "LM4550_controler_1/DATA_TO_SEND_175" BEL
+        "LM4550_controler_1/DATA_TO_SEND_174" BEL
+        "LM4550_controler_1/DATA_TO_SEND_173" BEL
+        "LM4550_controler_1/DATA_TO_SEND_172" BEL
+        "LM4550_controler_1/DATA_TO_SEND_171" BEL
+        "LM4550_controler_1/DATA_TO_SEND_170" BEL
+        "LM4550_controler_1/DATA_TO_SEND_169" BEL
+        "LM4550_controler_1/DATA_TO_SEND_168" BEL
+        "LM4550_controler_1/DATA_TO_SEND_167" BEL
+        "LM4550_controler_1/DATA_TO_SEND_166" BEL
+        "LM4550_controler_1/DATA_TO_SEND_165" BEL
+        "LM4550_controler_1/DATA_TO_SEND_164" BEL
+        "LM4550_controler_1/DATA_TO_SEND_163" BEL
+        "LM4550_controler_1/DATA_TO_SEND_162" BEL
+        "LM4550_controler_1/FRAME_OUT_254" BEL
+        "LM4550_controler_1/FRAME_OUT_251" BEL
+        "LM4550_controler_1/FRAME_OUT_239" BEL
+        "LM4550_controler_1/FRAME_OUT_237" BEL
+        "LM4550_controler_1/FRAME_OUT_236" BEL
+        "LM4550_controler_1/FRAME_OUT_235" BEL
+        "LM4550_controler_1/FRAME_OUT_234" BEL
+        "LM4550_controler_1/FRAME_OUT_233" BEL
+        "LM4550_controler_1/FRAME_OUT_232" BEL
+        "LM4550_controler_1/FRAME_OUT_219" BEL
+        "LM4550_controler_1/FRAME_OUT_218" BEL
+        "LM4550_controler_1/FRAME_OUT_217" BEL
+        "LM4550_controler_1/FRAME_OUT_216" BEL
+        "LM4550_controler_1/FRAME_OUT_215" BEL
+        "LM4550_controler_1/FRAME_OUT_214" BEL
+        "LM4550_controler_1/FRAME_OUT_213" BEL
+        "LM4550_controler_1/FRAME_OUT_212" BEL
+        "LM4550_controler_1/FRAME_OUT_211" BEL
+        "LM4550_controler_1/FRAME_OUT_210" BEL
+        "LM4550_controler_1/FRAME_OUT_209" BEL
+        "LM4550_controler_1/FRAME_OUT_208" BEL
+        "LM4550_controler_1/FRAME_OUT_207" BEL
+        "LM4550_controler_1/FRAME_OUT_206" BEL
+        "LM4550_controler_1/FRAME_OUT_205" BEL
+        "LM4550_controler_1/FRAME_OUT_204" BEL
+        "LM4550_controler_1/FRAME_OUT_199" BEL
+        "LM4550_controler_1/FRAME_OUT_198" BEL
+        "LM4550_controler_1/FRAME_OUT_197" BEL
+        "LM4550_controler_1/FRAME_OUT_196" BEL
+        "LM4550_controler_1/FRAME_OUT_195" BEL
+        "LM4550_controler_1/FRAME_OUT_194" BEL
+        "LM4550_controler_1/FRAME_OUT_193" BEL
+        "LM4550_controler_1/FRAME_OUT_192" BEL
+        "LM4550_controler_1/FRAME_OUT_191" BEL
+        "LM4550_controler_1/FRAME_OUT_190" BEL
+        "LM4550_controler_1/FRAME_OUT_189" BEL
+        "LM4550_controler_1/FRAME_OUT_188" BEL
+        "LM4550_controler_1/FRAME_OUT_187" BEL
+        "LM4550_controler_1/FRAME_OUT_186" BEL
+        "LM4550_controler_1/FRAME_OUT_185" BEL
+        "LM4550_controler_1/FRAME_OUT_184" BEL
+        "LM4550_controler_1/FRAME_OUT_183" BEL
+        "LM4550_controler_1/FRAME_OUT_182" BEL
+        "LM4550_controler_1/FRAME_OUT_179" BEL
+        "LM4550_controler_1/FRAME_OUT_178" BEL
+        "LM4550_controler_1/FRAME_OUT_177" BEL
+        "LM4550_controler_1/FRAME_OUT_176" BEL
+        "LM4550_controler_1/FRAME_OUT_175" BEL
+        "LM4550_controler_1/FRAME_OUT_174" BEL
+        "LM4550_controler_1/FRAME_OUT_173" BEL
+        "LM4550_controler_1/FRAME_OUT_172" BEL
+        "LM4550_controler_1/FRAME_OUT_171" BEL
+        "LM4550_controler_1/FRAME_OUT_170" BEL
+        "LM4550_controler_1/FRAME_OUT_169" BEL
+        "LM4550_controler_1/FRAME_OUT_168" BEL
+        "LM4550_controler_1/FRAME_OUT_167" BEL
+        "LM4550_controler_1/FRAME_OUT_166" BEL
+        "LM4550_controler_1/FRAME_OUT_165" BEL
+        "LM4550_controler_1/FRAME_OUT_164" BEL
+        "LM4550_controler_1/FRAME_OUT_163" BEL
+        "LM4550_controler_1/FRAME_OUT_162" BEL
+        "LM4550_controler_1/FRAME_IN_252" BEL
+        "LM4550_controler_1/FRAME_IN_251" BEL
+        "LM4550_controler_1/FRAME_IN_207" BEL
+        "LM4550_controler_1/FRAME_IN_206" BEL
+        "LM4550_controler_1/FRAME_IN_205" BEL
+        "LM4550_controler_1/FRAME_IN_204" BEL
+        "LM4550_controler_1/FRAME_IN_199" BEL
+        "LM4550_controler_1/FRAME_IN_198" BEL
+        "LM4550_controler_1/FRAME_IN_197" BEL
+        "LM4550_controler_1/FRAME_IN_196" BEL
+        "LM4550_controler_1/FRAME_IN_195" BEL
+        "LM4550_controler_1/FRAME_IN_194" BEL
+        "LM4550_controler_1/FRAME_IN_193" BEL
+        "LM4550_controler_1/FRAME_IN_192" BEL
+        "LM4550_controler_1/FRAME_IN_191" BEL
+        "LM4550_controler_1/FRAME_IN_190" BEL
+        "LM4550_controler_1/FRAME_IN_189" BEL
+        "LM4550_controler_1/FRAME_IN_188" BEL
+        "LM4550_controler_1/FRAME_IN_187" BEL
+        "LM4550_controler_1/FRAME_IN_186" BEL
+        "LM4550_controler_1/FRAME_IN_185" BEL
+        "LM4550_controler_1/FRAME_IN_184" BEL
+        "LM4550_controler_1/FRAME_IN_183" BEL
+        "LM4550_controler_1/FRAME_IN_182" BEL
+        "LM4550_controler_1/FRAME_IN_179" BEL
+        "LM4550_controler_1/FRAME_IN_178" BEL
+        "LM4550_controler_1/FRAME_IN_177" BEL
+        "LM4550_controler_1/FRAME_IN_176" BEL
+        "LM4550_controler_1/FRAME_IN_175" BEL
+        "LM4550_controler_1/FRAME_IN_174" BEL
+        "LM4550_controler_1/FRAME_IN_173" BEL
+        "LM4550_controler_1/FRAME_IN_172" BEL
+        "LM4550_controler_1/FRAME_IN_171" BEL
+        "LM4550_controler_1/FRAME_IN_170" BEL
+        "LM4550_controler_1/FRAME_IN_169" BEL
+        "LM4550_controler_1/FRAME_IN_168" BEL
+        "LM4550_controler_1/FRAME_IN_167" BEL
+        "LM4550_controler_1/FRAME_IN_166" BEL
+        "LM4550_controler_1/FRAME_IN_165" BEL
+        "LM4550_controler_1/FRAME_IN_164" BEL
+        "LM4550_controler_1/FRAME_IN_163" BEL
+        "LM4550_controler_1/FRAME_IN_162" BEL "LM4550_controler_1/READ_WRITE"
+        BEL "LM4550_controler_1/SEND_VALID_REG_5" BEL
+        "LM4550_controler_1/SEND_VALID_REG_4" BEL
+        "LM4550_controler_1/SEND_VALID_REG_3" BEL
+        "LM4550_controler_1/SEND_VALID_REG_2" BEL
+        "LM4550_controler_1/SEND_VALID_REG_1" BEL
+        "LM4550_controler_1/SEND_VALID_REG_0" BEL
+        "LM4550_controler_1/VALID_REGISTER_DATA" BEL "LM4550_controler_1/RDY"
+        BEL "LM4550_controler_1/DIN_REG_15" BEL
+        "LM4550_controler_1/DIN_REG_14" BEL "LM4550_controler_1/DIN_REG_13"
+        BEL "LM4550_controler_1/DIN_REG_12" BEL
+        "LM4550_controler_1/DIN_REG_11" BEL "LM4550_controler_1/DIN_REG_10"
+        BEL "LM4550_controler_1/DIN_REG_9" BEL "LM4550_controler_1/DIN_REG_8"
+        BEL "LM4550_controler_1/DIN_REG_7" BEL "LM4550_controler_1/DIN_REG_6"
+        BEL "LM4550_controler_1/DIN_REG_5" BEL "LM4550_controler_1/DIN_REG_4"
+        BEL "LM4550_controler_1/DIN_REG_3" BEL "LM4550_controler_1/DIN_REG_2"
+        BEL "LM4550_controler_1/DIN_REG_1" BEL "LM4550_controler_1/DIN_REG_0"
+        BEL "LM4550_controler_1/REGID_REG_5" BEL
+        "LM4550_controler_1/REGID_REG_4" BEL "LM4550_controler_1/REGID_REG_3"
+        BEL "LM4550_controler_1/REGID_REG_2" BEL
+        "LM4550_controler_1/REGID_REG_1" BEL "LM4550_controler_1/REGID_REG_0"
+        BEL "LM4550_controler_1/count_reg_31" BEL
+        "LM4550_controler_1/count_reg_30" BEL
+        "LM4550_controler_1/count_reg_29" BEL
+        "LM4550_controler_1/count_reg_28" BEL
+        "LM4550_controler_1/count_reg_27" BEL
+        "LM4550_controler_1/count_reg_26" BEL
+        "LM4550_controler_1/count_reg_25" BEL
+        "LM4550_controler_1/count_reg_24" BEL
+        "LM4550_controler_1/count_reg_23" BEL
+        "LM4550_controler_1/count_reg_22" BEL
+        "LM4550_controler_1/count_reg_21" BEL
+        "LM4550_controler_1/count_reg_20" BEL
+        "LM4550_controler_1/count_reg_19" BEL
+        "LM4550_controler_1/count_reg_18" BEL
+        "LM4550_controler_1/count_reg_17" BEL
+        "LM4550_controler_1/count_reg_16" BEL
+        "LM4550_controler_1/count_reg_15" BEL
+        "LM4550_controler_1/count_reg_14" BEL
+        "LM4550_controler_1/count_reg_13" BEL
+        "LM4550_controler_1/count_reg_12" BEL
+        "LM4550_controler_1/count_reg_11" BEL
+        "LM4550_controler_1/count_reg_10" BEL "LM4550_controler_1/count_reg_9"
+        BEL "LM4550_controler_1/count_reg_8" BEL
+        "LM4550_controler_1/count_reg_7" BEL "LM4550_controler_1/count_reg_6"
+        BEL "LM4550_controler_1/count_reg_5" BEL
+        "LM4550_controler_1/count_reg_4" BEL "LM4550_controler_1/count_reg_3"
+        BEL "LM4550_controler_1/count_reg_2" BEL
+        "LM4550_controler_1/count_reg_1" BEL "LM4550_controler_1/count_reg_0"
+        BEL "ioports16_1/state_FSM_FFd1" BEL "ioports16_1/state_FSM_FFd2" BEL
+        "ioports16_1/state_FSM_FFd4" BEL "ioports16_1/state_FSM_FFd5" BEL
+        "ioports16_1/state_FSM_FFd3" BEL "ioports16_1/state_FSM_FFd7" BEL
+        "ioports16_1/state_FSM_FFd8" BEL "ioports16_1/state_FSM_FFd6" BEL
+        "ioports16_1/state_FSM_FFd10" BEL "ioports16_1/state_FSM_FFd11" BEL
+        "ioports16_1/state_FSM_FFd9" BEL "ioports16_1/state_FSM_FFd12" BEL
+        "ioports16_1/state_FSM_FFd13" BEL "ioports16_1/state_FSM_FFd15" BEL
+        "ioports16_1/state_FSM_FFd14" BEL "ioports16_1/dataout_7" BEL
+        "ioports16_1/dataout_6" BEL "ioports16_1/dataout_5" BEL
+        "ioports16_1/dataout_4" BEL "ioports16_1/dataout_3" BEL
+        "ioports16_1/dataout_2" BEL "ioports16_1/dataout_1" BEL
+        "ioports16_1/dataout_0" BEL "ioports16_1/outc_3" BEL
+        "ioports16_1/outc_2" BEL "ioports16_1/outc_1" BEL "ioports16_1/outc_0"
+        BEL "ioports16_1/outb_3" BEL "ioports16_1/outb_2" BEL
+        "ioports16_1/outb_1" BEL "ioports16_1/outb_0" BEL "ioports16_1/outa_3"
+        BEL "ioports16_1/outa_2" BEL "ioports16_1/outa_1" BEL
+        "ioports16_1/outa_0" BEL "ioports16_1/out9_7" BEL "ioports16_1/out9_6"
+        BEL "ioports16_1/out9_5" BEL "ioports16_1/out9_4" BEL
+        "ioports16_1/out9_3" BEL "ioports16_1/out9_2" BEL "ioports16_1/out9_1"
+        BEL "ioports16_1/out9_0" BEL "ioports16_1/outf_1" BEL
+        "ioports16_1/outf_0" BEL "ioports16_1/out8_19" BEL
+        "ioports16_1/out8_18" BEL "ioports16_1/out8_17" BEL
+        "ioports16_1/out8_16" BEL "ioports16_1/out8_15" BEL
+        "ioports16_1/out8_14" BEL "ioports16_1/out8_13" BEL
+        "ioports16_1/out8_12" BEL "ioports16_1/out8_11" BEL
+        "ioports16_1/out8_10" BEL "ioports16_1/out8_9" BEL
+        "ioports16_1/out8_8" BEL "ioports16_1/out8_7" BEL "ioports16_1/out8_6"
+        BEL "ioports16_1/out8_5" BEL "ioports16_1/out8_4" BEL
+        "ioports16_1/out8_3" BEL "ioports16_1/out8_2" BEL "ioports16_1/out8_1"
+        BEL "ioports16_1/out8_0" BEL "ioports16_1/out3_5" BEL
+        "ioports16_1/out3_4" BEL "ioports16_1/out3_3" BEL "ioports16_1/out3_2"
+        BEL "ioports16_1/out3_1" BEL "ioports16_1/out3_0" BEL
+        "ioports16_1/out2_15" BEL "ioports16_1/out2_14" BEL
+        "ioports16_1/out2_13" BEL "ioports16_1/out2_12" BEL
+        "ioports16_1/out2_11" BEL "ioports16_1/out2_10" BEL
+        "ioports16_1/out2_9" BEL "ioports16_1/out2_8" BEL "ioports16_1/out2_7"
+        BEL "ioports16_1/out2_6" BEL "ioports16_1/out2_5" BEL
+        "ioports16_1/out2_4" BEL "ioports16_1/out2_3" BEL "ioports16_1/out2_2"
+        BEL "ioports16_1/out2_1" BEL "ioports16_1/out2_0" BEL
+        "ioports16_1/datatoout_20" BEL "ioports16_1/datatoout_19" BEL
+        "ioports16_1/datatoout_18" BEL "ioports16_1/datatoout_17" BEL
+        "ioports16_1/datatoout_16" BEL "ioports16_1/datatoout_8" BEL
+        "ioports16_1/datatoout_7" BEL "ioports16_1/datatoout_6" BEL
+        "ioports16_1/datatoout_5" BEL "ioports16_1/datatoout_4" BEL
+        "ioports16_1/datatoout_3" BEL "ioports16_1/datatoout_2" BEL
+        "ioports16_1/datatoout_1" BEL "ioports16_1/datatoout_0" BEL
+        "ioports16_1/address_3" BEL "ioports16_1/address_2" BEL
+        "ioports16_1/address_1" BEL "ioports16_1/address_0" BEL
+        "ioports16_1/enout" BEL "ioports16_1/byte2_3" BEL
+        "ioports16_1/byte2_2" BEL "ioports16_1/byte2_1" BEL
+        "ioports16_1/byte2_0" BEL "ioports16_1/byte1_7" BEL
+        "ioports16_1/byte1_6" BEL "ioports16_1/byte1_5" BEL
+        "ioports16_1/byte1_4" BEL "ioports16_1/byte1_3" BEL
+        "ioports16_1/byte1_2" BEL "ioports16_1/byte1_1" BEL
+        "ioports16_1/byte1_0" BEL "DUV/block_48kHz/seqmult_LpR/R_res_17" BEL
+        "DUV/block_48kHz/seqmult_LpR/R_res_16" BEL
+        "DUV/block_48kHz/seqmult_LpR/R_res_15" BEL
+        "DUV/block_48kHz/seqmult_LpR/R_res_14" BEL
+        "DUV/block_48kHz/seqmult_LpR/R_res_13" BEL
+        "DUV/block_48kHz/seqmult_LpR/R_res_12" BEL
+        "DUV/block_48kHz/seqmult_LpR/R_res_11" BEL
+        "DUV/block_48kHz/seqmult_LpR/R_res_10" BEL
+        "DUV/block_48kHz/seqmult_LpR/R_res_9" BEL
+        "DUV/block_48kHz/seqmult_LpR/R_res_8" BEL
+        "DUV/block_48kHz/seqmult_LpR/R_res_7" BEL
+        "DUV/block_48kHz/seqmult_LpR/R_res_6" BEL
+        "DUV/block_48kHz/seqmult_LpR/R_res_5" BEL
+        "DUV/block_48kHz/seqmult_LpR/R_res_4" BEL
+        "DUV/block_48kHz/seqmult_LpR/R_res_3" BEL
+        "DUV/block_48kHz/seqmult_LpR/R_res_2" BEL
+        "DUV/block_48kHz/seqmult_LpR/R_res_1" BEL
+        "DUV/block_48kHz/seqmult_LpR/R_res_0" BEL
+        "DUV/block_48kHz/seqmult_LmR/R_res_17" BEL
+        "DUV/block_48kHz/seqmult_LmR/R_res_16" BEL
+        "DUV/block_48kHz/seqmult_LmR/R_res_15" BEL
+        "DUV/block_48kHz/seqmult_LmR/R_res_14" BEL
+        "DUV/block_48kHz/seqmult_LmR/R_res_13" BEL
+        "DUV/block_48kHz/seqmult_LmR/R_res_12" BEL
+        "DUV/block_48kHz/seqmult_LmR/R_res_11" BEL
+        "DUV/block_48kHz/seqmult_LmR/R_res_10" BEL
+        "DUV/block_48kHz/seqmult_LmR/R_res_9" BEL
+        "DUV/block_48kHz/seqmult_LmR/R_res_8" BEL
+        "DUV/block_48kHz/seqmult_LmR/R_res_7" BEL
+        "DUV/block_48kHz/seqmult_LmR/R_res_6" BEL
+        "DUV/block_48kHz/seqmult_LmR/R_res_5" BEL
+        "DUV/block_48kHz/seqmult_LmR/R_res_4" BEL
+        "DUV/block_48kHz/seqmult_LmR/R_res_3" BEL
+        "DUV/block_48kHz/seqmult_LmR/R_res_2" BEL
+        "DUV/block_48kHz/seqmult_LmR/R_res_1" BEL
+        "DUV/block_48kHz/seqmult_LmR/R_res_0" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/Q_7" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/Q_6" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/Q_5" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/Q_4" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/Q_3" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/Q_2" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/Q_1" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/Q_0" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/STATE_FSM_FFd1" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/STATE_FSM_FFd2" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_B_4" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_B_3" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_B_2" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_B_1" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_B_0" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_H_17" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_H_16" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_H_15" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_H_14" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_H_13" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_H_12" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_H_11" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_H_10" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_H_9" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_H_8" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_H_7" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_H_6" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_H_5" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_H_4" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_H_3" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_H_2" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_H_1" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_H_0" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_A_17" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_A_16" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_A_15" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_A_14" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_A_13" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_A_12" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_A_11" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_A_10" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_A_9" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_A_8" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_A_7" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_A_6" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_A_5" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_A_4" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_A_3" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_A_2" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_A_1" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_A_0" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Bi_3" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Bi_2" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Bi_1" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Bi_0" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Ai_17" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Ai_16" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Ai_15" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Ai_14" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Ai_13" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Ai_12" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Ai_11" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Ai_10" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Ai_9" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Ai_8" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Ai_7" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Ai_6" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Ai_5" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Ai_4" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Ai_3" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Ai_2" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Ai_1" BEL
+        "DUV/block_48kHz/seqmult_LmR/seqmult_int/reg_Ai_0" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_B_4" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_B_3" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_B_2" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_B_1" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_B_0" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_H_17" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_H_16" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_H_15" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_H_14" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_H_13" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_H_12" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_H_11" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_H_10" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_H_9" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_H_8" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_H_7" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_H_6" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_H_5" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_H_4" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_H_3" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_H_2" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_H_1" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_H_0" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_A_17" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_A_16" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_A_15" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_A_14" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_A_13" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_A_12" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_A_11" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_A_10" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_A_9" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_A_8" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_A_7" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_A_6" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_A_5" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_A_4" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_A_3" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_A_2" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_A_1" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_A_0" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Bi_3" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Bi_2" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Bi_1" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Bi_0" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Ai_17" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Ai_16" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Ai_15" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Ai_14" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Ai_13" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Ai_12" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Ai_11" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Ai_10" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Ai_9" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Ai_8" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Ai_7" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Ai_6" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Ai_5" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Ai_4" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Ai_3" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Ai_2" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Ai_1" BEL
+        "DUV/block_48kHz/seqmult_LpR/seqmult_int/reg_Ai_0" BEL
+        "DUV/block_192kHz/dds_38/phase_17" BEL
+        "DUV/block_192kHz/dds_38/phase_16" BEL
+        "DUV/block_192kHz/dds_38/phase_15" BEL
+        "DUV/block_192kHz/dds_38/phase_14" BEL
+        "DUV/block_192kHz/dds_38/phase_13" BEL
+        "DUV/block_192kHz/dds_38/phase_12" BEL
+        "DUV/block_192kHz/dds_38/phase_11" BEL
+        "DUV/block_192kHz/dds_38/phase_10" BEL
+        "DUV/block_192kHz/dds_38/phase_9" BEL
+        "DUV/block_192kHz/dds_38/phase_8" BEL
+        "DUV/block_192kHz/dds_38/phase_7" BEL
+        "DUV/block_192kHz/dds_38/phase_6" BEL
+        "DUV/block_192kHz/dds_38/phase_5" BEL
+        "DUV/block_192kHz/dds_38/phase_4" BEL
+        "DUV/block_192kHz/dds_38/phase_3" BEL
+        "DUV/block_192kHz/dds_38/phase_2" BEL
+        "DUV/block_192kHz/dds_38/phase_1" BEL
+        "DUV/block_192kHz/dds_19/phase_17" BEL "DUV/block_192kHz/FMout_23" BEL
+        "DUV/block_192kHz/FMout_22" BEL "DUV/block_192kHz/FMout_21" BEL
+        "DUV/block_192kHz/FMout_20" BEL "DUV/block_192kHz/FMout_19" BEL
+        "DUV/block_192kHz/FMout_18" BEL "DUV/block_192kHz/FMout_17" BEL
+        "DUV/block_192kHz/FMout_16" BEL "DUV/block_192kHz/FMout_15" BEL
+        "DUV/block_192kHz/FMout_14" BEL "DUV/block_192kHz/FMout_13" BEL
+        "DUV/block_192kHz/FMout_12" BEL "DUV/block_192kHz/FMout_11" BEL
+        "DUV/block_192kHz/FMout_10" BEL "DUV/block_192kHz/FMout_9" BEL
+        "DUV/block_192kHz/FMout_8" BEL "DUV/block_192kHz/FMout_7" BEL
+        "DUV/block_192kHz/FMout_6" BEL "DUV/block_192kHz/FMout_5" BEL
+        "DUV/block_192kHz/FMout_4" BEL "DUV/block_192kHz/FMout_3" BEL
+        "DUV/block_192kHz/FMout_2" BEL "DUV/block_192kHz/FMout_1" BEL
+        "DUV/block_192kHz/FMout_0" BEL
+        "DUV/block_192kHz/seqmult_LI_R/R_res_17" BEL
+        "DUV/block_192kHz/seqmult_LI_R/R_res_16" BEL
+        "DUV/block_192kHz/seqmult_LI_R/R_res_15" BEL
+        "DUV/block_192kHz/seqmult_LI_R/R_res_14" BEL
+        "DUV/block_192kHz/seqmult_LI_R/R_res_13" BEL
+        "DUV/block_192kHz/seqmult_LI_R/R_res_12" BEL
+        "DUV/block_192kHz/seqmult_LI_R/R_res_11" BEL
+        "DUV/block_192kHz/seqmult_LI_R/R_res_10" BEL
+        "DUV/block_192kHz/seqmult_LI_R/R_res_9" BEL
+        "DUV/block_192kHz/seqmult_LI_R/R_res_8" BEL
+        "DUV/block_192kHz/seqmult_LI_R/R_res_7" BEL
+        "DUV/block_192kHz/seqmult_LI_R/R_res_6" BEL
+        "DUV/block_192kHz/seqmult_LI_R/R_res_5" BEL
+        "DUV/block_192kHz/seqmult_LI_R/R_res_4" BEL
+        "DUV/block_192kHz/seqmult_LI_R/R_res_3" BEL
+        "DUV/block_192kHz/seqmult_LI_R/R_res_2" BEL
+        "DUV/block_192kHz/seqmult_LI_R/R_res_1" BEL
+        "DUV/block_192kHz/seqmult_LI_R/R_res_0" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/STATE_FSM_FFd1" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/STATE_FSM_FFd2" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/Q_7" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/Q_6" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/Q_5" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/Q_4" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/Q_3" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/Q_2" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/Q_1" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/Q_0" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_B_7" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_B_6" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_B_5" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_B_4" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_B_3" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_B_2" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_B_1" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_B_0" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_H_17" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_H_16" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_H_15" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_H_14" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_H_13" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_H_12" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_H_11" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_H_10" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_H_9" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_H_8" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_H_7" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_H_6" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_H_5" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_H_4" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_H_3" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_H_2" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_H_1" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_H_0" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_A_17" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_A_16" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_A_15" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_A_14" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_A_13" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_A_12" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_A_11" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_A_10" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_A_9" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_A_8" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_A_7" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_A_6" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_A_5" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_A_4" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_A_3" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_A_2" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_A_1" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_A_0" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Bi_7" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Bi_6" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Bi_5" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Bi_4" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Bi_3" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Bi_2" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Bi_1" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Bi_0" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Ai_17" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Ai_16" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Ai_15" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Ai_14" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Ai_13" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Ai_12" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Ai_11" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Ai_10" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Ai_9" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Ai_8" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Ai_7" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Ai_6" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Ai_5" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Ai_4" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Ai_3" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Ai_2" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Ai_1" BEL
+        "DUV/block_192kHz/seqmult_LI_R/seqmult_int/reg_Ai_0" BEL
+        "DUV/block_192kHz/seqmult_LI_M/R_res_17" BEL
+        "DUV/block_192kHz/seqmult_LI_M/R_res_16" BEL
+        "DUV/block_192kHz/seqmult_LI_M/R_res_15" BEL
+        "DUV/block_192kHz/seqmult_LI_M/R_res_14" BEL
+        "DUV/block_192kHz/seqmult_LI_M/R_res_13" BEL
+        "DUV/block_192kHz/seqmult_LI_M/R_res_12" BEL
+        "DUV/block_192kHz/seqmult_LI_M/R_res_11" BEL
+        "DUV/block_192kHz/seqmult_LI_M/R_res_10" BEL
+        "DUV/block_192kHz/seqmult_LI_M/R_res_9" BEL
+        "DUV/block_192kHz/seqmult_LI_M/R_res_8" BEL
+        "DUV/block_192kHz/seqmult_LI_M/R_res_7" BEL
+        "DUV/block_192kHz/seqmult_LI_M/R_res_6" BEL
+        "DUV/block_192kHz/seqmult_LI_M/R_res_0" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/Q_7" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/Q_6" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/Q_5" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/Q_4" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/Q_3" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/Q_2" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/Q_1" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/Q_0" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/STATE_FSM_FFd1" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/STATE_FSM_FFd2" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_B_4" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_B_3" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_B_2" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_B_1" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_B_0" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_H_7" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_H_6" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_H_5" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_H_4" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_H_3" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_H_2" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_H_1" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_H_0" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_A_7" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_A_6" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_A_5" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_A_4" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_A_3" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_A_2" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_A_1" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_A_0" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_Bi_3" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_Bi_2" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_Bi_1" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_Bi_0" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_Ai_7" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_Ai_6" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_Ai_5" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_Ai_4" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_Ai_3" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_Ai_2" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_Ai_1" BEL
+        "DUV/block_192kHz/seqmult_LI_M/seqmult_int/reg_Ai_0" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_23" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_22" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_21" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_20" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_19" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_18" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_17" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_16" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_15" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_14" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_13" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_12" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_11" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_10" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_9" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_8" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_7" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_6" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_5" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_4" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_3" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_2" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_1" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/R_res_0" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/STATE_FSM_FFd1" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/STATE_FSM_FFd2" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/Q_7" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/Q_6" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/Q_5" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/Q_4" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/Q_3" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/Q_2" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/Q_1" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/Q_0" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_B_8" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_B_7" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_B_6" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_B_5" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_B_4" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_B_3" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_B_2" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_B_1" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_B_0" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_19" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_18" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_17" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_16" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_15" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_14" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_13" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_12" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_11" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_10" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_9" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_8" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_7" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_6" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_5" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_4" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_3" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_2" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_1" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_H_0" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_19" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_18" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_17" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_16" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_15" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_14" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_13" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_12" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_11" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_10" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_9" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_8" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_7" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_6" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_5" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_4" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_3" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_2" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_1" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_A_0" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Bi_7" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Bi_6" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Bi_5" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Bi_4" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Bi_3" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Bi_2" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Bi_1" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Bi_0" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_19" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_18" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_17" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_16" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_15" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_14" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_13" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_12" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_11" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_10" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_9" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_8" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_7" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_6" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_5" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_4" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_3" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_2" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_1" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/seqmult_int/reg_Ai_0" BEL
+        "DUV/interpol4x_LpR/accum_19" BEL "DUV/interpol4x_LpR/accum_18" BEL
+        "DUV/interpol4x_LpR/accum_17" BEL "DUV/interpol4x_LpR/accum_16" BEL
+        "DUV/interpol4x_LpR/accum_15" BEL "DUV/interpol4x_LpR/accum_14" BEL
+        "DUV/interpol4x_LpR/accum_13" BEL "DUV/interpol4x_LpR/accum_12" BEL
+        "DUV/interpol4x_LpR/accum_11" BEL "DUV/interpol4x_LpR/accum_10" BEL
+        "DUV/interpol4x_LpR/accum_9" BEL "DUV/interpol4x_LpR/accum_8" BEL
+        "DUV/interpol4x_LpR/accum_7" BEL "DUV/interpol4x_LpR/accum_6" BEL
+        "DUV/interpol4x_LpR/accum_5" BEL "DUV/interpol4x_LpR/accum_4" BEL
+        "DUV/interpol4x_LpR/accum_3" BEL "DUV/interpol4x_LpR/accum_2" BEL
+        "DUV/interpol4x_LpR/accum_1" BEL "DUV/interpol4x_LpR/accum_0" BEL
+        "DUV/interpol4x_LpR/r2_17" BEL "DUV/interpol4x_LpR/r2_16" BEL
+        "DUV/interpol4x_LpR/r2_15" BEL "DUV/interpol4x_LpR/r2_14" BEL
+        "DUV/interpol4x_LpR/r2_13" BEL "DUV/interpol4x_LpR/r2_12" BEL
+        "DUV/interpol4x_LpR/r2_11" BEL "DUV/interpol4x_LpR/r2_10" BEL
+        "DUV/interpol4x_LpR/r2_9" BEL "DUV/interpol4x_LpR/r2_8" BEL
+        "DUV/interpol4x_LpR/r2_7" BEL "DUV/interpol4x_LpR/r2_6" BEL
+        "DUV/interpol4x_LpR/r2_5" BEL "DUV/interpol4x_LpR/r2_4" BEL
+        "DUV/interpol4x_LpR/r2_3" BEL "DUV/interpol4x_LpR/r2_2" BEL
+        "DUV/interpol4x_LpR/r2_1" BEL "DUV/interpol4x_LpR/r2_0" BEL
+        "DUV/interpol4x_LpR/r1_17" BEL "DUV/interpol4x_LpR/r1_16" BEL
+        "DUV/interpol4x_LpR/r1_15" BEL "DUV/interpol4x_LpR/r1_14" BEL
+        "DUV/interpol4x_LpR/r1_13" BEL "DUV/interpol4x_LpR/r1_12" BEL
+        "DUV/interpol4x_LpR/r1_11" BEL "DUV/interpol4x_LpR/r1_10" BEL
+        "DUV/interpol4x_LpR/r1_9" BEL "DUV/interpol4x_LpR/r1_8" BEL
+        "DUV/interpol4x_LpR/r1_7" BEL "DUV/interpol4x_LpR/r1_6" BEL
+        "DUV/interpol4x_LpR/r1_5" BEL "DUV/interpol4x_LpR/r1_4" BEL
+        "DUV/interpol4x_LpR/r1_3" BEL "DUV/interpol4x_LpR/r1_2" BEL
+        "DUV/interpol4x_LpR/r1_1" BEL "DUV/interpol4x_LpR/r1_0" BEL
+        "DUV/interpol4x_LmR/accum_19" BEL "DUV/interpol4x_LmR/accum_18" BEL
+        "DUV/interpol4x_LmR/accum_17" BEL "DUV/interpol4x_LmR/accum_16" BEL
+        "DUV/interpol4x_LmR/accum_15" BEL "DUV/interpol4x_LmR/accum_14" BEL
+        "DUV/interpol4x_LmR/accum_13" BEL "DUV/interpol4x_LmR/accum_12" BEL
+        "DUV/interpol4x_LmR/accum_11" BEL "DUV/interpol4x_LmR/accum_10" BEL
+        "DUV/interpol4x_LmR/accum_9" BEL "DUV/interpol4x_LmR/accum_8" BEL
+        "DUV/interpol4x_LmR/accum_7" BEL "DUV/interpol4x_LmR/accum_6" BEL
+        "DUV/interpol4x_LmR/accum_5" BEL "DUV/interpol4x_LmR/accum_4" BEL
+        "DUV/interpol4x_LmR/accum_3" BEL "DUV/interpol4x_LmR/accum_2" BEL
+        "DUV/interpol4x_LmR/accum_1" BEL "DUV/interpol4x_LmR/accum_0" BEL
+        "DUV/interpol4x_LmR/r2_17" BEL "DUV/interpol4x_LmR/r2_16" BEL
+        "DUV/interpol4x_LmR/r2_15" BEL "DUV/interpol4x_LmR/r2_14" BEL
+        "DUV/interpol4x_LmR/r2_13" BEL "DUV/interpol4x_LmR/r2_12" BEL
+        "DUV/interpol4x_LmR/r2_11" BEL "DUV/interpol4x_LmR/r2_10" BEL
+        "DUV/interpol4x_LmR/r2_9" BEL "DUV/interpol4x_LmR/r2_8" BEL
+        "DUV/interpol4x_LmR/r2_7" BEL "DUV/interpol4x_LmR/r2_6" BEL
+        "DUV/interpol4x_LmR/r2_5" BEL "DUV/interpol4x_LmR/r2_4" BEL
+        "DUV/interpol4x_LmR/r2_3" BEL "DUV/interpol4x_LmR/r2_2" BEL
+        "DUV/interpol4x_LmR/r2_1" BEL "DUV/interpol4x_LmR/r2_0" BEL
+        "DUV/interpol4x_LmR/r1_17" BEL "DUV/interpol4x_LmR/r1_16" BEL
+        "DUV/interpol4x_LmR/r1_15" BEL "DUV/interpol4x_LmR/r1_14" BEL
+        "DUV/interpol4x_LmR/r1_13" BEL "DUV/interpol4x_LmR/r1_12" BEL
+        "DUV/interpol4x_LmR/r1_11" BEL "DUV/interpol4x_LmR/r1_10" BEL
+        "DUV/interpol4x_LmR/r1_9" BEL "DUV/interpol4x_LmR/r1_8" BEL
+        "DUV/interpol4x_LmR/r1_7" BEL "DUV/interpol4x_LmR/r1_6" BEL
+        "DUV/interpol4x_LmR/r1_5" BEL "DUV/interpol4x_LmR/r1_4" BEL
+        "DUV/interpol4x_LmR/r1_3" BEL "DUV/interpol4x_LmR/r1_2" BEL
+        "DUV/interpol4x_LmR/r1_1" BEL "DUV/interpol4x_LmR/r1_0" BEL
+        "dds_carrier_1/outsine_7" BEL "dds_carrier_1/outsine_6" BEL
+        "dds_carrier_1/outsine_5" BEL "dds_carrier_1/outsine_4" BEL
+        "dds_carrier_1/outsine_3" BEL "dds_carrier_1/outsine_2" BEL
+        "dds_carrier_1/outsine_1" BEL "dds_carrier_1/phasereg_19" BEL
+        "dds_carrier_1/phasereg_18" BEL "dds_carrier_1/phasereg_17" BEL
+        "dds_carrier_1/phasereg_16" BEL "dds_carrier_1/phasereg_15" BEL
+        "dds_carrier_1/phasereg_14" BEL "dds_carrier_1/phasereg_13" BEL
+        "dds_carrier_1/phasereg_12" BEL "dds_carrier_1/phasereg_11" BEL
+        "dds_carrier_1/phasereg_10" BEL "dds_carrier_1/phasereg_9" BEL
+        "dds_carrier_1/phasereg_8" BEL "dds_carrier_1/phasereg_7" BEL
+        "dds_carrier_1/phasereg_6" BEL "dds_carrier_1/phasereg_5" BEL
+        "dds_carrier_1/phasereg_4" BEL "dds_carrier_1/phasereg_3" BEL
+        "dds_carrier_1/phasereg_2" BEL "dds_carrier_1/phasereg_1" BEL
+        "dds_carrier_1/phasereg_0" BEL "dds_test_signal/phasereg_17" BEL
+        "dds_test_signal/phasereg_16" BEL "dds_test_signal/phasereg_15" BEL
+        "dds_test_signal/phasereg_14" BEL "dds_test_signal/phasereg_13" BEL
+        "dds_test_signal/phasereg_12" BEL "dds_test_signal/phasereg_11" BEL
+        "dds_test_signal/phasereg_10" BEL "dds_test_signal/phasereg_9" BEL
+        "dds_test_signal/phasereg_8" BEL "dds_test_signal/phasereg_7" BEL
+        "dds_test_signal/phasereg_6" BEL "dds_test_signal/phasereg_5" BEL
+        "dds_test_signal/phasereg_4" BEL "dds_test_signal/phasereg_3" BEL
+        "dds_test_signal/phasereg_2" BEL "dds_test_signal/phasereg_1" BEL
+        "dds_test_signal/phasereg_0" BEL "dds_test_signal/outsine_7" BEL
+        "dds_test_signal/outsine_6" BEL "dds_test_signal/outsine_5" BEL
+        "dds_test_signal/outsine_4" BEL "dds_test_signal/outsine_3" BEL
+        "dds_test_signal/outsine_2" BEL "dds_test_signal/outsine_1" BEL
+        "dds_test_signal/outsine_0" BEL "uart_1/baudtxcount_5" BEL
+        "uart_1/baudtxcount_2" BEL "uart_1/baudtxcount_4" BEL
+        "uart_1/baudrxcount_4" BEL "uart_1/baudrxcount_5" BEL
+        "uart_1/baudrxcount_2" BEL "uart_1/tx" BEL "uart_1/starttxbit" BEL
+        "DUV/block_192kHz/done_LI_M" BEL "DUV/block_192kHz/done_LI_R" BEL
+        "uart_1/staterxbc" BEL "uart_1/statetxbc" BEL "reset_d" BEL "reset"
+        BEL "uart_1/rxready" BEL "DUV/block_48kHz/seqmult_LpR/flag" BEL
+        "DUV/block_192kHz/start_FMout" BEL "DUV/block_192kHz/start_LI_R" BEL
+        "DUV/block_192kHz/start_LI_M" BEL "DUV/block_192kHz/seqmult_LI_R/flag"
+        BEL "DUV/block_192kHz/seqmult_LI_M/flag" BEL
+        "DUV/block_192kHz/seqmult_LI_FMout/flag" BEL "uart_1/statetx" BEL
+        "uart_1/staterx" BEL "uart_1/tx_1" BEL "clken192kHz_1" BEL
+        "clken48kHz_1" PIN "DUV/block_192kHz_dds_38/Mram_sineLUT1_pins<18>"
+        PIN "DUV/block_192kHz_dds_38/Mram_sineLUT1_pins<19>";
+PIN SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1_pins<1> = BEL
+        "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1" PINNAME O;
+PIN clock_bit2x_1/dcm_sp_inst_pins<1> = BEL "clock_bit2x_1/dcm_sp_inst"
+        PINNAME CLKFB;
+TIMEGRP clock_bit2x_1_clk0 = BEL "LM4550_controler_1/DELAY_SYNC2" BEL
+        "LM4550_controler_1/count_31" BEL "LM4550_controler_1/count_30" BEL
+        "LM4550_controler_1/count_29" BEL "LM4550_controler_1/count_28" BEL
+        "LM4550_controler_1/count_27" BEL "LM4550_controler_1/count_26" BEL
+        "LM4550_controler_1/count_25" BEL "LM4550_controler_1/count_24" BEL
+        "LM4550_controler_1/count_23" BEL "LM4550_controler_1/count_22" BEL
+        "LM4550_controler_1/count_21" BEL "LM4550_controler_1/count_20" BEL
+        "LM4550_controler_1/count_19" BEL "LM4550_controler_1/count_18" BEL
+        "LM4550_controler_1/count_17" BEL "LM4550_controler_1/count_16" BEL
+        "LM4550_controler_1/count_15" BEL "LM4550_controler_1/count_14" BEL
+        "LM4550_controler_1/count_13" BEL "LM4550_controler_1/count_12" BEL
+        "LM4550_controler_1/count_11" BEL "LM4550_controler_1/count_10" BEL
+        "LM4550_controler_1/count_9" BEL "LM4550_controler_1/count_8" BEL
+        "LM4550_controler_1/count_7" BEL "LM4550_controler_1/count_6" BEL
+        "LM4550_controler_1/count_5" BEL "LM4550_controler_1/count_4" BEL
+        "LM4550_controler_1/count_3" BEL "LM4550_controler_1/count_2" BEL
+        "LM4550_controler_1/count_1" BEL "LM4550_controler_1/count_0" BEL
+        "LM4550_controler_1/DELAY_SYNC1" BEL "LM4550_controler_1/SYNC" BEL
+        "LM4550_controler_1/STATE_1" BEL "LM4550_controler_1/STATE_0" BEL
+        "LM4550_controler_1/DATA_RECEIVED_252" BEL
+        "LM4550_controler_1/DATA_RECEIVED_251" BEL
+        "LM4550_controler_1/DATA_RECEIVED_207" BEL
+        "LM4550_controler_1/DATA_RECEIVED_206" BEL
+        "LM4550_controler_1/DATA_RECEIVED_205" BEL
+        "LM4550_controler_1/DATA_RECEIVED_204" BEL
+        "LM4550_controler_1/DATA_RECEIVED_199" BEL
+        "LM4550_controler_1/DATA_RECEIVED_198" BEL
+        "LM4550_controler_1/DATA_RECEIVED_197" BEL
+        "LM4550_controler_1/DATA_RECEIVED_196" BEL
+        "LM4550_controler_1/DATA_RECEIVED_195" BEL
+        "LM4550_controler_1/DATA_RECEIVED_194" BEL
+        "LM4550_controler_1/DATA_RECEIVED_193" BEL
+        "LM4550_controler_1/DATA_RECEIVED_192" BEL
+        "LM4550_controler_1/DATA_RECEIVED_191" BEL
+        "LM4550_controler_1/DATA_RECEIVED_190" BEL
+        "LM4550_controler_1/DATA_RECEIVED_189" BEL
+        "LM4550_controler_1/DATA_RECEIVED_188" BEL
+        "LM4550_controler_1/DATA_RECEIVED_187" BEL
+        "LM4550_controler_1/DATA_RECEIVED_186" BEL
+        "LM4550_controler_1/DATA_RECEIVED_185" BEL
+        "LM4550_controler_1/DATA_RECEIVED_184" BEL
+        "LM4550_controler_1/DATA_RECEIVED_183" BEL
+        "LM4550_controler_1/DATA_RECEIVED_182" BEL
+        "LM4550_controler_1/DATA_RECEIVED_179" BEL
+        "LM4550_controler_1/DATA_RECEIVED_178" BEL
+        "LM4550_controler_1/DATA_RECEIVED_177" BEL
+        "LM4550_controler_1/DATA_RECEIVED_176" BEL
+        "LM4550_controler_1/DATA_RECEIVED_175" BEL
+        "LM4550_controler_1/DATA_RECEIVED_174" BEL
+        "LM4550_controler_1/DATA_RECEIVED_173" BEL
+        "LM4550_controler_1/DATA_RECEIVED_172" BEL
+        "LM4550_controler_1/DATA_RECEIVED_171" BEL
+        "LM4550_controler_1/DATA_RECEIVED_170" BEL
+        "LM4550_controler_1/DATA_RECEIVED_169" BEL
+        "LM4550_controler_1/DATA_RECEIVED_168" BEL
+        "LM4550_controler_1/DATA_RECEIVED_167" BEL
+        "LM4550_controler_1/DATA_RECEIVED_166" BEL
+        "LM4550_controler_1/DATA_RECEIVED_165" BEL
+        "LM4550_controler_1/DATA_RECEIVED_164" BEL
+        "LM4550_controler_1/DATA_RECEIVED_163" BEL
+        "LM4550_controler_1/DATA_RECEIVED_162" BEL
+        "LM4550_controler_1/NEXTSTATE_1" BEL "LM4550_controler_1/NEXTSTATE_0"
+        BEL "LM4550_controler_1/IN_SHIFT_251" BEL
+        "LM4550_controler_1/IN_SHIFT_250" BEL
+        "LM4550_controler_1/IN_SHIFT_249" BEL
+        "LM4550_controler_1/IN_SHIFT_248" BEL
+        "LM4550_controler_1/IN_SHIFT_247" BEL
+        "LM4550_controler_1/IN_SHIFT_246" BEL
+        "LM4550_controler_1/IN_SHIFT_245" BEL
+        "LM4550_controler_1/IN_SHIFT_244" BEL
+        "LM4550_controler_1/IN_SHIFT_243" BEL
+        "LM4550_controler_1/IN_SHIFT_242" BEL
+        "LM4550_controler_1/IN_SHIFT_241" BEL
+        "LM4550_controler_1/IN_SHIFT_240" BEL
+        "LM4550_controler_1/IN_SHIFT_239" BEL
+        "LM4550_controler_1/IN_SHIFT_238" BEL
+        "LM4550_controler_1/IN_SHIFT_237" BEL
+        "LM4550_controler_1/IN_SHIFT_236" BEL
+        "LM4550_controler_1/IN_SHIFT_235" BEL
+        "LM4550_controler_1/IN_SHIFT_234" BEL
+        "LM4550_controler_1/IN_SHIFT_233" BEL
+        "LM4550_controler_1/IN_SHIFT_232" BEL
+        "LM4550_controler_1/IN_SHIFT_231" BEL
+        "LM4550_controler_1/IN_SHIFT_230" BEL
+        "LM4550_controler_1/IN_SHIFT_229" BEL
+        "LM4550_controler_1/IN_SHIFT_228" BEL
+        "LM4550_controler_1/IN_SHIFT_227" BEL
+        "LM4550_controler_1/IN_SHIFT_226" BEL
+        "LM4550_controler_1/IN_SHIFT_225" BEL
+        "LM4550_controler_1/IN_SHIFT_224" BEL
+        "LM4550_controler_1/IN_SHIFT_223" BEL
+        "LM4550_controler_1/IN_SHIFT_222" BEL
+        "LM4550_controler_1/IN_SHIFT_221" BEL
+        "LM4550_controler_1/IN_SHIFT_220" BEL
+        "LM4550_controler_1/IN_SHIFT_219" BEL
+        "LM4550_controler_1/IN_SHIFT_218" BEL
+        "LM4550_controler_1/IN_SHIFT_217" BEL
+        "LM4550_controler_1/IN_SHIFT_216" BEL
+        "LM4550_controler_1/IN_SHIFT_215" BEL
+        "LM4550_controler_1/IN_SHIFT_214" BEL
+        "LM4550_controler_1/IN_SHIFT_213" BEL
+        "LM4550_controler_1/IN_SHIFT_212" BEL
+        "LM4550_controler_1/IN_SHIFT_211" BEL
+        "LM4550_controler_1/IN_SHIFT_210" BEL
+        "LM4550_controler_1/IN_SHIFT_209" BEL
+        "LM4550_controler_1/IN_SHIFT_208" BEL
+        "LM4550_controler_1/IN_SHIFT_207" BEL
+        "LM4550_controler_1/IN_SHIFT_206" BEL
+        "LM4550_controler_1/IN_SHIFT_205" BEL
+        "LM4550_controler_1/IN_SHIFT_204" BEL
+        "LM4550_controler_1/IN_SHIFT_203" BEL
+        "LM4550_controler_1/IN_SHIFT_202" BEL
+        "LM4550_controler_1/IN_SHIFT_201" BEL
+        "LM4550_controler_1/IN_SHIFT_200" BEL
+        "LM4550_controler_1/IN_SHIFT_199" BEL
+        "LM4550_controler_1/IN_SHIFT_198" BEL
+        "LM4550_controler_1/IN_SHIFT_197" BEL
+        "LM4550_controler_1/IN_SHIFT_196" BEL
+        "LM4550_controler_1/IN_SHIFT_195" BEL
+        "LM4550_controler_1/IN_SHIFT_194" BEL
+        "LM4550_controler_1/IN_SHIFT_193" BEL
+        "LM4550_controler_1/IN_SHIFT_192" BEL
+        "LM4550_controler_1/IN_SHIFT_191" BEL
+        "LM4550_controler_1/IN_SHIFT_190" BEL
+        "LM4550_controler_1/IN_SHIFT_189" BEL
+        "LM4550_controler_1/IN_SHIFT_188" BEL
+        "LM4550_controler_1/IN_SHIFT_187" BEL
+        "LM4550_controler_1/IN_SHIFT_186" BEL
+        "LM4550_controler_1/IN_SHIFT_185" BEL
+        "LM4550_controler_1/IN_SHIFT_184" BEL
+        "LM4550_controler_1/IN_SHIFT_183" BEL
+        "LM4550_controler_1/IN_SHIFT_182" BEL
+        "LM4550_controler_1/IN_SHIFT_181" BEL
+        "LM4550_controler_1/IN_SHIFT_180" BEL
+        "LM4550_controler_1/IN_SHIFT_179" BEL
+        "LM4550_controler_1/IN_SHIFT_178" BEL
+        "LM4550_controler_1/IN_SHIFT_177" BEL
+        "LM4550_controler_1/IN_SHIFT_176" BEL
+        "LM4550_controler_1/IN_SHIFT_175" BEL
+        "LM4550_controler_1/IN_SHIFT_174" BEL
+        "LM4550_controler_1/IN_SHIFT_173" BEL
+        "LM4550_controler_1/IN_SHIFT_172" BEL
+        "LM4550_controler_1/IN_SHIFT_171" BEL
+        "LM4550_controler_1/IN_SHIFT_170" BEL
+        "LM4550_controler_1/IN_SHIFT_169" BEL
+        "LM4550_controler_1/IN_SHIFT_168" BEL
+        "LM4550_controler_1/IN_SHIFT_167" BEL
+        "LM4550_controler_1/IN_SHIFT_166" BEL
+        "LM4550_controler_1/IN_SHIFT_165" BEL
+        "LM4550_controler_1/IN_SHIFT_164" BEL
+        "LM4550_controler_1/IN_SHIFT_163" BEL
+        "LM4550_controler_1/IN_SHIFT_162" BEL
+        "LM4550_controler_1/IN_SHIFT_161" BEL
+        "LM4550_controler_1/IN_SHIFT_160" BEL
+        "LM4550_controler_1/IN_SHIFT_159" BEL
+        "LM4550_controler_1/IN_SHIFT_158" BEL
+        "LM4550_controler_1/IN_SHIFT_157" BEL
+        "LM4550_controler_1/IN_SHIFT_156" BEL
+        "LM4550_controler_1/IN_SHIFT_155" BEL
+        "LM4550_controler_1/IN_SHIFT_154" BEL
+        "LM4550_controler_1/IN_SHIFT_153" BEL
+        "LM4550_controler_1/IN_SHIFT_152" BEL
+        "LM4550_controler_1/IN_SHIFT_151" BEL
+        "LM4550_controler_1/IN_SHIFT_150" BEL
+        "LM4550_controler_1/IN_SHIFT_149" BEL
+        "LM4550_controler_1/IN_SHIFT_148" BEL
+        "LM4550_controler_1/IN_SHIFT_147" BEL
+        "LM4550_controler_1/IN_SHIFT_146" BEL
+        "LM4550_controler_1/IN_SHIFT_145" BEL
+        "LM4550_controler_1/IN_SHIFT_144" BEL
+        "LM4550_controler_1/IN_SHIFT_143" BEL
+        "LM4550_controler_1/IN_SHIFT_142" BEL
+        "LM4550_controler_1/IN_SHIFT_141" BEL
+        "LM4550_controler_1/IN_SHIFT_140" BEL
+        "LM4550_controler_1/IN_SHIFT_139" BEL
+        "LM4550_controler_1/IN_SHIFT_138" BEL
+        "LM4550_controler_1/IN_SHIFT_137" BEL
+        "LM4550_controler_1/IN_SHIFT_136" BEL
+        "LM4550_controler_1/IN_SHIFT_135" BEL
+        "LM4550_controler_1/IN_SHIFT_134" BEL
+        "LM4550_controler_1/IN_SHIFT_133" BEL
+        "LM4550_controler_1/IN_SHIFT_132" BEL
+        "LM4550_controler_1/IN_SHIFT_131" BEL
+        "LM4550_controler_1/IN_SHIFT_130" BEL
+        "LM4550_controler_1/IN_SHIFT_129" BEL
+        "LM4550_controler_1/IN_SHIFT_128" BEL
+        "LM4550_controler_1/IN_SHIFT_127" BEL
+        "LM4550_controler_1/IN_SHIFT_126" BEL
+        "LM4550_controler_1/IN_SHIFT_125" BEL
+        "LM4550_controler_1/IN_SHIFT_124" BEL
+        "LM4550_controler_1/IN_SHIFT_123" BEL
+        "LM4550_controler_1/IN_SHIFT_122" BEL
+        "LM4550_controler_1/IN_SHIFT_121" BEL
+        "LM4550_controler_1/IN_SHIFT_120" BEL
+        "LM4550_controler_1/IN_SHIFT_119" BEL
+        "LM4550_controler_1/IN_SHIFT_118" BEL
+        "LM4550_controler_1/IN_SHIFT_117" BEL
+        "LM4550_controler_1/IN_SHIFT_116" BEL
+        "LM4550_controler_1/IN_SHIFT_115" BEL
+        "LM4550_controler_1/IN_SHIFT_114" BEL
+        "LM4550_controler_1/IN_SHIFT_113" BEL
+        "LM4550_controler_1/IN_SHIFT_112" BEL
+        "LM4550_controler_1/IN_SHIFT_111" BEL
+        "LM4550_controler_1/IN_SHIFT_110" BEL
+        "LM4550_controler_1/IN_SHIFT_109" BEL
+        "LM4550_controler_1/IN_SHIFT_108" BEL
+        "LM4550_controler_1/IN_SHIFT_107" BEL
+        "LM4550_controler_1/IN_SHIFT_106" BEL
+        "LM4550_controler_1/IN_SHIFT_105" BEL
+        "LM4550_controler_1/IN_SHIFT_104" BEL
+        "LM4550_controler_1/IN_SHIFT_103" BEL
+        "LM4550_controler_1/IN_SHIFT_102" BEL
+        "LM4550_controler_1/IN_SHIFT_101" BEL
+        "LM4550_controler_1/IN_SHIFT_100" BEL "LM4550_controler_1/IN_SHIFT_99"
+        BEL "LM4550_controler_1/IN_SHIFT_98" BEL
+        "LM4550_controler_1/IN_SHIFT_97" BEL "LM4550_controler_1/IN_SHIFT_96"
+        BEL "LM4550_controler_1/IN_SHIFT_95" BEL
+        "LM4550_controler_1/IN_SHIFT_94" BEL "LM4550_controler_1/IN_SHIFT_93"
+        BEL "LM4550_controler_1/IN_SHIFT_92" BEL
+        "LM4550_controler_1/IN_SHIFT_91" BEL "LM4550_controler_1/IN_SHIFT_90"
+        BEL "LM4550_controler_1/IN_SHIFT_89" BEL
+        "LM4550_controler_1/IN_SHIFT_88" BEL "LM4550_controler_1/IN_SHIFT_87"
+        BEL "LM4550_controler_1/IN_SHIFT_86" BEL
+        "LM4550_controler_1/IN_SHIFT_85" BEL "LM4550_controler_1/IN_SHIFT_84"
+        BEL "LM4550_controler_1/IN_SHIFT_83" BEL
+        "LM4550_controler_1/IN_SHIFT_82" BEL "LM4550_controler_1/IN_SHIFT_81"
+        BEL "LM4550_controler_1/IN_SHIFT_80" BEL
+        "LM4550_controler_1/IN_SHIFT_79" BEL "LM4550_controler_1/IN_SHIFT_78"
+        BEL "LM4550_controler_1/IN_SHIFT_77" BEL
+        "LM4550_controler_1/IN_SHIFT_76" BEL "LM4550_controler_1/IN_SHIFT_75"
+        BEL "LM4550_controler_1/IN_SHIFT_74" BEL
+        "LM4550_controler_1/IN_SHIFT_73" BEL "LM4550_controler_1/IN_SHIFT_72"
+        BEL "LM4550_controler_1/IN_SHIFT_71" BEL
+        "LM4550_controler_1/IN_SHIFT_70" BEL "LM4550_controler_1/IN_SHIFT_69"
+        BEL "LM4550_controler_1/IN_SHIFT_68" BEL
+        "LM4550_controler_1/IN_SHIFT_67" BEL "LM4550_controler_1/IN_SHIFT_66"
+        BEL "LM4550_controler_1/IN_SHIFT_65" BEL
+        "LM4550_controler_1/IN_SHIFT_64" BEL "LM4550_controler_1/IN_SHIFT_63"
+        BEL "LM4550_controler_1/IN_SHIFT_62" BEL
+        "LM4550_controler_1/IN_SHIFT_61" BEL "LM4550_controler_1/IN_SHIFT_60"
+        BEL "LM4550_controler_1/IN_SHIFT_59" BEL
+        "LM4550_controler_1/IN_SHIFT_58" BEL "LM4550_controler_1/IN_SHIFT_57"
+        BEL "LM4550_controler_1/IN_SHIFT_56" BEL
+        "LM4550_controler_1/IN_SHIFT_55" BEL "LM4550_controler_1/IN_SHIFT_54"
+        BEL "LM4550_controler_1/IN_SHIFT_53" BEL
+        "LM4550_controler_1/IN_SHIFT_52" BEL "LM4550_controler_1/IN_SHIFT_51"
+        BEL "LM4550_controler_1/IN_SHIFT_50" BEL
+        "LM4550_controler_1/IN_SHIFT_49" BEL "LM4550_controler_1/IN_SHIFT_48"
+        BEL "LM4550_controler_1/IN_SHIFT_47" BEL
+        "LM4550_controler_1/IN_SHIFT_46" BEL "LM4550_controler_1/IN_SHIFT_45"
+        BEL "LM4550_controler_1/IN_SHIFT_44" BEL
+        "LM4550_controler_1/IN_SHIFT_43" BEL "LM4550_controler_1/IN_SHIFT_42"
+        BEL "LM4550_controler_1/IN_SHIFT_41" BEL
+        "LM4550_controler_1/IN_SHIFT_40" BEL "LM4550_controler_1/IN_SHIFT_39"
+        BEL "LM4550_controler_1/IN_SHIFT_38" BEL
+        "LM4550_controler_1/IN_SHIFT_37" BEL "LM4550_controler_1/IN_SHIFT_36"
+        BEL "LM4550_controler_1/IN_SHIFT_35" BEL
+        "LM4550_controler_1/IN_SHIFT_34" BEL "LM4550_controler_1/IN_SHIFT_33"
+        BEL "LM4550_controler_1/IN_SHIFT_32" BEL
+        "LM4550_controler_1/IN_SHIFT_31" BEL "LM4550_controler_1/IN_SHIFT_30"
+        BEL "LM4550_controler_1/IN_SHIFT_29" BEL
+        "LM4550_controler_1/IN_SHIFT_28" BEL "LM4550_controler_1/IN_SHIFT_27"
+        BEL "LM4550_controler_1/IN_SHIFT_26" BEL
+        "LM4550_controler_1/IN_SHIFT_25" BEL "LM4550_controler_1/IN_SHIFT_24"
+        BEL "LM4550_controler_1/IN_SHIFT_23" BEL
+        "LM4550_controler_1/IN_SHIFT_22" BEL "LM4550_controler_1/IN_SHIFT_21"
+        BEL "LM4550_controler_1/IN_SHIFT_20" BEL
+        "LM4550_controler_1/IN_SHIFT_19" BEL "LM4550_controler_1/IN_SHIFT_18"
+        BEL "LM4550_controler_1/IN_SHIFT_17" BEL
+        "LM4550_controler_1/IN_SHIFT_16" BEL "LM4550_controler_1/IN_SHIFT_15"
+        BEL "LM4550_controler_1/IN_SHIFT_14" BEL
+        "LM4550_controler_1/IN_SHIFT_13" BEL "LM4550_controler_1/IN_SHIFT_12"
+        BEL "LM4550_controler_1/IN_SHIFT_11" BEL
+        "LM4550_controler_1/IN_SHIFT_10" BEL "LM4550_controler_1/IN_SHIFT_9"
+        BEL "LM4550_controler_1/IN_SHIFT_8" BEL
+        "LM4550_controler_1/IN_SHIFT_7" BEL "LM4550_controler_1/IN_SHIFT_6"
+        BEL "LM4550_controler_1/IN_SHIFT_5" BEL
+        "LM4550_controler_1/IN_SHIFT_4" BEL "LM4550_controler_1/IN_SHIFT_3"
+        BEL "LM4550_controler_1/IN_SHIFT_2" BEL
+        "LM4550_controler_1/IN_SHIFT_1" BEL "LM4550_controler_1/IN_SHIFT_0"
+        BEL "LM4550_controler_1/OUT_SHIFT_255" BEL
+        "LM4550_controler_1/OUT_SHIFT_254" BEL
+        "LM4550_controler_1/OUT_SHIFT_253" BEL
+        "LM4550_controler_1/OUT_SHIFT_252" BEL
+        "LM4550_controler_1/OUT_SHIFT_251" BEL
+        "LM4550_controler_1/OUT_SHIFT_250" BEL
+        "LM4550_controler_1/OUT_SHIFT_249" BEL
+        "LM4550_controler_1/OUT_SHIFT_248" BEL
+        "LM4550_controler_1/OUT_SHIFT_247" BEL
+        "LM4550_controler_1/OUT_SHIFT_246" BEL
+        "LM4550_controler_1/OUT_SHIFT_245" BEL
+        "LM4550_controler_1/OUT_SHIFT_244" BEL
+        "LM4550_controler_1/OUT_SHIFT_243" BEL
+        "LM4550_controler_1/OUT_SHIFT_242" BEL
+        "LM4550_controler_1/OUT_SHIFT_241" BEL
+        "LM4550_controler_1/OUT_SHIFT_240" BEL
+        "LM4550_controler_1/OUT_SHIFT_239" BEL
+        "LM4550_controler_1/OUT_SHIFT_238" BEL
+        "LM4550_controler_1/OUT_SHIFT_237" BEL
+        "LM4550_controler_1/OUT_SHIFT_236" BEL
+        "LM4550_controler_1/OUT_SHIFT_235" BEL
+        "LM4550_controler_1/OUT_SHIFT_234" BEL
+        "LM4550_controler_1/OUT_SHIFT_233" BEL
+        "LM4550_controler_1/OUT_SHIFT_232" BEL
+        "LM4550_controler_1/OUT_SHIFT_231" BEL
+        "LM4550_controler_1/OUT_SHIFT_230" BEL
+        "LM4550_controler_1/OUT_SHIFT_229" BEL
+        "LM4550_controler_1/OUT_SHIFT_228" BEL
+        "LM4550_controler_1/OUT_SHIFT_227" BEL
+        "LM4550_controler_1/OUT_SHIFT_226" BEL
+        "LM4550_controler_1/OUT_SHIFT_225" BEL
+        "LM4550_controler_1/OUT_SHIFT_224" BEL
+        "LM4550_controler_1/OUT_SHIFT_223" BEL
+        "LM4550_controler_1/OUT_SHIFT_222" BEL
+        "LM4550_controler_1/OUT_SHIFT_221" BEL
+        "LM4550_controler_1/OUT_SHIFT_220" BEL
+        "LM4550_controler_1/OUT_SHIFT_219" BEL
+        "LM4550_controler_1/OUT_SHIFT_218" BEL
+        "LM4550_controler_1/OUT_SHIFT_217" BEL
+        "LM4550_controler_1/OUT_SHIFT_216" BEL
+        "LM4550_controler_1/OUT_SHIFT_215" BEL
+        "LM4550_controler_1/OUT_SHIFT_214" BEL
+        "LM4550_controler_1/OUT_SHIFT_213" BEL
+        "LM4550_controler_1/OUT_SHIFT_212" BEL
+        "LM4550_controler_1/OUT_SHIFT_211" BEL
+        "LM4550_controler_1/OUT_SHIFT_210" BEL
+        "LM4550_controler_1/OUT_SHIFT_209" BEL
+        "LM4550_controler_1/OUT_SHIFT_208" BEL
+        "LM4550_controler_1/OUT_SHIFT_207" BEL
+        "LM4550_controler_1/OUT_SHIFT_206" BEL
+        "LM4550_controler_1/OUT_SHIFT_205" BEL
+        "LM4550_controler_1/OUT_SHIFT_204" BEL
+        "LM4550_controler_1/OUT_SHIFT_203" BEL
+        "LM4550_controler_1/OUT_SHIFT_202" BEL
+        "LM4550_controler_1/OUT_SHIFT_201" BEL
+        "LM4550_controler_1/OUT_SHIFT_200" BEL
+        "LM4550_controler_1/OUT_SHIFT_199" BEL
+        "LM4550_controler_1/OUT_SHIFT_198" BEL
+        "LM4550_controler_1/OUT_SHIFT_197" BEL
+        "LM4550_controler_1/OUT_SHIFT_196" BEL
+        "LM4550_controler_1/OUT_SHIFT_195" BEL
+        "LM4550_controler_1/OUT_SHIFT_194" BEL
+        "LM4550_controler_1/OUT_SHIFT_193" BEL
+        "LM4550_controler_1/OUT_SHIFT_192" BEL
+        "LM4550_controler_1/OUT_SHIFT_191" BEL
+        "LM4550_controler_1/OUT_SHIFT_190" BEL
+        "LM4550_controler_1/OUT_SHIFT_189" BEL
+        "LM4550_controler_1/OUT_SHIFT_188" BEL
+        "LM4550_controler_1/OUT_SHIFT_187" BEL
+        "LM4550_controler_1/OUT_SHIFT_186" BEL
+        "LM4550_controler_1/OUT_SHIFT_185" BEL
+        "LM4550_controler_1/OUT_SHIFT_184" BEL
+        "LM4550_controler_1/OUT_SHIFT_183" BEL
+        "LM4550_controler_1/OUT_SHIFT_182" BEL
+        "LM4550_controler_1/OUT_SHIFT_181" BEL
+        "LM4550_controler_1/OUT_SHIFT_180" BEL
+        "LM4550_controler_1/OUT_SHIFT_179" BEL
+        "LM4550_controler_1/OUT_SHIFT_178" BEL
+        "LM4550_controler_1/OUT_SHIFT_177" BEL
+        "LM4550_controler_1/OUT_SHIFT_176" BEL
+        "LM4550_controler_1/OUT_SHIFT_175" BEL
+        "LM4550_controler_1/OUT_SHIFT_174" BEL
+        "LM4550_controler_1/OUT_SHIFT_173" BEL
+        "LM4550_controler_1/OUT_SHIFT_172" BEL
+        "LM4550_controler_1/OUT_SHIFT_171" BEL
+        "LM4550_controler_1/OUT_SHIFT_170" BEL
+        "LM4550_controler_1/OUT_SHIFT_169" BEL
+        "LM4550_controler_1/OUT_SHIFT_168" BEL
+        "LM4550_controler_1/OUT_SHIFT_167" BEL
+        "LM4550_controler_1/OUT_SHIFT_166" BEL
+        "LM4550_controler_1/OUT_SHIFT_165" BEL
+        "LM4550_controler_1/OUT_SHIFT_164" BEL
+        "LM4550_controler_1/OUT_SHIFT_163" BEL
+        "LM4550_controler_1/OUT_SHIFT_162" BEL
+        "LM4550_controler_1/OUT_SHIFT_161" BEL
+        "LM4550_controler_1/OUT_SHIFT_160" BEL
+        "LM4550_controler_1/OUT_SHIFT_159" BEL
+        "LM4550_controler_1/OUT_SHIFT_158" BEL
+        "LM4550_controler_1/OUT_SHIFT_157" BEL
+        "LM4550_controler_1/OUT_SHIFT_156" BEL
+        "LM4550_controler_1/OUT_SHIFT_155" BEL
+        "LM4550_controler_1/OUT_SHIFT_154" BEL
+        "LM4550_controler_1/OUT_SHIFT_153" BEL
+        "LM4550_controler_1/OUT_SHIFT_152" BEL
+        "LM4550_controler_1/OUT_SHIFT_151" BEL
+        "LM4550_controler_1/OUT_SHIFT_150" BEL
+        "LM4550_controler_1/OUT_SHIFT_149" BEL
+        "LM4550_controler_1/OUT_SHIFT_148" BEL
+        "LM4550_controler_1/OUT_SHIFT_147" BEL
+        "LM4550_controler_1/OUT_SHIFT_146" BEL
+        "LM4550_controler_1/OUT_SHIFT_145" BEL
+        "LM4550_controler_1/OUT_SHIFT_144" BEL
+        "LM4550_controler_1/OUT_SHIFT_143" BEL
+        "LM4550_controler_1/OUT_SHIFT_142" BEL
+        "LM4550_controler_1/OUT_SHIFT_141" BEL
+        "LM4550_controler_1/OUT_SHIFT_140" BEL
+        "LM4550_controler_1/OUT_SHIFT_139" BEL
+        "LM4550_controler_1/OUT_SHIFT_138" BEL
+        "LM4550_controler_1/OUT_SHIFT_137" BEL
+        "LM4550_controler_1/OUT_SHIFT_136" BEL
+        "LM4550_controler_1/OUT_SHIFT_135" BEL
+        "LM4550_controler_1/OUT_SHIFT_134" BEL
+        "LM4550_controler_1/OUT_SHIFT_133" BEL
+        "LM4550_controler_1/OUT_SHIFT_132" BEL
+        "LM4550_controler_1/OUT_SHIFT_131" BEL
+        "LM4550_controler_1/OUT_SHIFT_130" BEL
+        "LM4550_controler_1/OUT_SHIFT_129" BEL
+        "LM4550_controler_1/OUT_SHIFT_128" BEL
+        "LM4550_controler_1/OUT_SHIFT_127" BEL
+        "LM4550_controler_1/OUT_SHIFT_126" BEL
+        "LM4550_controler_1/OUT_SHIFT_125" BEL
+        "LM4550_controler_1/OUT_SHIFT_124" BEL
+        "LM4550_controler_1/OUT_SHIFT_123" BEL
+        "LM4550_controler_1/OUT_SHIFT_122" BEL
+        "LM4550_controler_1/OUT_SHIFT_121" BEL
+        "LM4550_controler_1/OUT_SHIFT_120" BEL
+        "LM4550_controler_1/OUT_SHIFT_119" BEL
+        "LM4550_controler_1/OUT_SHIFT_118" BEL
+        "LM4550_controler_1/OUT_SHIFT_117" BEL
+        "LM4550_controler_1/OUT_SHIFT_116" BEL
+        "LM4550_controler_1/OUT_SHIFT_115" BEL
+        "LM4550_controler_1/OUT_SHIFT_114" BEL
+        "LM4550_controler_1/OUT_SHIFT_113" BEL
+        "LM4550_controler_1/OUT_SHIFT_112" BEL
+        "LM4550_controler_1/OUT_SHIFT_111" BEL
+        "LM4550_controler_1/OUT_SHIFT_110" BEL
+        "LM4550_controler_1/OUT_SHIFT_109" BEL
+        "LM4550_controler_1/OUT_SHIFT_108" BEL
+        "LM4550_controler_1/OUT_SHIFT_107" BEL
+        "LM4550_controler_1/OUT_SHIFT_106" BEL
+        "LM4550_controler_1/OUT_SHIFT_105" BEL
+        "LM4550_controler_1/OUT_SHIFT_104" BEL
+        "LM4550_controler_1/OUT_SHIFT_103" BEL
+        "LM4550_controler_1/OUT_SHIFT_102" BEL
+        "LM4550_controler_1/OUT_SHIFT_101" BEL
+        "LM4550_controler_1/OUT_SHIFT_100" BEL
+        "LM4550_controler_1/OUT_SHIFT_99" BEL
+        "LM4550_controler_1/OUT_SHIFT_98" BEL
+        "LM4550_controler_1/OUT_SHIFT_97" BEL
+        "LM4550_controler_1/OUT_SHIFT_96" BEL
+        "LM4550_controler_1/OUT_SHIFT_95" BEL
+        "LM4550_controler_1/OUT_SHIFT_94" BEL
+        "LM4550_controler_1/OUT_SHIFT_93" BEL
+        "LM4550_controler_1/OUT_SHIFT_92" BEL
+        "LM4550_controler_1/OUT_SHIFT_91" BEL
+        "LM4550_controler_1/OUT_SHIFT_90" BEL
+        "LM4550_controler_1/OUT_SHIFT_89" BEL
+        "LM4550_controler_1/OUT_SHIFT_88" BEL
+        "LM4550_controler_1/OUT_SHIFT_87" BEL
+        "LM4550_controler_1/OUT_SHIFT_86" BEL
+        "LM4550_controler_1/OUT_SHIFT_85" BEL
+        "LM4550_controler_1/OUT_SHIFT_84" BEL
+        "LM4550_controler_1/OUT_SHIFT_83" BEL
+        "LM4550_controler_1/OUT_SHIFT_82" BEL
+        "LM4550_controler_1/OUT_SHIFT_81" BEL
+        "LM4550_controler_1/OUT_SHIFT_80" BEL
+        "LM4550_controler_1/OUT_SHIFT_79" BEL
+        "LM4550_controler_1/OUT_SHIFT_78" BEL
+        "LM4550_controler_1/OUT_SHIFT_77" BEL
+        "LM4550_controler_1/OUT_SHIFT_76" BEL
+        "LM4550_controler_1/OUT_SHIFT_75" BEL
+        "LM4550_controler_1/OUT_SHIFT_74" BEL
+        "LM4550_controler_1/OUT_SHIFT_73" BEL
+        "LM4550_controler_1/OUT_SHIFT_72" BEL
+        "LM4550_controler_1/OUT_SHIFT_71" BEL
+        "LM4550_controler_1/OUT_SHIFT_70" BEL
+        "LM4550_controler_1/OUT_SHIFT_69" BEL
+        "LM4550_controler_1/OUT_SHIFT_68" BEL
+        "LM4550_controler_1/OUT_SHIFT_67" BEL
+        "LM4550_controler_1/OUT_SHIFT_66" BEL
+        "LM4550_controler_1/OUT_SHIFT_65" BEL
+        "LM4550_controler_1/OUT_SHIFT_64" BEL
+        "LM4550_controler_1/OUT_SHIFT_63" BEL
+        "LM4550_controler_1/OUT_SHIFT_62" BEL
+        "LM4550_controler_1/OUT_SHIFT_61" BEL
+        "LM4550_controler_1/OUT_SHIFT_60" BEL
+        "LM4550_controler_1/OUT_SHIFT_59" BEL
+        "LM4550_controler_1/OUT_SHIFT_58" BEL
+        "LM4550_controler_1/OUT_SHIFT_57" BEL
+        "LM4550_controler_1/OUT_SHIFT_56" BEL
+        "LM4550_controler_1/OUT_SHIFT_55" BEL
+        "LM4550_controler_1/OUT_SHIFT_54" BEL
+        "LM4550_controler_1/OUT_SHIFT_53" BEL
+        "LM4550_controler_1/OUT_SHIFT_52" BEL
+        "LM4550_controler_1/OUT_SHIFT_51" BEL
+        "LM4550_controler_1/OUT_SHIFT_50" BEL
+        "LM4550_controler_1/OUT_SHIFT_49" BEL
+        "LM4550_controler_1/OUT_SHIFT_48" BEL
+        "LM4550_controler_1/OUT_SHIFT_47" BEL
+        "LM4550_controler_1/OUT_SHIFT_46" BEL
+        "LM4550_controler_1/OUT_SHIFT_45" BEL
+        "LM4550_controler_1/OUT_SHIFT_44" BEL
+        "LM4550_controler_1/OUT_SHIFT_43" BEL
+        "LM4550_controler_1/OUT_SHIFT_42" BEL
+        "LM4550_controler_1/OUT_SHIFT_41" BEL
+        "LM4550_controler_1/OUT_SHIFT_40" BEL
+        "LM4550_controler_1/OUT_SHIFT_39" BEL
+        "LM4550_controler_1/OUT_SHIFT_38" BEL
+        "LM4550_controler_1/OUT_SHIFT_37" BEL
+        "LM4550_controler_1/OUT_SHIFT_36" BEL
+        "LM4550_controler_1/OUT_SHIFT_35" BEL
+        "LM4550_controler_1/OUT_SHIFT_34" BEL
+        "LM4550_controler_1/OUT_SHIFT_33" BEL
+        "LM4550_controler_1/OUT_SHIFT_32" BEL
+        "LM4550_controler_1/OUT_SHIFT_31" BEL
+        "LM4550_controler_1/OUT_SHIFT_30" BEL
+        "LM4550_controler_1/OUT_SHIFT_29" BEL
+        "LM4550_controler_1/OUT_SHIFT_28" BEL
+        "LM4550_controler_1/OUT_SHIFT_27" BEL
+        "LM4550_controler_1/OUT_SHIFT_26" BEL
+        "LM4550_controler_1/OUT_SHIFT_25" BEL
+        "LM4550_controler_1/OUT_SHIFT_24" BEL
+        "LM4550_controler_1/OUT_SHIFT_23" BEL
+        "LM4550_controler_1/OUT_SHIFT_22" BEL
+        "LM4550_controler_1/OUT_SHIFT_21" BEL
+        "LM4550_controler_1/OUT_SHIFT_20" BEL
+        "LM4550_controler_1/OUT_SHIFT_19" BEL
+        "LM4550_controler_1/OUT_SHIFT_18" BEL
+        "LM4550_controler_1/OUT_SHIFT_17" BEL
+        "LM4550_controler_1/OUT_SHIFT_16" BEL
+        "LM4550_controler_1/OUT_SHIFT_15" BEL
+        "LM4550_controler_1/OUT_SHIFT_14" BEL
+        "LM4550_controler_1/OUT_SHIFT_13" BEL
+        "LM4550_controler_1/OUT_SHIFT_12" BEL
+        "LM4550_controler_1/OUT_SHIFT_11" BEL
+        "LM4550_controler_1/OUT_SHIFT_10" BEL "LM4550_controler_1/OUT_SHIFT_9"
+        BEL "LM4550_controler_1/OUT_SHIFT_8" BEL
+        "LM4550_controler_1/OUT_SHIFT_7" BEL "LM4550_controler_1/OUT_SHIFT_6"
+        BEL "LM4550_controler_1/OUT_SHIFT_5" BEL
+        "LM4550_controler_1/OUT_SHIFT_4" BEL "LM4550_controler_1/OUT_SHIFT_3"
+        BEL "LM4550_controler_1/OUT_SHIFT_2" BEL
+        "LM4550_controler_1/OUT_SHIFT_1" BEL "LM4550_controler_1/OUT_SHIFT_0"
+        BEL "LM4550_controler_1/SYNC_1" BEL "clock_bit2x_1/clkout1_buf" PIN
+        "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1_pins<1>" PIN
+        "clock_bit2x_1/dcm_sp_inst_pins<1>";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
+        PINNAME DIVCLK;
+PIN clock_bit2x_1/dcm_sp_inst_pins<3> = BEL "clock_bit2x_1/dcm_sp_inst"
+        PINNAME CLKIN;
+TIMEGRP clock_freq = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
+        "clock_bit2x_1/dcm_sp_inst_pins<3>";
+TS_clock_freq = PERIOD TIMEGRP "clock_freq" 81.38 ns HIGH 50%;
+TS_clock_freq_98 = PERIOD TIMEGRP "clock_freq_98" 10 ns HIGH 50%;
+TS_clock_bit2x_1_clkfx = PERIOD TIMEGRP "clock_bit2x_1_clkfx" TS_clock_freq /
+        16 HIGH 50%;
+TS_clock_bit2x_1_clk0 = PERIOD TIMEGRP "clock_bit2x_1_clk0" TS_clock_freq HIGH
+        50%;
+SCHEMATIC END;
+

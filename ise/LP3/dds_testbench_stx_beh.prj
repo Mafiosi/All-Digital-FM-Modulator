@@ -1,3 +1,0 @@
-verilog isim_temp "src/dds.v"
-verilog isim_temp "src/dds_tb.v"
-verilog isim_temp "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

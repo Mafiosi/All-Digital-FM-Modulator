@@ -1,0 +1,413 @@
+# Reading C:/questasim64_10.4c/tcl/vsim/pref.tcl
+# //  Questa Sim-64
+# //  Version 10.4c win64 Jul 20 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# do {s6base_tb.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 21:33:07 on Jan 12,2019
+# vlog -reportprogress 300 ipcore_dir/clock_bit2x.v 
+# -- Compiling module clock_bit2x
+# 
+# Top level modules:
+# 	clock_bit2x
+# End time: 21:33:07 on Jan 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 21:33:07 on Jan 12,2019
+# vlog -reportprogress 300 ../IP-cores/seq-multiplier/verilog/seqmultNM.v 
+# -- Compiling module seqmultNM
+# 
+# Top level modules:
+# 	seqmultNM
+# End time: 21:33:07 on Jan 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 21:33:07 on Jan 12,2019
+# vlog -reportprogress 300 ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/seqmultNM_sat.v 
+# -- Compiling module seqmultNM_sat
+# 
+# Top level modules:
+# 	seqmultNM_sat
+# End time: 21:33:07 on Jan 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 21:33:07 on Jan 12,2019
+# vlog -reportprogress 300 ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/dds_working.v 
+# -- Compiling module dds_working
+# 
+# Top level modules:
+# 	dds_working
+# End time: 21:33:07 on Jan 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 21:33:07 on Jan 12,2019
+# vlog -reportprogress 300 ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/dds.v 
+# -- Compiling module dds
+# 
+# Top level modules:
+# 	dds
+# End time: 21:33:07 on Jan 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 21:33:07 on Jan 12,2019
+# vlog -reportprogress 300 ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/block_48kHz.v 
+# -- Compiling module block_48kHz
+# 
+# Top level modules:
+# 	block_48kHz
+# End time: 21:33:08 on Jan 12,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 21:33:08 on Jan 12,2019
+# vlog -reportprogress 300 ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/block_192kHz.v 
+# -- Compiling module block_192kHz
+# 
+# Top level modules:
+# 	block_192kHz
+# End time: 21:33:08 on Jan 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 21:33:08 on Jan 12,2019
+# vlog -reportprogress 300 ../IP-cores/Interpolator-4X/verilog/interpol4x.v 
+# -- Compiling module interpol4x
+# 
+# Top level modules:
+# 	interpol4x
+# End time: 21:33:08 on Jan 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 21:33:08 on Jan 12,2019
+# vlog -reportprogress 300 ../src/verilog-rtl/uart.v 
+# -- Compiling module uart
+# 
+# Top level modules:
+# 	uart
+# End time: 21:33:08 on Jan 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 21:33:08 on Jan 12,2019
+# vlog -reportprogress 300 ../src/verilog-rtl/LM4550_controler.v 
+# -- Compiling module LM4550_controler
+# 
+# Top level modules:
+# 	LM4550_controler
+# End time: 21:33:08 on Jan 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 21:33:08 on Jan 12,2019
+# vlog -reportprogress 300 ../src/verilog-rtl/ioports16V2018.v 
+# -- Compiling module ioports16V2018
+# 
+# Top level modules:
+# 	ioports16V2018
+# End time: 21:33:08 on Jan 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 21:33:08 on Jan 12,2019
+# vlog -reportprogress 300 ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/main_block.v 
+# -- Compiling module my_fm_stereo
+# 
+# Top level modules:
+# 	my_fm_stereo
+# End time: 21:33:08 on Jan 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 21:33:08 on Jan 12,2019
+# vlog -reportprogress 300 ../src/verilog-netlist/dds_carrier_synthesis.v 
+# -- Compiling module dds_carrier
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	dds_carrier
+# 	glbl
+# End time: 21:33:08 on Jan 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 21:33:08 on Jan 12,2019
+# vlog -reportprogress 300 ../src/verilog-netlist/ddsaudio_synthesis.v 
+# -- Compiling module ddsaudio
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	ddsaudio
+# 	glbl
+# End time: 21:33:09 on Jan 12,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 21:33:09 on Jan 12,2019
+# vlog -reportprogress 300 ../IP-cores/clk-enable-generator/verilog/clockenablegen.v 
+# -- Compiling module clockenablegen
+# 
+# Top level modules:
+# 	clockenablegen
+# End time: 21:33:09 on Jan 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 21:33:09 on Jan 12,2019
+# vlog -reportprogress 300 ../src/verilog-tb/LM4550_digital_sim.v 
+# -- Compiling module LM4550_digital_sim
+# 
+# Top level modules:
+# 	LM4550_digital_sim
+# End time: 21:33:09 on Jan 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 21:33:09 on Jan 12,2019
+# vlog -reportprogress 300 ../src/verilog-rtl/s6base.v 
+# -- Compiling module s6base
+# 
+# Top level modules:
+# 	s6base
+# End time: 21:33:09 on Jan 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 21:33:09 on Jan 12,2019
+# vlog -reportprogress 300 ../src/verilog-tb/s6base_tb.v 
+# -- Compiling module s6base_tb
+# 
+# Top level modules:
+# 	s6base_tb
+# End time: 21:33:09 on Jan 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 21:33:09 on Jan 12,2019
+# vlog -reportprogress 300 C:/Xilinx/14.6/ISE_DS/ISE/verilog/src/glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 21:33:09 on Jan 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work work.s6base_tb glbl 
+# Start time: 21:33:09 on Jan 12,2019
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "seqmultNM(fast__2)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "seqmultNM(fast)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "seqmultNM(fast__1)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "seqmultNM(fast__3)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "ioports16V2018(fast)".
+# 
+# ** Warning: ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/seqmultNM_sat.v(59): (vopt-2697) LSB of part-select into 'R_cmp' is out of bounds.
+# 
+# ** Warning: ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/seqmultNM_sat.v(59): (vopt-2697) LSB of part-select into 'R_cmp' is out of bounds.
+# 
+# Loading work.s6base_tb(fast)
+# Loading work.s6base(fast)
+# Loading work.clock_bit2x(fast)
+# Loading unisims_ver.IBUFG(fast)
+# Loading unisims_ver.DCM_SP(fast)
+# Loading unisims_ver.dcm_sp_clock_divide_by_2(fast)
+# Loading unisims_ver.dcm_sp_maximum_period_check(fast)
+# Loading unisims_ver.dcm_sp_maximum_period_check(fast__1)
+# Loading unisims_ver.dcm_sp_clock_lost(fast)
+# Loading unisims_ver.BUFG(fast)
+# Loading work.uart(fast)
+# Loading work.ioports16V2018(fast)
+# Loading work.LM4550_controler(fast)
+# Loading work.clockenablegen(fast)
+# Loading work.my_fm_stereo(fast)
+# Loading work.block_48kHz(fast)
+# Loading work.seqmultNM_sat(fast)
+# Loading work.seqmultNM(fast)
+# Loading work.block_192kHz(fast)
+# Loading work.seqmultNM_sat(fast__1)
+# Loading work.seqmultNM(fast__1)
+# Loading work.seqmultNM_sat(fast__2)
+# Loading work.seqmultNM(fast__2)
+# Loading work.seqmultNM_sat(fast__3)
+# Loading work.seqmultNM(fast__3)
+# Loading work.dds(fast)
+# Loading work.dds_working(fast)
+# Loading work.dds(fast__1)
+# Loading work.interpol4x(fast)
+# Loading work.ddsaudio(fast)
+# Loading unisims_ver.VCC(fast)
+# Loading unisims_ver.GND(fast)
+# Loading unisims_ver.FDRE(fast)
+# Loading unisims_ver.MUXCY(fast)
+# Loading unisims_ver.XORCY(fast)
+# Loading unisims_ver.LUT1(fast)
+# Loading unisims_ver.INV(fast)
+# Loading unisims_ver.LUT6(fast)
+# Loading unisims_ver.LUT5(fast)
+# Loading work.dds_carrier(fast)
+# Loading unisims_ver.LUT4(fast)
+# Loading unisims_ver.LUT3(fast)
+# Loading work.uart(fast__1)
+# Loading work.LM4550_digital_sim(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Alunos  Hostname: I02CP2109  ProcessID: 10120
+# 
+#           Attempting to use alternate WLF file "./wlft90atxk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft90atxk
+# 
+# ** Error: Error: Illegal widget path to WinfoTopFrame: 
+# Executing ONERROR command at macro ./wave_s6base_top.do line 60
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 18 of file "../simdata/DDSLUT_38.hex". (Current address [17], address range [0:16])    : ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/dds.v(19)
+#    Time: 0 ps  Iteration: 0  Instance: /s6base_tb/s6base_1/DUV/block_192kHz/dds_38
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 18 of file "../simdata/DDSLUT_19.hex". (Current address [17], address range [0:16])    : ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/dds.v(19)
+#    Time: 0 ps  Iteration: 0  Instance: /s6base_tb/s6base_1/DUV/block_192kHz/dds_19
+# Loading simulation input data from files ../simdata/fmstereo_audioin_left.hex, ../simdata/fmstereo_audioin_right.hex:
+# Datain(    0) [ left, right] = [       0  ,        0] (hex 00000  00000)
+# Datain(    1) [ left, right] = [    -208  ,      205] (hex 3ff30  000cd)
+# Datain(    2) [ left, right] = [    3551  ,    -3567] (hex 00ddf  3f211)
+# Datain(    3) [ left, right] = [    4730  ,    -4565] (hex 0127a  3ee2b)
+# Datain(    4) [ left, right] = [    5660  ,    -4000] (hex 0161c  3f060)
+# Datain(    5) [ left, right] = [    7989  ,    -4222] (hex 01f35  3ef82)
+# Datain(    6) [ left, right] = [    8947  ,    -3979] (hex 022f3  3f075)
+# Datain(    7) [ left, right] = [    9267  ,    -4273] (hex 02433  3ef4f)
+# Datain(    8) [ left, right] = [    9664  ,    -4101] (hex 025c0  3effb)
+# Datain(    9) [ left, right] = [   10529  ,    -4112] (hex 02921  3eff0)
+# Datain(   10) [ left, right] = [    9696  ,    -4226] (hex 025e0  3ef7e)
+# Datain(   11) [ left, right] = [    8147  ,    -4251] (hex 01fd3  3ef65)
+# Datain(   12) [ left, right] = [    7369  ,    -4343] (hex 01cc9  3ef09)
+# Datain(   13) [ left, right] = [    7574  ,    -4461] (hex 01d96  3ee93)
+# Datain(   14) [ left, right] = [    7255  ,    -4353] (hex 01c57  3eeff)
+# Datain(   15) [ left, right] = [    6054  ,    -4276] (hex 017a6  3ef4c)
+# Datain(   16) [ left, right] = [    5962  ,    -4051] (hex 0174a  3f02d)
+# Datain(   17) [ left, right] = [    7534  ,    -4273] (hex 01d6e  3ef4f)
+# Datain(   18) [ left, right] = [    9275  ,    -4333] (hex 0243b  3ef13)
+# Datain(   19) [ left, right] = [   10048  ,    -4369] (hex 02740  3eeef)
+# -----------------------------------------------
+# Read        4800 samples from input files
+# 
+# -----------------------------------------------
+# Loading golden output data from file ../simdata/fmstereo_mpx_golden.hex:
+# Golden dataout(    0) =        0 (hex 000000 )
+# Golden dataout(    1) =        0 (hex 000000 )
+# Golden dataout(    2) =        0 (hex 000000 )
+# Golden dataout(    3) =        0 (hex 000000 )
+# Golden dataout(    4) =        0 (hex 000000 )
+# Golden dataout(    5) =        0 (hex 000000 )
+# Golden dataout(    6) =        0 (hex 000000 )
+# Golden dataout(    7) =        0 (hex 000000 )
+# Golden dataout(    8) =        0 (hex 000000 )
+# Golden dataout(    9) =       22 (hex 000016 )
+# Golden dataout(   10) =      100 (hex 000064 )
+# Golden dataout(   11) =       26 (hex 00001a )
+# Golden dataout(   12) =     -186 (hex ffff46 )
+# Golden dataout(   13) =      552 (hex 000228 )
+# Golden dataout(   14) =     -652 (hex fffd74 )
+# Golden dataout(   15) =    -2592 (hex fff5e0 )
+# Golden dataout(   16) =    -1046 (hex fffbea )
+# Golden dataout(   17) =     3200 (hex 000c80 )
+# Golden dataout(   18) =     3214 (hex 000c8e )
+# Golden dataout(   19) =    -1148 (hex fffb84 )
+# -----------------------------------------------
+# Read       19205 samples from output golden file
+# 
+# -----------------------------------------------
+# [time=     1.063 us] Reset released, programming gains and output frequency
+# [time=   480.492 us] Applying input samples...
+# [time=   542.993 us] Starting the clock enable generator
+# ERROR: Data out (          0) =        -2  (fffffe), expected           0  (000000)
+# ERROR: Data out (          1) =        -2  (fffffe), expected           0  (000000)
+# ERROR: Data out (          2) =        -2  (fffffe), expected           0  (000000)
+# ERROR: Data out (          3) =        -2  (fffffe), expected           0  (000000)
+# ERROR: Data out (          4) =        -4  (fffffc), expected           0  (000000)
+# ERROR: Data out (          5) =        -4  (fffffc), expected           0  (000000)
+# ERROR: Data out (          6) =        -6  (fffffa), expected           0  (000000)
+# ERROR: Data out (          7) =        -6  (fffffa), expected           0  (000000)
+# ERROR: Data out (          8) =        -1  (ffffff), expected           0  (000000)
+# ERROR: Data out (          9) =        -1  (ffffff), expected          22  (000016)
+# ERROR: Data out (         10) =        -1  (ffffff), expected         100  (000064)
+# ERROR: Data out (         11) =      -188  (ffff44), expected          26  (00001a)
+# ERROR: Data out (         12) =      -130  (ffff7e), expected        -186  (ffffff46)
+# ERROR: Data out (         13) =        -1  (ffffff), expected         552  (000228)
+# ERROR: Data out (         14) =        -1  (ffffff), expected        -652  (fffffd74)
+# ERROR: Data out (         15) =       -18  (ffffee), expected       -2592  (fffff5e0)
+# ERROR: Data out (         16) =       -18  (ffffee), expected       -1046  (fffffbea)
+# ERROR: Data out (         17) =       -14  (fffff2), expected        3200  (000c80)
+# ERROR: Data out (         18) =        -8  (fffff8), expected        3214  (000c8e)
+# ERROR: Data out (         19) =        -4  (fffffc), expected       -1148  (fffffb84)
+# ERROR: Data out (         20) =        -4  (fffffc), expected       -4448  (ffffeea0)
+# ERROR: Data out (         21) =        -6  (fffffa), expected        -820  (fffffccc)
+# ERROR: Data out (         22) =        -6  (fffffa), expected        4538  (0011ba)
+# ERROR: Data out (         23) =        -4  (fffffc), expected        5246  (00147e)
+# ERROR: Data out (         24) =        -4  (fffffc), expected         262  (000106)
+# ERROR: Data out (         25) =        -4  (fffffc), expected       -2882  (fffff4be)
+# ERROR: Data out (         26) =        -6  (fffffa), expected         618  (00026a)
+# ERROR: Data out (         27) =        -6  (fffffa), expected        7666  (001df2)
+# ERROR: Data out (         28) =        -4  (fffffc), expected        9106  (002392)
+# ERROR: Data out (         29) =        -4  (fffffc), expected        2856  (000b28)
+# ERROR: Data out (         30) =        -4  (fffffc), expected       -1820  (fffff8e4)
+# ERROR: Data out (         31) =        -6  (fffffa), expected        1678  (00068e)
+# ERROR: Data out (         32) =        -6  (fffffa), expected        9512  (002528)
+# ERROR: Data out (         33) =        -4  (fffffc), expected       10694  (0029c6)
+# ERROR: Data out (         34) =        -4  (fffffc), expected        4358  (001106)
+# ERROR: Data out (         35) =        -4  (fffffc), expected       -1552  (fffff9f0)
+# ERROR: Data out (         36) =        -6  (fffffa), expected        1820  (00071c)
+# ERROR: Data out (         37) =        -6  (fffffa), expected        9436  (0024dc)
+# ERROR: Data out (         38) =        -4  (fffffc), expected       11516  (002cfc)
+# ERROR: Data out (         39) =        -4  (fffffc), expected        4776  (0012a8)
+# ERROR: Data out (         40) =        -4  (fffffc), expected        -998  (fffffc1a)
+# ERROR: Data out (         41) =        -6  (fffffa), expected        1896  (000768)
+# ERROR: Data out (         42) =        -6  (fffffa), expected       10480  (0028f0)
+# ERROR: Data out (         43) =        -4  (fffffc), expected       13074  (003312)
+# ERROR: Data out (         44) =        -4  (fffffc), expected        6416  (001910)
+# ERROR: Data out (         45) =        -4  (fffffc), expected        -714  (fffffd36)
+# ERROR: Data out (         46) =        -6  (fffffa), expected        1422  (00058e)
+# ERROR: Data out (         47) =        -6  (fffffa), expected        9616  (002590)
+# ERROR: Data out (         48) =        -6  (fffffa), expected       12104  (002f48)
+# ERROR: Data out (         49) =        -4  (fffffc), expected        5710  (00164e)
+# ERROR: Data out (         50) =        -4  (fffffc), expected       -1334  (fffffaca)
+# ERROR: Data out (         51) =        -6  (fffffa), expected         244  (0000f4)
+# ERROR: Data out (         52) =        -6  (fffffa), expected        6800  (001a90)
+# ERROR: Data out (         53) =        -6  (fffffa), expected        9646  (0025ae)
+# ERROR: Data out (         54) =        -4  (fffffc), expected        4024  (000fb8)
+# ERROR: Data out (         55) =        -4  (fffffc), expected       -1958  (fffff85a)
+# ERROR: Data out (         56) =        -6  (fffffa), expected       -1092  (fffffbbc)
+# ERROR: Data out (         57) =        -6  (fffffa), expected        5808  (0016b0)
+# ERROR: Data out (         58) =        -6  (fffffa), expected        8910  (0022ce)
+# ERROR: Data out (         59) =        -4  (fffffc), expected        4256  (0010a0)
+# ERROR: Data out (         60) =        -4  (fffffc), expected       -2154  (fffff796)
+# ERROR: Data out (         61) =        -6  (fffffa), expected       -1508  (fffffa1c)
+# ERROR: Data out (         62) =        -6  (fffffa), expected        5268  (001494)
+# ERROR: Data out (         63) =        -6  (fffffa), expected        8718  (00220e)
+# ERROR: Data out (         64) =        -4  (fffffc), expected        4578  (0011e2)
+# ERROR: Data out (         65) =        -4  (fffffc), expected       -2054  (fffff7fa)
+# ERROR: Data out (         66) =        -6  (fffffa), expected       -1860  (fffff8bc)
+# ERROR: Data out (         67) =        -4  (fffffc), expected        3596  (000e0c)
+# ERROR: Data out (         68) =        -6  (fffffa), expected        6902  (001af6)
+# ERROR: Data out (         69) =        -4  (fffffc), expected        3290  (000cda)
+# ERROR: Data out (         70) =        -4  (fffffc), expected       -2050  (fffff7fe)
+# ERROR: Dat# End time: 21:33:40 on Jan 12,2019, Elapsed time: 0:02:07
+# Errors: 0, Warnings: 4
+Data out (         72) =        -6  (fffffa), expected        3356  (000d1c)
+# ERROR: Data out (         73) =        -6  (fffffa), expected        7394  (001ce2)
+# ERROR: Data out (         74) =        -4  (fffffc), expected        4670  (00123e)
+# ERROR: Data out (         75) =        -4  (fffffc), expected       -1426  (fffffa6e)
+# ERROR: Data out (         76) =        -6  (fffffa), expected       -1906  (fffff88e)
+# ERROR: Data out (         77) =        -6  (fffffa), expected        4876  (00130c)
+# ERROR: Data out (         78) =        -6  (fffffa), expected       10352  (002870)
+# ERROR: Data out (         79) =        -4  (fffffc), expected        7602  (001db2)
+# End time: 21:33:31 on Jan 12,2019, Elapsed time: 0:00:22
+# Errors: 3, Warnings: 6
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             # End time: 21:33:40 on Jan 12,2019, Elapsed time: 1:57:02
+# Errors: 0, Warnings: 6

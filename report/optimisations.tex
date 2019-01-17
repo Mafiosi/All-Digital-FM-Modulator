@@ -1,0 +1,61 @@
+\section{Further optimisations}\label{sec:further-optimisations}
+
+\subsection{Architectural optimisations}
+
+In order to optimise the circuit, a minimum area target was defined.
+
+To achieve this, some strategies were followed, as is explained below.
+
+\subsubsection*{Coding}
+
+Below are listed the performed optimisations:
+\begin{itemize}
+	\item Definition of \texttt{seqmultNM} blocks with \texttt{N} (multiplier) having the most bits and \texttt{M} (multiplicand) having the least bits. This increases the number of cycles needed for computation (but still manages to meet timing constraints), but allows for decreases in area
+	\item Elimination of all duplicate \texttt{reg} and \texttt{wire} instantiations
+\end{itemize}
+
+Further optimisation was also attempted. However, some measures didn't translate into additional optimisation gains. The attempted procedures are listed below:
+\begin{itemize}
+	\item Condensation of all division and multiplication scenarios in \texttt{seqmultNM\_sat} by using a \emph{wire} assignment before comparing the final value
+	\item Utilisation of \texttt{else ... if} statements when in the presence of mutually exclusive statements (e.g. \texttt{x} versus \texttt{!x})
+	\item Utilisation of registers to save all previous inputs from multipliers, in order to lower power consumption in case the results remained unaltered (removed due to increase in area size)
+	\item Utilisation of two-step sum in \texttt{block\_192kHz} (i.e. by performing two sums with two operands instead of a single sum with three operators
+\end{itemize}
+
+\subsubsection*{Synthesis}
+After validation of the final design, synthesis optimisation was achieved by means of editing the \texttt{Optimisation Goal} and \texttt{Optimisation Effort} parameters under the \texttt{Synthesis - XST > Process Properties} options.
+
+Maximum optimisation was achieved using the values listed below. The resulting device utilisation statistics are presented in \autoref{table:device-utilisation}.
+
+\begin{table}[!h]
+\center
+\begin{tabular}{|p{6cm}|p{2cm}|}
+\hline
+\textbf{Optimisation Goal}   & Speed  \\ \hline
+\textbf{Optimisation Effort} & Normal \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Resource occupancy}
+
+The results for the resource occupancy of the device upon synthesis follow below.
+
+%Having the clock frequency fixed to \emph{insert\_freq\_here}, 
+\begin{table}[!h]
+\center
+\begin{tabular}{|l|R{2.25cm}|R{2.25cm}|R{2.25cm}|}
+\hline
+\rowcolor[HTML]{FFFF99} 
+\textbf{Logic utilisation}        & \multicolumn{1}{l|}{\cellcolor[HTML]{FFFF99}\textbf{Used}} & \multicolumn{1}{l|}{\cellcolor[HTML]{FFFF99}\textbf{Available}} & \multicolumn{1}{l|}{\cellcolor[HTML]{FFFF99}\textbf{Utilisation}} \\ \hline
+Number of Slice Registers         & 1732                                                       & 54576                                                           & 3\%                                                               \\ \hline
+Number of Slice LUTs              & 1319                                                       & 27288                                                           & 5\%                                                               \\ \hline
+Number of fully used LUT-FF pairs & 898                                                       & 1778                                                            & 50\%                                                              \\ \hline
+Number of bonded IOBs             & 78                                                         & 218                                                             & 35\%                                                              \\ \hline
+Number of Block RAM/FIFO          & 0                                                          & 116                                                             & 0\%                                                               \\ \hline
+\end{tabular}
+\caption{Device utilisation results for the final optimised synthesis}\label{table:device-utilisation}
+\end{table}
+
+\subsection{Additional changes}
+
+Besides this, a change was performed to the FM stereo data generation data generation script (\texttt{fmstereo\_gensimdata.m}). An imprecision was detected in lines 135 and 137, in which the generated data, when saturating to a negative value, would exceed the representation range of the hardware, a wrong value. The code was changed so as to saturate to the most negative value possible to represent by its number of bits.

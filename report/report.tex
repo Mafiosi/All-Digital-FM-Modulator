@@ -1,0 +1,86 @@
+%++++++++++++++++++++++++++++++++++++++++
+% Don't modify this section unless you know what you're doing!
+\documentclass[letterpaper,12pt]{article}
+\usepackage{tabularx} % extra features for tabular environment
+\usepackage{amsmath}  % improve math presentation
+\usepackage{graphicx} % takes care of graphic including machinery
+\usepackage[margin=1in,letterpaper]{geometry} % decreases margins
+\usepackage{cite} % takes care of citations
+\usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
+\hypersetup{
+	colorlinks=true,       % false: boxed links; true: colored links
+	linkcolor=blue,        % color of internal links
+	citecolor=blue,        % color of links to bibliography
+	filecolor=magenta,     % color of file links
+	urlcolor=blue         
+}
+\usepackage{indentfirst}		% indents first paragraph
+\usepackage[utf8]{inputenc} % allows usage of latin characters
+
+%% Include color package
+\usepackage[table,xcdraw]{xcolor}
+\definecolor{cloudwhite}{cmyk}{0,0,0,0.025}
+
+%% Includes source-code listings package
+\usepackage{listings}
+\lstset{ %
+ language={},		                % choose the language of the code
+ basicstyle=\footnotesize\ttfamily,
+ keywordstyle=\bfseries,
+ numbers=none,                      % where to put the line-numbers
+ frame=tb,
+ float=htb,
+ aboveskip=8mm,
+ belowskip=4mm,
+ backgroundcolor=\color{cloudwhite},
+ showspaces=false,                  % show spaces adding particular underscores
+ showstringspaces=false,            % underline spaces within strings
+ showtabs=false,                    % show tabs within strings adding particular underscores
+ tabsize=2,	                        % sets default tabsize to 2 spaces
+ captionpos=b,                      % sets the caption-position to bottom
+ breaklines=true,                   % sets automatic line breaking
+ breakatwhitespace=false,           % sets if automatic breaks should only happen at whitespace
+ escapeinside={\%*}{*)},            % if you want to add a comment within your code
+ morekeywords={*,var,template,new}  % if you want to add more keywords to the set
+}
+
+%% Enables new settings for editing tables
+\usepackage{tabularx}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+%% Supports both eps and pdf files
+%\usepackage{epstopdf}
+
+\graphicspath{{figures/}}
+
+%++++++++++++++++++++++++++++++++++++++++
+
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.4\textwidth]{uporto-feup.pdf}\par\vspace{1cm}
+	{\scshape\Large EEC0055\\ Projecto de Sistemas Digitais\par}
+	\vspace{1.5cm}
+	{\huge\bfseries Laboratory 3: All-digital FM stereo modulator\par}
+	\vspace{2.5cm}
+	{\Large João Beleza, Pedro Costa\par}
+	\vspace{0.25cm}
+	{\{up201402831, up201402793\}@fe.up.pt\par}
+	\vfill
+
+	\vfill
+
+	{\large \today\par} % bottom of the page
+\end{titlepage}
+
+\input{system-overview}
+
+\input{dds-module}
+
+\input{control-path}
+
+\input{optimisations}
+
+\end{document}

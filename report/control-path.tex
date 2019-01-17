@@ -1,0 +1,32 @@
+\section{Control path}\label{sec:control-path}
+
+In this section the control path will be explained, followed by the implementation of both \texttt{block\_48kHz} and \texttt{block\_192kHz} blocks. These are an application of that same algorithm.
+
+The multiplication block is essential for the correct functioning of the system. As such, the control path was designed around its requirements, as detailed below.
+
+\begin{lstlisting}[caption={Description of the control path}, label={lst:control}]
+	* Start phase:
+		- The inputs are continually updated in accordance with each multiplier
+		- The start flag of the multiplier is enabled
+	* Multiplier phase:
+		- The control flag is enabled when the ready flag is low
+	* Final phase:
+		- Results are signalled as ready when both control and ready flags are enabled
+		- Upon acknowledging the valid results, the control flag is set to low
+\end{lstlisting}
+
+\subsection{block\_48kHz}
+
+For this block, both inputs are being added and subtracted continuously by means of an \emph{assign} condition. Any possible overflow is avoided by discarding the LSB as a result of a previous sum which preserves any overflow information.
+
+Due to requirements of the \texttt{seqmultNM} blocks, both \texttt{Ks} and \texttt{Kd} gains are extended by a signal bit, so as to be interpreted as signed (and positive) variables.
+
+The multiplier is enabled using the signal \texttt{clocken\_48}, which is active during a single clock cycle, with a periodicity of 48 kHz. After this, the strategy in \autoref{lst:control} is used, and its output is directed to the inputs of the \texttt{interpol4x} blocks. Using the \texttt{seqmultNM\_sat} described under \autoref{sec:further-optimisations}, the outputs of both multipliers are shifted by 3 bits to the right.
+
+\subsection{block\_192kHz}
+
+For this block, a similar implementation is performed. The gains \texttt{Kp} and \texttt{Kf} are extended by a signal bit. The output of both \texttt{dds} blocks is placed in a 8-bit register. 
+
+The multipliers at the left of the sum block (see \autoref{fig:overview}) are enabled using the signal \texttt{clocken\_192}, which is active during a single clock cycle, with a periodicity of 192 kHz. Besides this, a condition is added, which signals that all calculations are finished within the block. For the multiplication with the 38 kHz sine wave, the result is affected by an 8-bit right shift. For the multiplication with the 19 kHz sine wave, the result is affected by an 6-bit left shift. Both outputs are rescaled using the \texttt{seqmultNM\_sat} block.
+
+A single \emph{assign} statement is used for the summation of all three values before the rightmost multiplication. When both multiplications before this sumation finishes, as described under \autoref{lst:control}, the results are acknowledged. This disables the flags of the multipliers on the left of the summation, and enables the rightmost multiplication. Its output already counts for a 4-bit shift. A control flag is enabled, which states that all calculations are finished, and its values are loaded into a registered output with a periodicity of 192 kHz.

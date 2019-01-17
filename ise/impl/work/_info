@@ -1,0 +1,458 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Alunos.I02CP2109/Desktop/lab3/impl
+T_opt
+!s110 1546745955
+VAaFS<Wmo]eCDf0=B]azZ?2
+Z1 04 9 4 work s6base_tb fast 0
+Z2 04 4 4 work glbl fast 0
+=1-4ccc6a23d3c8-5c317862-35f-2788
+Z3 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip +acc
+n@_opt
+Z4 OL;O;10.4c;61
+R0
+T_opt1
+!s110 1547328694
+VKWeOMJ:Y<UDlVWeJ>UG;51
+R1
+R2
+=1-4ccc6a23d398-5c3a5cb6-23-1040
+R3
+n@_opt1
+R4
+R0
+T_opt2
+!s110 1547321799
+VOSolX>eoBh;eZk?V6CAD;1
+R1
+R2
+=1-4ccc6a23d398-5c3a41c7-5b-768
+R3
+n@_opt2
+R4
+R0
+T_opt3
+!s110 1547328790
+V_Qh1OlogIR_k]kfGRH6mf2
+R1
+R2
+=1-4ccc6a23d398-5c3a5d16-4a-29d8
+R3
+n@_opt3
+R4
+vblock_192kHz
+Z5 !s110 1547328788
+!i10b 1
+!s100 `iU1nS`6HbLaLQ3]:>EdX2
+I@Bc=K:U]K44JDGA=[h4Nd2
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 dC:/Users/Alunos.I02CP2107/Documents/PSDIss/lab3/impl
+w1547321726
+8../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/block_192kHz.v
+F../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/block_192kHz.v
+Z8 L0 14
+Z9 OL;L;10.4c;61
+r1
+!s85 0
+31
+Z10 !s108 1547328788.000000
+!s107 ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/block_192kHz.v|
+!s90 -reportprogress|300|../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/block_192kHz.v|
+!i113 0
+Z11 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+nblock_192k@hz
+vblock_48kHz
+R5
+!i10b 1
+!s100 ib?hb;?Yff5@o@ZMS=gle3
+I8V3bLR1cRR@DLSz]jkR]I1
+R6
+R7
+w1547318653
+8../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/block_48kHz.v
+F../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/block_48kHz.v
+R8
+R9
+r1
+!s85 0
+31
+Z12 !s108 1547328787.000000
+!s107 ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/block_48kHz.v|
+!s90 -reportprogress|300|../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/block_48kHz.v|
+!i113 0
+R11
+nblock_48k@hz
+vclock_bit2x
+Z13 !s110 1547328787
+!i10b 1
+!s100 oQ`:aPZfNbE?LfTFTKkLb1
+I_igHb6FXC`n`QbE_4hdMF0
+R6
+R7
+w1544817698
+8ipcore_dir/clock_bit2x.v
+Fipcore_dir/clock_bit2x.v
+L0 71
+R9
+r1
+!s85 0
+31
+R12
+!s107 ipcore_dir/clock_bit2x.v|
+!s90 -reportprogress|300|ipcore_dir/clock_bit2x.v|
+!i113 0
+R11
+vclockenablegen
+Z14 !s110 1547328789
+!i10b 1
+!s100 d<zG7U:7f:1[h:=f@za[H2
+IAhSo_2Mczo7R7ba3moEI]0
+R6
+R7
+w1545834018
+8../IP-cores/clk-enable-generator/verilog/clockenablegen.v
+F../IP-cores/clk-enable-generator/verilog/clockenablegen.v
+R8
+R9
+r1
+!s85 0
+31
+Z15 !s108 1547328789.000000
+!s107 ../IP-cores/clk-enable-generator/verilog/clockenablegen.v|
+!s90 -reportprogress|300|../IP-cores/clk-enable-generator/verilog/clockenablegen.v|
+!i113 0
+R11
+vdds
+R13
+!i10b 1
+!s100 E?GRXcLhTiBP4ho<jWkzc3
+I<<zfIL@ehjoWnKZ2HgdoK0
+R6
+R7
+w1547328775
+8../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/dds.v
+F../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/dds.v
+L0 3
+R9
+r1
+!s85 0
+31
+R12
+!s107 ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/dds.v|
+!s90 -reportprogress|300|../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/dds.v|
+!i113 0
+R11
+vdds_carrier
+R5
+!i10b 1
+!s100 SP2>R^<L6Wc8M]aRaAiJW2
+IM3l1C6IDLzel?dLjL:g8P2
+R6
+R7
+w1545949508
+8../src/verilog-netlist/dds_carrier_synthesis.v
+F../src/verilog-netlist/dds_carrier_synthesis.v
+Z16 L0 36
+R9
+r1
+!s85 0
+31
+R10
+!s107 ../src/verilog-netlist/dds_carrier_synthesis.v|
+!s90 -reportprogress|300|../src/verilog-netlist/dds_carrier_synthesis.v|
+!i113 0
+R11
+vdds_working
+R13
+!i10b 1
+!s100 GZ4BDHKn^hb6DITz8>=ZL1
+IY>_?1<B^MB<G<0@i]73Ca1
+R6
+R7
+w1547321776
+8../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/dds_working.v
+F../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/dds_working.v
+L0 3
+R9
+r1
+!s85 0
+31
+R12
+!s107 ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/dds_working.v|
+!s90 -reportprogress|300|../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/dds_working.v|
+!i113 0
+R11
+vddsaudio
+R14
+!i10b 1
+!s100 KJ[?b@AbQ0j2GBjZH=ASO2
+IK<oJal3h>3GCjXC?2<J6Y3
+R6
+R7
+w1545949231
+8../src/verilog-netlist/ddsaudio_synthesis.v
+F../src/verilog-netlist/ddsaudio_synthesis.v
+R16
+R9
+r1
+!s85 0
+31
+R10
+!s107 ../src/verilog-netlist/ddsaudio_synthesis.v|
+!s90 -reportprogress|300|../src/verilog-netlist/ddsaudio_synthesis.v|
+!i113 0
+R11
+vglbl
+R14
+!i10b 1
+!s100 UlJ]9LUWO:ZWoRO62F9fW3
+IP;Y;blEan[UB]Q:CASZKV1
+R6
+R7
+w1370713715
+8C:/Xilinx/14.6/ISE_DS/ISE/verilog/src/glbl.v
+FC:/Xilinx/14.6/ISE_DS/ISE/verilog/src/glbl.v
+L0 5
+R9
+r1
+!s85 0
+31
+R15
+!s107 C:/Xilinx/14.6/ISE_DS/ISE/verilog/src/glbl.v|
+!s90 -reportprogress|300|C:/Xilinx/14.6/ISE_DS/ISE/verilog/src/glbl.v|
+!i113 0
+R11
+vinterpol4x
+R5
+!i10b 1
+!s100 =eQe@2S1kNlXfS0A55>lX3
+IzD8lM2=Re62WGd=dea0NY3
+R6
+R7
+w1545825820
+8../IP-cores/Interpolator-4X/verilog/interpol4x.v
+F../IP-cores/Interpolator-4X/verilog/interpol4x.v
+L0 33
+R9
+r1
+!s85 0
+31
+R10
+!s107 ../IP-cores/Interpolator-4X/verilog/interpol4x.v|
+!s90 -reportprogress|300|../IP-cores/Interpolator-4X/verilog/interpol4x.v|
+!i113 0
+R11
+vioports16V2018
+R5
+!i10b 1
+!s100 zmQ^7NATPoFRPYBkRoABU1
+IJV^P;EnHXP>@zoJ2a;94@0
+R6
+R7
+w1545664490
+8../src/verilog-rtl/ioports16V2018.v
+F../src/verilog-rtl/ioports16V2018.v
+L0 19
+R9
+r1
+!s85 0
+31
+R10
+!s107 ../src/verilog-rtl/ioports16V2018.v|
+!s90 -reportprogress|300|../src/verilog-rtl/ioports16V2018.v|
+!i113 0
+R11
+nioports16@v2018
+vLM4550_controler
+R5
+!i10b 1
+!s100 bU]?Nh9ejL@UT:7GBV`cZ1
+IflM86I]^j4P1MBoZ33>4S1
+R6
+R7
+w1481621412
+8../src/verilog-rtl/LM4550_controler.v
+F../src/verilog-rtl/LM4550_controler.v
+L0 3
+R9
+r1
+!s85 0
+31
+R10
+!s107 ../src/verilog-rtl/LM4550_controler.v|
+!s90 -reportprogress|300|../src/verilog-rtl/LM4550_controler.v|
+!i113 0
+R11
+n@l@m4550_controler
+vLM4550_digital_sim
+R14
+!i10b 1
+!s100 >:[d2eLnZLV@7QBkKI9DU2
+IMf2HR^aK7n1N92FQ07>C<1
+R6
+R7
+w1545904900
+8../src/verilog-tb/LM4550_digital_sim.v
+F../src/verilog-tb/LM4550_digital_sim.v
+L0 8
+R9
+r1
+!s85 0
+31
+R15
+!s107 ../src/verilog-tb/LM4550_digital_sim.v|
+!s90 -reportprogress|300|../src/verilog-tb/LM4550_digital_sim.v|
+!i113 0
+R11
+n@l@m4550_digital_sim
+vmy_fm_stereo
+R5
+!i10b 1
+!s100 2DK<S0h^i:jaB=9oNogb52
+I8WEda;NB0<k4N=A>;GXM:3
+R6
+R7
+w1546733628
+8../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/main_block.v
+F../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/main_block.v
+L0 15
+R9
+r1
+!s85 0
+31
+R10
+!s107 ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/main_block.v|
+!s90 -reportprogress|300|../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/main_block.v|
+!i113 0
+R11
+vs6base
+R14
+!i10b 1
+!s100 1H=>bVzN;`[B>Joh2;S2h3
+I8:XBFlInRb_aGV>Gg`GT=2
+R6
+R7
+w1546745818
+8../src/verilog-rtl/s6base.v
+F../src/verilog-rtl/s6base.v
+F../src/verilog-rtl/alunos/joaobeleza-pedrocosta/instance.v
+L0 24
+R9
+r1
+!s85 0
+31
+R15
+!s107 ../src/verilog-rtl/alunos/joaobeleza-pedrocosta/instance.v|../src/verilog-rtl/s6base.v|
+!s90 -reportprogress|300|../src/verilog-rtl/s6base.v|
+!i113 0
+R11
+vs6base_tb
+R14
+!i10b 1
+!s100 =J5XH;3JVT;_`i<1_@9WD2
+ITUi9OGMg885MiDU99f1oa0
+R6
+R7
+w1547319941
+8../src/verilog-tb/s6base_tb.v
+F../src/verilog-tb/s6base_tb.v
+F../src/verilog-tb/verilog-tasks.v
+L0 28
+R9
+r1
+!s85 0
+31
+R15
+!s107 ../src/verilog-tb/verilog-tasks.v|../src/verilog-tb/s6base_tb.v|
+!s90 -reportprogress|300|../src/verilog-tb/s6base_tb.v|
+!i113 0
+R11
+vseqmultNM
+R13
+!i10b 1
+!s100 ;=90`RzgZ57Gb6SJz8=la2
+ITjc6`[NQT6Mbzm5]hTYQ^3
+R6
+R7
+w1544703866
+8../IP-cores/seq-multiplier/verilog/seqmultNM.v
+F../IP-cores/seq-multiplier/verilog/seqmultNM.v
+L0 26
+R9
+r1
+!s85 0
+31
+R12
+!s107 ../IP-cores/seq-multiplier/verilog/seqmultNM.v|
+!s90 -reportprogress|300|../IP-cores/seq-multiplier/verilog/seqmultNM.v|
+!i113 0
+R11
+nseqmult@n@m
+vseqmultNM_sat
+R13
+!i10b 1
+!s100 `KMf@2hO^P1JlehRXMLFW1
+Ic7:;j=BV[4lmf?SgfjQVO3
+R6
+R7
+w1547327520
+8../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/seqmultNM_sat.v
+F../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/seqmultNM_sat.v
+L0 1
+R9
+r1
+!s85 0
+31
+R12
+!s107 ../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/seqmultNM_sat.v|
+!s90 -reportprogress|300|../src/verilog-rtl/Alunos/joaobeleza-pedrocosta/seqmultNM_sat.v|
+!i113 0
+R11
+nseqmult@n@m_sat
+vstereo_mx_fm_tb
+!s110 1547136078
+!i10b 1
+!s100 C5FHdbPQ[EY<9ikYT^L]L0
+Ioeg@O6@Q>zCa6G5`kEzjb1
+R6
+R7
+w1547135864
+8../src/verilog-tb/fm_stereo_mx_tb.v
+F../src/verilog-tb/fm_stereo_mx_tb.v
+L0 27
+R9
+r1
+!s85 0
+31
+!s108 1547136078.000000
+!s107 ../src/verilog-tb/fm_stereo_mx_tb.v|
+!s90 -reportprogress|300|../src/verilog-tb/fm_stereo_mx_tb.v|
+!i113 0
+R11
+vuart
+R5
+!i10b 1
+!s100 6S]3c7<MfIk7>gmhSGA3Q0
+I_dfe@YBdz<4:C7LFeHioH3
+R6
+R7
+w1510661592
+8../src/verilog-rtl/uart.v
+F../src/verilog-rtl/uart.v
+L0 11
+R9
+r1
+!s85 0
+31
+R10
+!s107 ../src/verilog-rtl/uart.v|
+!s90 -reportprogress|300|../src/verilog-rtl/uart.v|
+!i113 0
+R11

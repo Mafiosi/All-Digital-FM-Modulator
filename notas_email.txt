@@ -1,0 +1,8 @@
+[PSDi] Enviar ao prof.:
+* Referir que temos o programa a funcionar
+* Falar sobre testbenches e/ou optimizações que possamos ter antes da entrega (e que sejam benificiadas), basicamente os parâmetros de avaliação do prof.
+* Data limite de envio do relatório
+* Falar sobre o erro na DAC
+* Quando apresentar (a partir de dia 9)
+* Se a sincronização 1 clk antes é problemática (em princípio não, mas ainda assim…)
+* Beleza em CC
